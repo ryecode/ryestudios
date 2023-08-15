@@ -18,24 +18,40 @@ export const Profile = () => {
         animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
         exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
       >
+        <div className="header" id="profileTitle">
+        <h1 class="hero-title" id="title">
+          <b>A FEW THINGS ABOUT ME..</b>
+      </h1>
+        </div>
         <div className="profileCard">
-          <div className="left-container">
+          <div className="left-container" id="pCardLeft">
             <img
               className="profileImage"
               src="https://ryecode.github.io/portfolio/ImageBank/RyeFormal3.png"
               alt="Profile"
             />
-            <h2 id="h2" className="gradienttext">
+            <h1 id="h2" className="gradienttext">
               Ryan Corral
-            </h2>
-            <p id="p">( MERN ) Full-Stack Web Developer</p>
-            <p>
-              sit esse et et amet pariatur Lorem Lorem proident voluptate do
-              quis magna laboris sit voluptate et dolor nulla nisi minim amet
-              laborum aliquip do
+            </h1>
+            <p id="p">Full-Stack Web Developer</p>
+            <p id="aboutMe">
+            Greetings GUEST! I'm Rye, a Full-Stack Web Developer based in Antipolo City, Philippines. I recently graduated from KodeGo's Full-Stack Web Development Bootcamp this past June 2023. Where I was awarded <br />"<a href="https://youtu.be/Hq0qzBNZzQA" target="_blank"  rel="noopener noreferrer" style={{color: "hsl(45, 100%, 53%)", zIndex: 1}} >Best in Coding</a>".  
+                <br/>
+                Since childhood, one of my passions has been computers. I can quickly learn stuff about computers and programming. My first code was a simple ATM program back in high school using Turbo Pascal, and I was having so much fun learning to code!
+                <br/>
+                Now that my skills have been somewhat updated, I'm looking to get a chance to work for a good IT company, showcase my skills and passion for coding, and further expand my knowledge about programming.              
+          
             </p>
           </div>
-          <div className="right-container">
+
+          <div className="middle-container" id="pCardMid">
+            <h3 id="h3" className="gradienttext">
+              Programming Skills
+            </h3>
+
+          </div>
+
+          <div className="right-container" id="pCardRight">
             <h3 id="h3" className="gradienttext">
               Profile Details
             </h3>
@@ -70,6 +86,7 @@ export const Profile = () => {
               </tr>
             </table>
           </div>
+
         </div>
       </motion.div>
     </>
