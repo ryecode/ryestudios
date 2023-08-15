@@ -29,7 +29,7 @@ return (
       muted
       playsInline
       fetchPriority={"high"}
-      poster="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
+      poster="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.jpeg"
     />
     <div className="content">
       <h1>WELCOME</h1>
