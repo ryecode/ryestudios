@@ -4,23 +4,15 @@ import "./Card3D.style.css";
 const Card3D = () => {
   return (
     <>
-      <div className="cardContainer">
-        <div className="header">
-          <h1>MY PROJECTS</h1>
-          {/* <p>Guest, here are my projects both completed and still working on</p> */}
-        </div>
-        
+      <div>
         <div className="projects">
-
           <div className="folder">
             <div className="card-bg">
               <p>
                 {" "}
                 sit esse et et amet pariatur Lorem Lorem proident voluptate do
                 quis magna laboris sit voluptate et dolor nulla nisi minim amet
-                laborum aliquip do sit esse et et amet pariatur Lorem Lorem
-                proident voluptate do quis magna laboris sit voluptate et dolor
-                nulla nisi minim amet laborum aliquip do
+                laborum aliquip do
               </p>
             </div>
             <div className="card-cta">
@@ -38,6 +30,9 @@ const Card3D = () => {
                 src="https://ryecode.github.io/portfolio/ImageBank/RyePortfolioSS.jpeg"
                 alt="website screenshot"
               />
+            </div>
+            <div className="detailButton">
+              <button>DETAILS</button>
             </div>
           </div>
 
@@ -66,6 +61,9 @@ const Card3D = () => {
                 alt="website screenshot"
               />
             </div>
+            <div className="detailButton">
+              <button>DETAILS</button>
+            </div>
           </div>
 
           <div className="folder">
@@ -92,6 +90,9 @@ const Card3D = () => {
                 src="https://ryecode.github.io/portfolio/ImageBank/RyeTicTacToeSS.jpeg"
                 alt="website screenshot"
               />
+            </div>
+            <div className="detailButton">
+              <button>DETAILS</button>
             </div>
           </div>
 
@@ -127,8 +128,11 @@ const Card3D = () => {
                         <img src='https://ryecode.github.io/portfolio/ImageBank/RYELogoBLackSphere.png' alt='logo' />
                     </div> */}
             </div>
+            <div className="detailButton">
+              <button>DETAILS</button>
+            </div>
           </div>
-
+          
         </div>
       </div>
     </>

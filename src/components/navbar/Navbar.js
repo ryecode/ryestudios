@@ -1,8 +1,9 @@
 import React from "react";
 import "./Navbar.styles.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
+
   return (
     <>
       <div>
@@ -38,16 +39,16 @@ export const Navbar = () => {
           </label>
           <ul className="menu">
             <li className="nav-item neon-button1">
-              <Link className="nav-link" to="/"> Home </Link>
+              <NavLink className="nav-link" to="/"> Home </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <Link className="nav-link" to="/profile"> My Profile </Link>
+              <NavLink  className="nav-link" to="/profile"> My Profile </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <Link className="nav-link" to="/project"> My Projects </Link>
+              <NavLink  className="nav-link" to="/project"> My Projects </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <Link className="nav-link" to="/contact"> Contact Me </Link>
+              <NavLink  className="nav-link" to="/contact"> Contact Me </NavLink>
             </li>
           </ul>
         </nav>

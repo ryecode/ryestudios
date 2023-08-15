@@ -6,6 +6,7 @@
   margin-top: 0;
   padding: 0;
   position: absolute;
+  border-top: 0.1em solid hsl(112, 100%, 50%);
 }
 
 .btn {

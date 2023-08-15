@@ -78,6 +78,7 @@
   box-sizing: border-box;
   margin: 0;
   width: 100vw;
+  border-bottom: 0.1em solid hsl(112, 100%, 50%);
 }
 
 .menu {
@@ -206,9 +207,9 @@
 
 
 
-#active 
+.active 
 {
-  color: hsl(45, 100%, 53%);
+  color: hsl(113, 100%, 86%);
   text-shadow: 0 0 1em rgb(254, 248, 248),
 }
 

@@ -27,26 +27,6 @@
     box-sizing: border-box;
 }
 
-/* html, body {
-    width: 100vw;
-    height: 100vh;
-} */
-
-.cardContainer {
-    width: 100%;
-    height: 100%;
-    background: var(--container-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3.5em;
-    padding: 5em 0em 15em 0em;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
 .header {
     color: hsl(0, 0%, 100%);
     font-size: 30px;
@@ -81,6 +61,9 @@ p {
     .cardContainer {
         padding: 10em 0em 10em 0em;
     }
+    .card-fg {
+        pointer-events: none;
+    }
 }
 
 .folder {
@@ -90,6 +73,8 @@ p {
     border-radius: 10px;
     perspective: 1400px;
     cursor: pointer;
+    margin-bottom: 2em;
+
 }
 
 .card-bg {
@@ -188,46 +173,6 @@ p {
     transform: rotateY(-40deg);
 }
 
-.hover-container {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-    padding-top: 70%;
-    background-image: linear-gradient(0,rgba(240, 169, 1, 0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.7),rgb(240, 169, 1,0.4),rgb(240, 169, 1,0.2),rgb(240, 169, 1,0.1),transparent);
-    color: black;
-    opacity: 0;
-    transition: opacity 0.45s, height 0.5s;
-    }
-    .cards:hover > .hover-container {
-    opacity: 100%;
-    pointer-events: all;
-    height: 100%;
-    }
-    .hover-header {
-    width: 50%;
-    font-size: 30px;
-    }
-    .hover-btn {
-    width: 50%;
-    color: black;
-    display: grid;
-    place-items: center;
-    border-radius: 25px;
-    background-color: white;
-    height: 30px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    box-sizing: content-box;
-    padding:5px 10px;
-    }
-    .hover-description {
-    width: 100%;
-    font-size: small;
-    color: black;
-    }
+.detailButton {
+    margin-top: 335px;
+}
