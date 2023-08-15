@@ -11,7 +11,44 @@ html, body {
     background-color: rgb(0, 0, 0);
 }
 
-.projectBody {
-    width: 100%;
+@media only screen and (max-width: 770px) {
+    .profileCard {
+      flex-direction: column;
+      margin-top: 1.5em;
+      height: auto;
+      width: 100%;
+    }
+
+    .header {
+      transform: translateX(-3.5em);
+      padding-top: 1.5em;
+    }
+  
+    .hero-title {
+      z-index: 1;
+      }
+
+    .folder {
+      transform: translateX(-3.75em);
+    }
+  }
+
+  .header {
+      margin-left: 2.5em;
+  }
+
+  .hero-title {
+    z-index: 1;
+    transform: translatex(1.5em);
+    margin: 2em 0 1em 0;
+    }
+
+.profileCard {
+    margin-bottom: 4em;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0 4em 0;
 }
