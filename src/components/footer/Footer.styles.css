@@ -6,13 +6,12 @@
   margin-top: 0;
   padding: 0;
   position: absolute;
-  border-top: 0.1em solid hsl(112, 100%, 50%);
 }
 
 .btn {
   width: 100%;
   font-size: 1em;
-  height: 90px;
+  height: 70px;
   border: none;
   outline: none;
   /* background: black; */
@@ -24,7 +23,7 @@
 
 .words {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   background-image: none;
   font-weight: bold;
   letter-spacing: 5px;
@@ -163,7 +162,7 @@
 }
 
 .credit {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   text-align: center;
   color: rgb(145, 146, 147);
   opacity: 50%;

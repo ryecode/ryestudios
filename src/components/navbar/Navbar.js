@@ -12,13 +12,13 @@ export const Navbar = () => {
             className="container-fluid"
             style={{
               paddingTop: "15px",
-              paddingBottom: "5px",
+              paddingBottom: "0px",
               width: "80%",
               backgroundColor: "transparent",
             }}
           >
             <a
-              href="https://ryecode.github.io/portfolio/home"
+              href="https://ryestudios.vercel.app/"
               style={{ textDecoration: "none" }}
             >
               <h1 class="animate-charcter">

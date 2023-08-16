@@ -73,12 +73,12 @@
   justify-content: space-between;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(40, 40, 40, 0.873));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 80px;
+  height: 4em;
   padding: 5px;
   box-sizing: border-box;
   margin: 0;
   width: 100vw;
-  border-bottom: 0.1em solid hsl(112, 100%, 50%);
+  
 }
 
 .menu {
@@ -247,9 +247,8 @@
   background-clip: border-box;
   background-size: 200% auto;
   color: #fff;
-  background-clip: text;
-  /* text-fill-color: transparent; */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
