@@ -21,7 +21,7 @@ body {
   box-sizing: border-box;
 }
 
-.profTitle 
+/* .profTitle 
   {
     font-size: 40px;
     font-weight: bolder;
@@ -30,7 +30,8 @@ body {
     width: max-content;
     font-weight: 800;
     border-radius: 5px;
-  }
+    
+  } */
   
   .profTitle::before,
   .profTitle::after {
@@ -43,65 +44,62 @@ body {
   }
   
   .profTitle::before {
-    background-color: #014717;
+    background-color: #2e2e2e;
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
   }
-  /* .profTitle::after {
-    width: 0.5em;
-    background: hsl(0, 0%, 6%);
-    animation: 
-        typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards, 
-        blink 750ms steps(18) infinite;
-  } */
 
-
-#title {
-  font-size: 1.5rem;
-  color: hsl(0, 0%, 97%);
-  margin: 3em 0 2em 3em;
-  padding: 1em;
-  box-shadow: -5px 5px 10px rgb(255, 255, 255);
-  width: fit-content;
-  border: #f4f6f5;
-  background: linear-gradient(to right, #30a904, #2a9105, #014717);
-
-}
+  #profileTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.5em;
+    color: hsl(0, 0%, 97%);
+    margin: 0.1em 0 2em 3em;
+    padding: 1em;
+    box-shadow: -1px 3px 1px #5b5b5b;
+    width: fit-content;
+    background: #2e2e2e;
+    border-color: #2e2e2e;
+    border-radius: 10px;
+    transform: translateX(125%);
+  }
 
 .profileCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
-  margin-bottom: 8em;
+  padding: 5em;
+  margin-bottom: 0em;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #12c2e9;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3cd604, #0e9037, #3cd604);
+  background: -webkit-linear-gradient(to right, #227b02, #00471a, #227b02);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3cd604, #0e9037, #3cd604);
+  background: linear-gradient(to right, #227b02, #00471a, #227b02);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .left-container {
   background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  background: -webkit-linear-gradient(to left, #181818, #545454);
+  background: linear-gradient(to left, #181818, #545454);
   flex: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
-  padding: 10px;
+  padding: 1.45em;
   margin: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .middle-container {
-  background: #000000;
+  background: linear-gradient(to right, #181818, #202020, #181818);
   flex: 1;
   width: 100%;
   height: 600px;
@@ -113,8 +111,8 @@ body {
 
 .right-container {
   background: #000000;
-  background: -webkit-linear-gradient(to left, #434343, #000000);
-  background: linear-gradient(to left, #434343, #000000);
+  background: -webkit-linear-gradient(to right, #181818, #545454);
+  background: linear-gradient(to right, #181818, #545454);
   flex: 1;
   width: 100%;
   height: 600px;
@@ -127,8 +125,12 @@ body {
 @media only screen and (max-width: 770px) {
   .profileCard {
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 0.1em;
     width: 100%;
+  }
+
+  .middle-container {
+    height: 600px;
   }
 
   .left-container {
@@ -146,8 +148,9 @@ body {
   }
 
   #profileTitle {
-    padding-left: 2em;
-    padding-right: 0em;
+    margin: 7em 0 0 0;
+    transform: translateX(0.9em);
+
   }
 
   #pCardLeft {
@@ -176,14 +179,14 @@ body {
 }
 
 #h2 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   margin-bottom: 0px;
   font-weight: bold;
 }
 
 #h3 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 0.5em;
   font-weight: bold;
 }
@@ -193,17 +196,9 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-
 }
 
-/* .gradientname {
-  background-image: linear-gradient(to right, #049f32 0%, #b5ff5a 25%, #277304 50%, #b5ff5a 75%, #029813 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-} */
-
-#p {
+#role {
   font-size: 1em;
   margin-bottom: 0px;
   color: aliceblue
@@ -211,9 +206,11 @@ body {
 
 #aboutMe {
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 1.5em;
   font-size: 0.75em;
   letter-spacing: 0.1em;
+  color: aliceblue;
+  overflow-y: auto;
 }
 
 .table {
@@ -231,7 +228,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 20px;
-  color: white;
+  color: aliceblue;
 }
 
 .td:first-child {

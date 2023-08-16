@@ -10,19 +10,20 @@ export const Profile = () => {
         // animate={{ height: "100%" }}
         // exit={{ y: "-100%", transition: {duration: 0.6, delay: 0.1 } }}
 
-        initial={{opacity: 0, transition: {duration: 1, delay: 0.2}}}
-        animate={{opacity: 1, transition: {duration: 1, delay: 0.2}}}
-        exit={{opacity: 0, transition: {duration: 1, delay: 0.2}}}
+        initial={{ opacity: 0, transition: { duration: 1, delay: 0.2 } }}
+        animate={{ opacity: 1, transition: { duration: 1, delay: 0.2 } }}
+        exit={{ opacity: 0, transition: { duration: 1, delay: 0.2 } }}
 
         // initial={{scale: 0, transition: {duration: 2, delay: 1.02}}}
         // animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
         // exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
       >
         <div id="profileTitle">
-        <h1 class="profTitle" id="title">
-          <b>A FEW THINGS ABOUT ME..</b>
-      </h1>
+          <h1 class="profTitle gradienttext">
+            <b>A FEW THINGS ABOUT ME..</b>
+          </h1>
         </div>
+
         <div className="profileCard">
           <div className="left-container" id="pCardLeft">
             <img
@@ -33,14 +34,30 @@ export const Profile = () => {
             <h1 id="h2" className="gradienttext">
               Ryan Corral
             </h1>
-            <p id="p">Full-Stack Web Developer</p>
+            <p id="role">Full-Stack Web Developer</p>
             <p id="aboutMe">
-            Greetings GUEST! I'm Rye, a Full-Stack Web Developer based in Antipolo City, Philippines. I recently graduated from KodeGo's Full-Stack Web Development Bootcamp this past June 2023. Where I was awarded <br />"<a href="https://youtu.be/Hq0qzBNZzQA" target="_blank"  rel="noopener noreferrer" style={{color: "hsl(45, 100%, 53%)", zIndex: 1}} >Best in Coding</a>".  
-                <br/>
-                Since childhood, one of my passions has been computers. I can quickly learn stuff about computers and programming. My first code was a simple ATM program back in high school using Turbo Pascal, and I was having so much fun learning to code!
-                <br/>
-                Now that my skills have been somewhat updated, I'm looking to get a chance to work for a good IT company, showcase my skills and passion for coding, and further expand my knowledge about programming.              
-          
+              Greetings GUEST! I'm Rye, a Full-Stack Web Developer based in
+              Antipolo City, Philippines. I recently graduated from KodeGo's
+              Full-Stack Web Development Bootcamp this past June 2023. Where I
+              was awarded <br />"
+              <a
+                href="https://youtu.be/Hq0qzBNZzQA"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "hsl(45, 100%, 53%)", zIndex: 1 }}
+              >
+                Best in Coding
+              </a>
+              ".
+              <br />
+              Since childhood, one of my passions has been computers. I can
+              quickly learn stuff about computers and programming. My first code
+              was a simple ATM program back in high school using Turbo Pascal!
+              <br />
+              Now that my skills have been somewhat updated, I'm looking to get
+              a chance to work for a good IT company, showcase my skills and
+              passion for coding, and further expand my knowledge about
+              programming.
             </p>
           </div>
 
@@ -48,7 +65,31 @@ export const Profile = () => {
             <h3 id="h3" className="gradienttext">
               Programming Skills
             </h3>
-
+            <p id="aboutMe">
+              Greetings GUEST! I'm Rye, a Full-Stack Web Developer based in
+              Antipolo City, Philippines. I recently graduated from KodeGo's
+              Full-Stack Web Development Bootcamp this past June 2023. Where I
+              was awarded <br />"
+              <a
+                href="https://youtu.be/Hq0qzBNZzQA"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "hsl(45, 100%, 53%)", zIndex: 1 }}
+              >
+                Best in Coding
+              </a>
+              ".
+              <br />
+              Since childhood, one of my passions has been computers. I can
+              quickly learn stuff about computers and programming. My first code
+              was a simple ATM program back in high school using Turbo Pascal,
+              and I was having so much fun learning to code!
+              <br />
+              Now that my skills have been somewhat updated, I'm looking to get
+              a chance to work for a good IT company, showcase my skills and
+              passion for coding, and further expand my knowledge about
+              programming.
+            </p>
           </div>
 
           <div className="right-container" id="pCardRight">
@@ -86,8 +127,8 @@ export const Profile = () => {
               </tr>
             </table>
           </div>
-
         </div>
+
       </motion.div>
     </>
   );
