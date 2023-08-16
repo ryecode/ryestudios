@@ -11,7 +11,69 @@ html, body {
     background-color: rgb(0, 0, 0);
 }
 
-.projectBody {
-    width: 100%;
+@media only screen and (max-width: 770px) {
+    .profileCard {
+      flex-direction: column;
+      margin-top: 1.5em;
+      height: auto;
+      width: 100%;
+    }
+
+    .header {
+      transform: translateX(-3.5em);
+      padding-top: 1.5em;
+    }
+
+    .folder {
+      transform: translateX(-3.75em);
+    }
+  }
+
+  .header {
+      margin-left: 2.5em;
+  }
+
+
+.profileCard {
+    margin-bottom: 4em;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0 4em 0;
 }
+
+.projectTitle 
+  {
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: max-content;
+    color: hsl(49 37% 94%);
+    font-weight: 800;
+  }
+  
+  .projectTitle::before,
+  .projectTitle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .projectTitle::before {
+    background-color: black;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
+  }
+  .projectTitle::after {
+    width: 0.5em;
+    background: hsl(49 37% 94%);
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards, 
+        blink 750ms steps(18) infinite;
+  }
