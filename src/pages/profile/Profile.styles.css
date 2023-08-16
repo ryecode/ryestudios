@@ -1,3 +1,8 @@
+:root {
+  --typewriterSpeed: 3s;
+  --typewriterSteps: 25;
+}
+
 body {
   /* font-family: Arial, sans-serif; */
   padding: 10px 0 10px 0;
@@ -14,6 +19,52 @@ body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+}
+
+.profTitle 
+  {
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    width: max-content;
+    font-weight: 800;
+    border-radius: 5px;
+  }
+  
+  .profTitle::before,
+  .profTitle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .profTitle::before {
+    background-color: #014717;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
+  }
+  /* .profTitle::after {
+    width: 0.5em;
+    background: hsl(0, 0%, 6%);
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards, 
+        blink 750ms steps(18) infinite;
+  } */
+
+
+#title {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 97%);
+  margin: 3em 0 2em 3em;
+  padding: 1em;
+  box-shadow: -5px 5px 10px rgb(255, 255, 255);
+  width: fit-content;
+  border: #f4f6f5;
+  background: linear-gradient(to right, #30a904, #2a9105, #014717);
+
 }
 
 .profileCard {
@@ -185,12 +236,4 @@ body {
 
 .td:first-child {
   font-weight: bold;
-}
-
-/* TYPEWRITER */
-
-#title {
-  margin: 2em 0 0.5em 0rem;
-  font-size: 1.5rem;
-  color: hsl(113, 100%, 86%);
 }

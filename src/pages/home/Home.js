@@ -17,7 +17,7 @@ return (
     // animate={{opacity: 1, transition: {duration: 1, delay: 0.2}}}
     // exit={{opacity: 0, transition: {duration: 1, delay: 0.2}}}
 
-    initial={{scale: 0, transition: {duration: 2}}}
+    initial={{scale: 0, transition: {duration: 2, delay: 1.02}}}
     animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
     exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
   >
