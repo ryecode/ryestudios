@@ -19,7 +19,7 @@ export const Profile = () => {
         // exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
       >
         <div id="profileTitle">
-          <h1 class="profTitle gradienttext">
+          <h1 class="profTitle gradienttext" id="title">
             <b>A FEW THINGS ABOUT ME..</b>
           </h1>
         </div>

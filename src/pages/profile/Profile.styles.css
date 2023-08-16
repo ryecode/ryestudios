@@ -32,38 +32,45 @@ body {
     border-radius: 5px;
     
   } */
-  
-  .profTitle::before,
-  .profTitle::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .profTitle::before {
-    background-color: #2e2e2e;
-    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
-  }
 
-  #profileTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    font-size: 0.5em;
-    color: hsl(0, 0%, 97%);
-    margin: 0.1em 0 2em 3em;
-    padding: 1em;
-    box-shadow: -1px 3px 1px #5b5b5b;
-    width: fit-content;
-    background: #2e2e2e;
-    border-color: #2e2e2e;
-    border-radius: 10px;
-    transform: translateX(125%);
-  }
+.profTitle::before,
+.profTitle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.profTitle::before {
+  background: linear-gradient(to top, #0c0c0c, #434040);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
+  border-radius: 5px;
+
+}
+
+#profileTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 0.05em;
+  color: hsl(0, 0%, 97%);
+  margin: 1em 0 20px 0;
+  padding: 5em;
+  box-shadow: -2px 3px 1px #5b5b5b;
+  width: fit-content;
+  background: linear-gradient(to top, #0c0c0c, #434040);
+  border-color: #2e2e2e;
+  border-radius: 5px;
+  transform: translateX(134%);
+}
+
+#title {
+  font-size: 1.85rem;
+  padding: 0.5em;
+}
 
 .profileCard {
   display: flex;
@@ -84,22 +91,22 @@ body {
 
 .left-container {
   background: #000000;
-  background: -webkit-linear-gradient(to left, #181818, #545454);
-  background: linear-gradient(to left, #181818, #545454);
+  background: -webkit-linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
+  background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
   flex: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
-  padding: 1.45em;
+  padding: 1em;
   margin: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .middle-container {
-  background: linear-gradient(to right, #181818, #202020, #181818);
+  background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
   flex: 1;
   width: 100%;
   height: 600px;
@@ -111,8 +118,8 @@ body {
 
 .right-container {
   background: #000000;
-  background: -webkit-linear-gradient(to right, #181818, #545454);
-  background: linear-gradient(to right, #181818, #545454);
+  background: -webkit-linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
+  background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
   flex: 1;
   width: 100%;
   height: 600px;
@@ -144,13 +151,18 @@ body {
   }
 
   #title {
-    transform: translateY(-0.5em);
+    transform: translateY(1em);
+    font-size: x-large;
+    padding: 1em;
   }
 
   #profileTitle {
-    margin: 7em 0 0 0;
-    transform: translateX(0.9em);
+    margin: 5em 0 0 0;
+    transform: translateX(15em);
+  }
 
+  .profTitle::before {
+    transform: translateY(-1em);
   }
 
   #pCardLeft {
@@ -167,6 +179,11 @@ body {
     margin: 1.5em 0 1.5em 0.25%;
     width: 95%;
   }
+
+  .middle-container {
+    background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
+  }
+
 }
 
 
@@ -206,7 +223,7 @@ body {
 
 #aboutMe {
   margin: 0.5em;
-  padding: 1.5em;
+  padding: 1.2em;
   font-size: 0.75em;
   letter-spacing: 0.1em;
   color: aliceblue;
