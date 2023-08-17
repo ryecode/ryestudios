@@ -1,0 +1,43 @@
+
+#contactCardQuery {
+    height: 350px; 
+    width: 100%;
+    animation: crashRight 3s ease-in calc(var(--typewriterSpeed) + 1.1s) forwards; 
+    animation-iteration-count: initial;
+    transform: translateX(120%);
+    z-index: 1;
+    margin-top: 0px;
+    border: 5px hsl(112, 100%, 50%);
+    border-style: ridge;
+  }
+
+  #cardQuery {
+    text-align: center;
+    margin-top: 35px;
+    width: 80%;
+    z-index: 1;
+    opacity: 1;
+  }
+
+  #pdfLink {
+    animation: crashLeft 3s ease-in calc(var(--typewriterSpeed) + 2s) forwards; 
+    animation-iteration-count: initial; 
+    text-align: center; 
+    transform: translateX(-110%); 
+    color: black; 
+    margin-top: 0px;
+    z-index: 1;
+  }
+
+  #tilter {
+    animation: crashLeft 3s ease-in calc(var(--typewriterSpeed) + 1s) forwards; 
+    animation-iteration-count: initial; 
+    text-align: center; 
+    transform: translateX(-110%);
+    z-index: 1;
+  }
+
+  #rowDaw {
+    margin: 10px 5px 10px -25px;
+    color: aliceblue;
+  }

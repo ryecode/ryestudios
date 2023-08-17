@@ -1056,9 +1056,9 @@ transform: scale(1.1);
 }
 
 .tilt-box{
-width: 100%;
-height: 100%;
-background: #04527b;
+width: 70%;
+height: 80%;
+background: linear-gradient(to right, #1a1919, #434040, #1a1919);
 position: relative;
 display: flex;
 align-items: center;
@@ -1071,6 +1071,7 @@ transition: all 0.6s ease-out;
 perspective: 1000px;
 transform-style: preserve-3d;
 margin-left: 30px;
+padding: 0.2em;
 
 }
 .tilt-box strong{

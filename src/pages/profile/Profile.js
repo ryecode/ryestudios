@@ -39,7 +39,7 @@ export const Profile = () => {
             <p id="role">Full-Stack Web Developer</p>
             <p id="qoute">
               <i>
-                "If it's your passion, It's never too late to start doing it."
+                "If you love it, It's never too late to start doing it."
               </i>
             </p>
             <p>
@@ -120,11 +120,11 @@ export const Profile = () => {
                 </li>
                 <li>
                   <a
-                    href="https://tailwindcss.com/"
+                    href="https://www.framer.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>TAILWIND</span>
+                    <span>FRAMER MOTION</span>
                   </a>
                 </li>
                 <li>
