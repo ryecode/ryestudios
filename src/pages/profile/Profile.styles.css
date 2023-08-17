@@ -65,7 +65,7 @@ body {
   background: linear-gradient(to top, #0c0c0c, #434040);
   border-color: #2e2e2e;
   border-radius: 5px;
-  transform: translateX(134%);
+  transform: translateX(15%);
 }
 
 #title {
@@ -160,7 +160,7 @@ body {
 
   #profileTitle {
     margin: 5em 0 0 0;
-    transform: translateX(25em);
+    transform: translateX(20em);
     padding: 0;
   }
 
@@ -188,7 +188,7 @@ body {
   }
 
   .skillButtons {
-    transform: translateX(3.5em);
+    transform: translateX(0em);
   }
 
 }
@@ -226,6 +226,10 @@ body {
   font-size: 1em;
   margin-bottom: 0px;
   color: aliceblue
+}
+
+#qoute {
+  font-size: 0.8em;
 }
 
 #aboutMe {

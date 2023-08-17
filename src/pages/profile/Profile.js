@@ -38,6 +38,7 @@ export const Profile = () => {
               Ryan Corral
             </h1>
             <p id="role">Full-Stack Web Developer</p>
+            <p id="qoute"><i>"If it's your passion, It's never too late to turn dreams into reality."</i></p>
           </div>
 
         <div className="right-container" id="pCardRight">
