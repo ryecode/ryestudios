@@ -11,6 +11,23 @@ html, body {
     background-color: rgb(0, 0, 0);
 }
 
+#projectTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 0.05em;
+  color: hsl(0, 0%, 97%);
+  margin: 1em 0 20px 0;
+  padding: 5em;
+  box-shadow: -2px 3px 1px #5b5b5b;
+  width: fit-content;
+  background: linear-gradient(to top, #0c0c0c, #434040);
+  border-color: #2e2e2e;
+  border-radius: 5px;
+  transform: translateX(155%);
+}
+
 @media only screen and (max-width: 770px) {
     .profileCard {
       flex-direction: column;
@@ -19,19 +36,22 @@ html, body {
       width: 100%;
     }
 
-    .header {
-      transform: translateX(-3.5em);
-      padding-top: 1.5em;
-    }
-
     .folder {
       transform: translateX(-3.75em);
     }
+
+  #projectTitle {
+    margin: 30em 0 0 0;
+    transform: translateX(20em);
   }
 
-  .header {
-      margin-left: 2.5em;
+  #titleID {
+    transform: translateY(0.3em);
+    padding: 1em;
   }
+
+  }
+
 
 
 .profileCard {
@@ -44,36 +64,33 @@ html, body {
     padding: 3em 0 4em 0;
 }
 
-.projectTitle 
-  {
-    font-size: 40px;
-    font-weight: bolder;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    width: max-content;
-    color: hsl(49 37% 94%);
-    font-weight: 800;
-  }
-  
-  .projectTitle::before,
-  .projectTitle::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .projectTitle::before {
-    background-color: black;
-    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
-  }
-  .projectTitle::after {
-    width: 0.5em;
-    background: hsl(49 37% 94%);
-    animation: 
-        typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards, 
-        blink 750ms steps(18) infinite;
-  }
+
+.projTitle::before,
+.projTitle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.projTitle::before {
+  background: linear-gradient(to top, #0c0c0c, #434040);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
+  border-radius: 5px;
+
+}
+
+.gradientTitle {
+  background-image: linear-gradient(to right, #0c832f 0%, #8eff5a 50%, #038112 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#titleID {
+  font-size: 1.5rem;
+  padding: 0.75em;
+}
+

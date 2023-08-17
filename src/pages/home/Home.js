@@ -8,7 +8,7 @@ export const Home = () => {
     // let navigate = useNavigate();
     
 return (
-  <motion.div className="home"
+  <motion.div className="overlay"
     // initial={{height: "100%"}}
     // animate={{height: "100%"}}
     // exit={{y: "-100%", transition: {duration: 0.6, delay: 0.1} }}
@@ -21,7 +21,7 @@ return (
     animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
     exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
   >
-    <div className="overlay"></div>
+    {/* <div className="overlay"></div> */}
     <video
       src={videoBG}
       autoPlay

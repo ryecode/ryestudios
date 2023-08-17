@@ -20,11 +20,11 @@ export const Project = () => {
       // animate={{ scale: 1, transition: { duration: 1, delay: 0.2}}}
       // exit={{ scale: 0, transition: { duration: 1, delay: 0.2}}}
     >
-      <div className="header">
-        <h1 class="projectTitle">
-          <b>GUEST, Check out my projects!</b>
-        </h1>
-      </div>
+        <div id="projectTitle">
+          <h1 class="projTitle gradientTitle" id="titleID">
+            <b>CHECK MY PROJECTS OUT!</b>
+          </h1>
+        </div>
       <div className="profileCard">
         <div>
           <Card3D />
