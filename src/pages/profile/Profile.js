@@ -39,8 +39,7 @@ export const Profile = () => {
             <p id="role">Full-Stack Web Developer</p>
             <p id="qoute">
               <i>
-                "If it's your passion, It's never too late to turn dreams into
-                reality."
+                "If it's your passion, It's never too late to start doing it."
               </i>
             </p>
             <p>
