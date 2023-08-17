@@ -6,8 +6,8 @@
 }
 
 :root {
-    --typewriterSpeed: 2s;
-    --typewriterSteps: 16;
+    --typewriterSpeed: 3s;
+    --typewriterSteps: 26;
   }
   
   html
@@ -68,13 +68,13 @@
   
   .hero-title::before {
     background-color: black;
-    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 0.5s forwards;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
   }
   .hero-title::after {
-    width: 0.25em;
+    width: 0.5em;
     background: hsl(49 37% 94%);
     animation: 
-        typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 0.5s forwards, 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards, 
         blink 750ms steps(18) infinite;
   }
   
@@ -216,7 +216,7 @@ scale: 1.25;
   background-color: black;
 }
 
-.card {
+.cardLegacy {
   position: relative;
   margin: 15px 0px 0px 0px;
   padding: 0;
@@ -225,7 +225,7 @@ scale: 1.25;
   box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
 }
 
-.card::after 
+.cardLegacy::after 
 {
   content: '';
   position: absolute;
@@ -239,7 +239,7 @@ scale: 1.25;
   border-right: 3.5px solid hsl(45, 100%, 53%);
 
 }
-.card::before
+.cardLegacy::before
 {
   content: '';
   position: absolute;
@@ -253,12 +253,12 @@ scale: 1.25;
   border-bottom: 3.5px solid hsl(45, 100%, 53%);
 }
 
-.card:hover::before
+.cardLegacy:hover::before
 {
   transform: scale(1.05, 1);
 }
 
-.card:hover::after
+.cardLegacy:hover::after
 {
   transform: scale(1, 1.05);
 }
