@@ -37,8 +37,35 @@ export const Profile = () => {
               Ryan Corral
             </h1>
             <p id="role">Full-Stack Web Developer</p>
+            <p id="qoute">
+              <i>
+                "If it's your passion, It's never too late to start doing it."
+              </i>
+            </p>
+            <p>
+              <a
+                href="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                  alt="certificate"
+                  width={"90%"}
+                />
+              </a>
+            </p>
           </div>
-          
+
+          <div className="right-container" id="pCardRight">
+            <h3 id="h3" className="gradienttext">
+              Profile Details
+            </h3>
+            <div className="accordionContainer">
+              <AccordionComponent />
+            </div>
+          </div>
+
           <div className="middle-container" id="pCardMid">
             <h3 id="h3" className="gradienttext">
               Programming Skills
@@ -64,7 +91,11 @@ export const Profile = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.w3.org/Style/CSS/Overview.en.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>CSS3</span>
                   </a>
                 </li>
@@ -79,78 +110,117 @@ export const Profile = () => {
                 </li>
 
                 <li>
-                  <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.figma.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>FIGMA</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>TAILWIND</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://nodejs.org/en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>NODE.js</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.mongodb.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>MONGO DB</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://www.postman.com/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.postman.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>POSTMAN</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>EXPRESS.js</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.blog/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.blog/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>GITHUB</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://react-bootstrap.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://react-bootstrap.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>REACT BOOTSTRAP</span>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>BOOTSTRAP v5.3</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://dev.classmethod.jp/articles/git-bash-commands/?fbclid=IwAR2RADTjXgRVwBcGMezHKd9KVBQGoGCxod5ehizfVY20H4Lqr_jxGEmYzQY" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://dev.classmethod.jp/articles/git-bash-commands/?fbclid=IwAR2RADTjXgRVwBcGMezHKd9KVBQGoGCxod5ehizfVY20H4Lqr_jxGEmYzQY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>GITBASH</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://vercel.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>VERCEL</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://ryecode.github.io/portfolio/ImageBank/TeamWork.png" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://ryecode.github.io/portfolio/ImageBank/TeamWork.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>TEAMWORK</span>
                   </a>
                 </li>
               </ul>
             </div>
-          </div>
-
-          <div className="right-container" id="pCardRight">
-            <h3 id="h3" className="gradienttext">
-              Profile Details
-            </h3>
-            <div className="accordionContainer">
-            <AccordionComponent />
-            </div>            
           </div>
         </div>
       </motion.div>
