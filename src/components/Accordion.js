@@ -3,6 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
+import { AppContext } from '../App';
 
 const PINK = '#8eff5a';
 const BLUE = '#00471a';
@@ -31,6 +32,9 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 }
 
 export const AccordionComponent = () => {
+
+  const {userName} = useContext(AppContext)
+
   return (
     <Accordion defaultActiveKey="0" flush>
       <Card style={{background: "transparent", border: "none"}}>
@@ -41,7 +45,7 @@ export const AccordionComponent = () => {
           <Card.Body>
             
           <p id="aboutMe">
-              Greetings GUEST! I'm Rye, a Full-Stack Web Developer based in
+              Greetings{""} {userName}! I'm Rye, a Full-Stack Web Developer based in
               Antipolo City, Philippines. I recently graduated from KodeGo's
               Full-Stack Web Development Bootcamp this past June 2023. Where I
               was awarded <br />"

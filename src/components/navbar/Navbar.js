@@ -11,9 +11,9 @@ export const Navbar = () => {
           <div
             className="container-fluid"
             style={{
-              paddingTop: "15px",
-              paddingBottom: "0px",
-              width: "80%",
+              paddingTop: "1em",
+              paddingBottom: "0",
+              width: "100%",
               backgroundColor: "transparent",
             }}
           >
@@ -26,8 +26,8 @@ export const Navbar = () => {
                   className="RyeLogo"
                   src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
                   alt="RYE Logo"
-                  height="15%"
-                  width="15%"
+                  height="12%"
+                  width="12%"
                 />{" "}
                 RYE STUDIOS
               </h1>
@@ -42,13 +42,13 @@ export const Navbar = () => {
               <NavLink className="nav-link" to="/"> Home </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <NavLink  className="nav-link" to="/profile"> My Profile </NavLink>
+              <NavLink  className="nav-link" to="/profile"> Profile </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <NavLink  className="nav-link" to="/project"> My Projects </NavLink>
+              <NavLink  className="nav-link" to="/project"> Projects </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <NavLink  className="nav-link" to="/contact"> Contact Me </NavLink>
+              <NavLink  className="nav-link" to="/contact"> Contact </NavLink>
             </li>
           </ul>
         </nav>

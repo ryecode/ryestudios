@@ -15,9 +15,9 @@
 
 .neon-button1 {
   background-color: transparent;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
-  color:  hsl(108, 100%, 29%);
+  color:  hsl(108, 98%, 35%);
   text-shadow: 0 0 1 0 rgb(255, 255, 255);
   display: inline-block;
   cursor: pointer;
@@ -26,7 +26,7 @@
   padding: 0.25em 1em;
   border-radius: 0.5em;
   position: relative;
-  font-weight: 600;
+  font-weight: 400;
   opacity: 0;
   animation: scale 1.25s ease-in forwards;
 }
@@ -72,9 +72,9 @@
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(40, 40, 40, 0.873));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 4em;
-  padding: 5px;
+  
+  height: 3em;
+  padding: 1em;
   box-sizing: border-box;
   margin: 0;
   width: 100vw;
@@ -96,7 +96,7 @@
 }
 
 .menu > li {
-  margin: 0 1rem;
+  margin: 0 0.5em;
   overflow: hidden;
 }
 
@@ -160,13 +160,13 @@
   {
     display: flex;
     padding-right: 1.5em;
-    transform: translateX(-0.5em);
+    transform: translateX(0.75em);
   }
   .menu 
   {
     position: absolute;
     top: 0;
-    margin-top: 63px;
+    margin-top: 3.005em;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -224,13 +224,14 @@
   transform: translate(0rem);
   opacity: 0;
   text-decoration: none;
+  padding: 1em 0 1.25em 0;
 }
 
 .RyeLogo:hover
 {
   border-radius: 50%;  
-  scale: 1.35;
-  box-shadow: 0 0 1em hsl(112, 100%, 50%);
+  scale: 1.25;
+  /* box-shadow: 0 0 0.5em hsl(112, 100%, 50%); */
 }
 
 .animate-charcter

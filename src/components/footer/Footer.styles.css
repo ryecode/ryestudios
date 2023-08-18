@@ -11,14 +11,13 @@
 .btn {
   width: 100%;
   font-size: 1em;
-  height: 70px;
+  height: 3em;
   border: none;
   outline: none;
-  /* background: black; */
-  /* cursor: none; */
+  pointer-events: none;
   position: relative;
   border-radius: 10px;
-  padding: 0;
+  padding: 1em;
 }
 
 .words {
@@ -162,9 +161,9 @@
 }
 
 .credit {
-  font-size: 0.5rem;
+  font-size: 0.55rem;
   text-align: center;
-  color: rgb(145, 146, 147);
+  color: rgb(218, 227, 235);
   opacity: 50%;
   margin: 0 0 0 0;
   padding-bottom: 2.5em;
@@ -174,7 +173,7 @@
 
 .credit a {
   text-decoration: none;
-  color: rgb(17, 120, 3);
+  color: rgb(21, 178, 1);
   font-weight: bold;
 }
 

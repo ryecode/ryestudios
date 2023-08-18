@@ -43,13 +43,13 @@ left: 0;
 
 .hero-title::before {
 background-color: black;
-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 0.5s forwards;
+animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1.5s forwards;
 }
 .hero-title::after {
 width: 0.25em;
 background: hsl(49 37% 94%);
 animation: 
-    typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 0.5s forwards, 
+    typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1.5s forwards, 
     blink 750ms steps(18) infinite;
 }
 
@@ -61,7 +61,7 @@ transform: translateY(-2rem);
 animation: fadeInY 2s ease 
 calc(var(--typewriterSpeed) + 0.5s) forwards;
 color: hsl(49 37% 94%);
-font-weight: 700;
+font-weight: 400;
 margin-top: 2px;
 }
 
