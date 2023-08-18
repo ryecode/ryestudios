@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { ChangeUserName } from "../../components/ChangeUserName"
+import '../../components/Modal.styles.css'
 
 export const Home = () => {
   const { userName } = useContext(AppContext);
@@ -58,7 +59,7 @@ export const Home = () => {
         </div>
         <div class="subtitle" id="greet">
         <h1 >
-          <b>WELCOME{""} {userName}</b>
+          WELCOME{""} {userName}
          <br />To Rye Zone
          </h1>
         </div>

@@ -45,6 +45,7 @@ video {
 #heroHome {
     position: relative;
     margin: -20em 0 0 -50em;
+    caret-color: transparent;
 }
 
 #askName {
@@ -52,10 +53,12 @@ video {
     margin: 0em -50em -20em 0;
     animation: scale 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
     opacity: 0;
+    padding: 3em;
+    caret-color: transparent;
 }
 
 #askName button {
-    color: rgb(76, 76, 255);
+    color: #3367f8;
     text-shadow: none;
 }
 
@@ -66,11 +69,12 @@ video {
     transform: translateY(-2rem);
     animation: fadeInY 2s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
-    color: hsl(128, 95%, 68%);
-    font-weight: 700;
+    color: hsl(128, 85%, 52%);
+    font-weight: 400;
     margin-top: 2px;
     backdrop-filter: blur(20px);
     padding: 1em;
+    caret-color: transparent;
 }
 
 @media (max-width: 770px) {
