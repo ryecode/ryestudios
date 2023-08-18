@@ -9,8 +9,8 @@ export const ChangeUserName = () => {
   return (
     <div id="askName">
         <h4>Greetings Guest,<br/>please enter your name..</h4>
-        <input onChange={(event) => {setNewUserName(event.target.value)}} />
-        <button onClick={() => {setUserName(newUserName)}}>
+        <input onChange={(event) => {setNewUserName(event.target.value)}} /><br />
+        <button class="neon-button" style={{marginTop:"1em"}} onClick={() => {setUserName(newUserName) }}>
             ENTER
         </button>
     </div>
