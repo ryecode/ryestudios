@@ -32,7 +32,6 @@ export const Home = () => {
         muted
         playsInline
         fetchpriority={"high"}
-        poster="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
       />
 
       <div className="content">
@@ -59,9 +58,9 @@ export const Home = () => {
         </div>
         <div class="subtitle" id="greet">
         <h1 >
-          WELCOME{""} {userName}
-        </h1>
-        <p>To Rye Zone</p>
+          <b>WELCOME{""} {userName}</b>
+         <br />To Rye Zone
+         </h1>
         </div>
           <ChangeUserName />
       </div>

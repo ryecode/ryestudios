@@ -54,16 +54,23 @@ video {
     opacity: 0;
 }
 
+#askName button {
+    color: rgb(76, 76, 255);
+    text-shadow: none;
+}
+
 #greet {
     color: hsl(0, 0%, 0% / 0.7);
-    font-size: 17px;
+    font-size: 25px;
     opacity: 0;
     transform: translateY(-2rem);
     animation: fadeInY 2s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
-    color: hsl(49 37% 94%);
+    color: hsl(128, 95%, 68%);
     font-weight: 700;
     margin-top: 2px;
+    backdrop-filter: blur(20px);
+    padding: 1em;
 }
 
 @media (max-width: 770px) {
