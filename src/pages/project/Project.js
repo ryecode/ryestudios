@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export const Project = () => {
   return (
-    <motion.div
+    <motion.div style={{ marginTop: '5%'}}
       className="projectBody"
         initial={{ height: "100%" }}
         animate={{ height: "100%" }}

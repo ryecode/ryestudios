@@ -1,13 +1,18 @@
 import React from "react";
 import "./Profile.styles.css";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { AppContext } from "../../App";
 
 import { AccordionComponent } from "../../components/Accordion";
 
 export const Profile = () => {
+
+  const {userName} = useContext(AppContext)
+
   return (
     <>
-      <motion.div
+      <motion.div style={{ marginTop: '5%'}}
         // initial={{ height: "100%" }}
         // animate={{ height: "100%" }}
         // exit={{ y: "-100%", transition: {duration: 0.6, delay: 0.1 } }}
@@ -21,8 +26,12 @@ export const Profile = () => {
         // exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
       >
         <div id="profileTitle">
+          {/* <h1>Hi{""} {userName}</h1> <br /> */}
           <h1 class="profTitle gradienttext" id="title">
-            <b>A FEW THINGS ABOUT ME..</b>
+            <b>Hi{""} {userName},</b>
+          </h1>
+          <h1 class="profTitle1 gradienttext" id="title1">
+            <b>Allow me to Introduce myself..</b>
           </h1>
         </div>
 

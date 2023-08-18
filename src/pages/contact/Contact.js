@@ -4,7 +4,7 @@ import { Hero } from "../../components/heroBanner/Hero";
 
 export const Contact = () => {
   return (
-    <motion.div
+    <motion.div style={{ marginTop: '5%'}}
     initial={{width: "100%"}}
     animate={{width: "100%"}}
     exit={{x: "110%", transition: {duration: 0.6, delay: 0.1 } }}
