@@ -45,7 +45,7 @@ export const AccordionComponent = () => {
           <Card.Body>
             
           <p id="aboutMe">
-              Greetings{""} {userName}! I'm Rye, a Full-Stack Web Developer based in
+              Greetings{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>! I'm Rye, a Full-Stack Web Developer based in
               Antipolo City, Philippines. I recently graduated from KodeGo's
               Full-Stack Web Development Bootcamp this past June 2023. Where I
               was awarded <br />"
@@ -76,7 +76,25 @@ export const AccordionComponent = () => {
           <ContextAwareToggle eventKey="1">BACKGROUND</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
-          <Card.Body>Hello! I am another body</Card.Body>
+          <Card.Body>
+            <h6 style={{color:'greenyellow'}} >EDUCATIONAL ATTAINMENT</h6>
+            <p>
+            <b>○ KodeGo-Bootcamp (Feb.2023-Jul.2023)</b><br/>
+            • Full-Stack Web Development <br/>
+            ♦ Best in Coding Award<br/><br/>
+            <b>○ AMA University (2001-2004, 2010-2011)</b><br/>
+            • B.S. Electronics & Communications Engineering
+            </p>
+            <h6 style={{color:'greenyellow'}} >WORK EXPERIENCE</h6>
+            <p><b>
+            ○ TelePerformance Antipolo (2020-2023)</b><br/>
+            ■ <i>Technical Support Representative</i>
+            <p style={{fontSize:'0.7em'}}>
+            • Troubleshooted devices and service issues for customers of AT&T U-verse, DirecTV, and Mobility accounts.
+            </p>
+            </p>
+
+          </Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>

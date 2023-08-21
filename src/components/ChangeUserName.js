@@ -1,6 +1,5 @@
 import React from "react";
-import { useContext } from "react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { AppContext } from "../App";
 
 export const ChangeUserName = () => {
@@ -19,9 +18,10 @@ export const ChangeUserName = () => {
           onChange={(event) => {
             setNewUserName(event.target.value);
           }}
-          style={{padding:"0.2em", textAlign:"center"}}
+          style={{padding:"0.2em", textAlign:"center", caretColor:'black'}}
         />
         <br />
+        <a href="#demo-modal" style={{padding:'1em'}}>
         <button
           class="neon-button"
           style={{ marginTop: "1em" }}
@@ -29,21 +29,17 @@ export const ChangeUserName = () => {
             setUserName(newUserName);
           }}
         >
-          <a href="#demo-modal">ENTER</a>
+          ENTER
         </button>
+        </a>
 
-        <div id="demo-modal" className="modal wrapper">
+        <div id="demo-modal" className="modal wrapper" >
           <div class="modal__content">
-            <div class="modal__close">
-              {/* <button>
-          <a href="#">X</a>
-          </button> */}
-            </div>
             <h1>
-              Hi{""} {userName}!
+              Hi{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>!
             </h1>
             <p className="modal__footer">
-              Thank you for visiting my website. I do hope you will like
+              Thank you for visiting my website. I do hope you will like my
               portfolio. Please go ahead, explore, and enjoy!
               <br />
             </p>
@@ -56,10 +52,10 @@ export const ChangeUserName = () => {
               <img
                 src="https://ryecode.github.io/portfolio/ImageBank/rocket.png"
                 alt="rocket ship"
-                width={"70%"}
+                width={"60%"}
                 style={{ zIndex: 1 }}
               />
-              <p style={{ color: "black", fontSize: "0.6em" }}>
+              <p style={{ color: "black", fontSize: "0.5em" }}>
                 START EXPLORING!
               </p>
             </a>

@@ -71,8 +71,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(40, 40, 40, 0.873));
-  
+  caret-color: transparent;
+  /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(40, 40, 40, 0.873)); */
+  backdrop-filter: blur(10px);
   height: 3em;
   padding: 1em;
   box-sizing: border-box;

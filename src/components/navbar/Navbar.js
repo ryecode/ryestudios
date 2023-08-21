@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <>
       <div>
-        <nav className="top-nav fixed-top bg-body-tertiary">
+        <nav className="top-nav fixed-top">
           <div
             className="container-fluid"
             style={{

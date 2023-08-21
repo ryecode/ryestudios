@@ -31,11 +31,11 @@
     bottom: 0;
     left: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     margin: 0;
     padding: 0;
-    transition: all .4s;
+    transition: all 1s;
   }
   
   .modal:target {
@@ -85,16 +85,15 @@
 
   .modal__close2 {
     position: absolute;
-    top: 10em;
+    top: 11.5em;
     right: 11.5em;
     color: #38f9d7;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.75em;
     font-weight: 800;
-    width: 9em;
-    height: 8em;
+    width: 7em;
+    height: 6.25em;
     background-image: linear-gradient(19deg, #21D4FD 0%, #3f21ff 100%);
-    padding: 0;
   }
 /* 
   .modal__close3 {
@@ -152,8 +151,8 @@
     }
 
     @keyframes bounce {
-      0% { transform: translateY(0%) ; }
-      100% { transform: translateY(-300%) ; }
+      0% 100% { transform: translateY(0%) ; }
+      50% { transform: translateY(-200%) ; }
 
       } 
 
