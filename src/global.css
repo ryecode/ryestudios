@@ -635,29 +635,27 @@ z-index: 1;
 .sub
 {
 opacity: 0;
-transform: translatex(100%);
 animation: scale 1s ease-in-out 
 0.5s forwards;
 background: transparent;
 border: none;
-margin-top: 10px;
-margin-left: 30px;
-padding-top: 0px;
-margin-bottom: 5px;
+padding: 0 15em 0 0;
 z-index: 1;
 pointer-events: all;
+position: absolute;
+margin-top: -4.5em;
 }
 
 /* ///////////////////////////////// PROFILE PAGE /////////////////////////////////  */
 
 .about
 {
-margin: 30px 0 10px 0;
+padding: 3em 0 0 8em;
 background: linear-gradient(to right bottom,rgb(53, 40, 1) 70%, rgb(4, 3, 0));
 /* border-radius: 10px; */
 box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);  
 width: 100%;
-padding: 30px;
+caret-color: transparent;
 z-index: 1;
 display: flexbox;
 }
