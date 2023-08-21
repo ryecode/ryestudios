@@ -3,20 +3,31 @@
   --typewriterSteps: 20;
 }
 
-body {
-  /* font-family: Arial, sans-serif; */
+/* body {
+  font-family: Arial, sans-serif;
   display: inline-block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-}
+} */
 
 html,
 body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+}
+
+.profileBody {
+  margin-top: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    rgb(0, 0, 0),
+    rgba(0, 185, 0, 0.95),
+    rgb(0, 0, 0)
+); 
 }
 
 .profTitle 
@@ -47,124 +58,155 @@ body {
 }
 
 .profTitle::before {
-  background: black;
+  background: rgb(91, 196, 73);
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
   border-radius: 5px;
 }
 
 .profTitle1::before {
-  background: black;
+  background: rgb(31, 194, 2);
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
   border-radius: 5px;
 }
 
 #profileTitle {
-  text-align: left;
   display: flex;
   justify-content: left;
   flex-direction: column;
-  align-items: center;
-  position: relative;
-  font-size: 0.05em;
-  color: hsl(0, 0%, 97%);
-  margin: 1em 0 20px 0;
-  padding: 10em;
-  box-shadow: -2px 3px 1px #5b5b5b;
+  align-items: flex-start;
+  position: absolute;
+  color: hsl(126, 97%, 39%);
   width: fit-content;
-  background: black;
-  border-color: #2e2e2e;
-  border-radius: 5px;
-  transform: translateX(30%);
+  background: transparent;
+  border: none;
+  transform: translate(-150%, -100%);
 }
 
 
 #title {
-  font-size: 1rem;
+  font-size: 2rem;
+  color: hsl(126, 97%, 39%);
+  /* -webkit-text-fill-color: rgba(139, 223, 139, 0);
+  text-shadow: 0px 0px #ff0000; */
+  /* background-image: linear-gradient(
+    -225deg,
+    #21D4FD 0%,
+    #ff2121 29%,
+    #85FFBD 67%,
+    #008000 100%
+  ); */
+
 
 }
 
 #title1 {
   font-size: 1rem;
-
 }
 
 .profileCard {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5em;
+
+  padding: 5em 2em 3em 2em;
   margin-bottom: 5em;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100vh;
-  background: #12c2e9;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2ba100, #00471a, #2ba100);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2ba100, #00471a, #2ba100);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: transparent;
+  border: none;
+  /* background: -webkit-linear-gradient(to right, #2ba100, #00471a, #2ba100);
+  background: linear-gradient(to right, #2ba100, #00471a, #2ba100); */
+
 }
 
-.left-container {
-  background: #000000;
-  background: -webkit-linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
-  background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
+.header-container {
+  caret-color: transparent;
+  background: -webkit-radial-gradient(circle, #0c0c0c, #434040, #0c0c0c);
+  background: radial-gradient(circle, #0c0c0c, #434040, #0c0c0c);
   flex: 1;
-  width: 100%;
+  width: 450px;
+  height: 610px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 600px;
   padding: 1em;
-  margin: 2em;
+  margin: 0 2em 2em 2em;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  transform: translateX(15em);
+  opacity: 1;
+  z-index: 1;
+
 }
 
-.middle-container {
+.skills-container {
+  caret-color: transparent;
   background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
   flex: 1;
-  z-index: 0;
-  width: 100%;
-  height: 600px;
+  width: 450px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1em;
-  margin: 2em;
-  border-radius: 30px;
+  margin: 0 2em 2em 2em;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateX(15em);
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
 }
 
-.right-container {
+.details-container {
+  caret-color: transparent;
   background: #000000;
   background: -webkit-linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
-  background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
+  background: linear-gradient(to right, #0c0c0c, #434040, #0c0c0c);
   flex: 1;
-  width: 100%;
-  height: 600px;
+  width: 450px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1em;
-  margin: 2em;
-  border-radius: 30px;
+  margin: 0 2em 2em 2em;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateX(15em);
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 770px) {
   .profileCard {
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
     margin-top: 0.1em;
     width: 100%;
   }
 
-  .middle-container {
-    height: 600px;
+  .header-container {
+    margin-left: -28em;
+    margin-top: 10em;
+    padding: 1em;
+    width: 95%;
   }
 
-  .left-container {
-    flex: 1;
-    max-width: 100%;
-    background: linear-gradient(to top, #000000, #434343);
+  .details-container {
+    margin-left: -28em;
+    margin-top: 10em;
+    padding: 1em;
+    width: 95%;
+    height: 620px;
+    font-size: 0.93em;
   }
 
-  .right-container {
+  .skills-container {
     background: linear-gradient(to top, #434343, #000000);
+    margin-left: -28em;
+    margin-top: 10em;
+    padding: 1em;
+    width: 95%;
   }
 
   #title {
@@ -180,31 +222,12 @@ body {
   }
 
   #profileTitle {
-    transform: translateX(50em);
-    margin-top: 80em;
+    transform: translateY(-20em);
+
   }
 
   .profTitle::before {
     transform: translateY(0.2em);
-  }
-
-  #pCardLeft {
-    margin: 1.5em 0 1.5em 0.25%;
-    width: 95%;
-  }
-
-  #pCardMid {
-    margin: 1.5em 0 1.5em 0.25%;
-    width: 95%;
-  }
-
-  #pCardRight {
-    margin: 1.5em 0 1.5em 0.25%;
-    width: 95%;
-  }
-
-  .middle-container {
-    background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
   }
 
   .skillButtons {
@@ -260,7 +283,7 @@ body {
   color: white;
   overflow-y: auto;
 }
-
+/* 
 .table {
   display: flex;
   flex-direction: column;
@@ -281,12 +304,12 @@ body {
 
 .td:first-child {
   font-weight: bold;
-}
+} */
 
 
 
 .skillButtons {
-  margin: 1em;
+  margin: 0 1em 1em 1em;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -457,4 +480,10 @@ body {
   display: inline-block;
   position: relative;
   width: 100%;
+}
+
+.toggleBtns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

@@ -12,7 +12,7 @@ export const Profile = () => {
 
   return (
     <>
-      <motion.div style={{ marginTop: '5%'}}
+      <motion.div className="profileBody"
         // initial={{ height: "100%" }}
         // animate={{ height: "100%" }}
         // exit={{ y: "-100%", transition: {duration: 0.6, delay: 0.1 } }}
@@ -25,18 +25,41 @@ export const Profile = () => {
         // animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
         // exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
       >
-        <div id="profileTitle">
-          {/* <h1>Hi{""} {userName}</h1> <br /> */}
-          <h1 class="profTitle gradienttext" id="title">
-            <b>Hi{""} {userName},</b>
-          </h1>
-          <h1 class="profTitle1 gradienttext" id="title1">
-            <b>Allow me to Introduce myself..</b>
-          </h1>
-        </div>
+
 
         <div className="profileCard">
-          <div className="left-container" id="pCardLeft">
+
+        <div id="profileTitle">
+            <h1 class="profTitle " id="title">
+            <b>Hi{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>!</b>
+          </h1>
+          <h1 id="title1">
+            <b>Allow me to Introduce myself..</b>
+          </h1>
+          <ul className="toggleBtns">
+            <li>Chapter I</li>
+            <li>Chapter II</li>
+            <li>Chapter III</li>  
+          </ul>
+        </div>
+
+        <motion.div className="header-container"
+            initial={{
+              x: 100,
+              opacity: 0
+            }}
+            animate={{
+              x: 240,
+              opacity: 1,
+              transition: {
+                delay: 0.3,
+                duration: 3
+              }
+            }}
+            exit={{
+              opacity: 0
+            }}
+            >
             <img
               className="profileImage"
               src="https://ryecode.github.io/portfolio/ImageBank/RyeFormal3.png"
@@ -48,7 +71,7 @@ export const Profile = () => {
             <p id="role">Full-Stack Web Developer</p>
             <p id="qoute">
               <i>
-                "If you have passion for it, Just go for it and start doing it."
+              <q>When you love coding, it's not considered work. I call it fun!</q>
               </i>
             </p>
             <p>
@@ -64,9 +87,9 @@ export const Profile = () => {
                 />
               </a>
             </p>
-          </div>
+          </motion.div>
 
-          <div className="right-container" id="pCardRight">
+          <div className="details-container" id="pCardDetails">
             <h3 id="h3" className="gradienttext">
               Profile Details
             </h3>
@@ -75,7 +98,7 @@ export const Profile = () => {
             </div>
           </div>
 
-          <div className="middle-container" id="pCardMid">
+          <div className="skills-container" id="pCardSkills">
             <h3 id="h3" className="gradienttext">
               Programming Skills
             </h3>

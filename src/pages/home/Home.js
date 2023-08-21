@@ -33,6 +33,7 @@ export const Home = () => {
         muted
         playsInline
         fetchpriority={"high"}
+        poster="https://ryecode.github.io/portfolio/ImageBank/loading.png"
       />
 
       <div className="content">
@@ -59,7 +60,7 @@ export const Home = () => {
         </div>
         <div class="subtitle" id="greet">
         <h1 >
-          WELCOME{""} {userName}
+          WELCOME{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>
          <br />To Rye Zone
          </h1>
         </div>
