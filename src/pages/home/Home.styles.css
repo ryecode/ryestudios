@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-
-}
-
 video {
     width: 100%;
     height: 100vh;
@@ -18,7 +5,7 @@ video {
 }
 
 .content {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -26,7 +13,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 
 .overlay {
@@ -55,6 +42,7 @@ video {
     opacity: 0;
     padding: 2em;
     caret-color: transparent;
+    color: aliceblue;
 }
 
 #askName button {
@@ -64,7 +52,7 @@ video {
 
 #greet {
     color: hsl(0, 0%, 0% / 0.7);
-    font-size: 25px;
+    font-size: 1em;
     opacity: 0;
     transform: translateY(-2em);
     animation: fadeInY 2s ease 
@@ -75,6 +63,7 @@ video {
     backdrop-filter: blur(20px);
     padding: 1em;
     caret-color: transparent;
+    font-family: 'Carter One', cursive;
 }
 
 @media (max-width: 770px) {
