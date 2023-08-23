@@ -16,8 +16,7 @@
     background-color: #12192c;
     border-radius: 12px;
     text-transform: uppercase;
-    color: #faf8f8;
-    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    
   }
@@ -54,7 +53,7 @@
     width: 40em;
     max-width: 100%;
     background: linear-gradient(to right, #339010f5, #00471a, #339010f5);
-    padding: 1em;
+    padding: 1.25em;
     height: 100%;
     color:#fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -62,12 +61,13 @@
   .modal__content > h1{
       color :#38f9d7;
       text-align: center;
+      font-size: 1.75em;
   }
   .modal__footer {
     text-align: center;
-      color: #e4edebf7;
+      color: white;
       text-decoration: none;
-      font-size: 0.8em;
+      font-size: 0.75em;
       
     }
 /*    
@@ -85,50 +85,23 @@
 
   .modal__close2 {
     position: absolute;
-    top: 11.5em;
+    top: 10.25em;
     right: 11.5em;
     color: #38f9d7;
     text-decoration: none;
+    font-family: 'Poppins';
     font-size: 0.75em;
     font-weight: 800;
     width: 7em;
-    height: 6.25em;
+    height: 6em;
+    padding: 0;
     background-image: linear-gradient(19deg, #21D4FD 0%, #3f21ff 100%);
   }
-/* 
-  .modal__close3 {
-    position: absolute;
-    top: 15em;
-    right: 3em;
-    color: #017d66;
-    text-decoration: none;
-    font-size: 0.6em;
-    font-weight: 800;
-    width: 10em;
-    background: linear-gradient(to right, #F9D423, #e65c00);
-  } */
-/* 
-  .modal__close button {
-    position: absolute;
-    top: 10em;
-    right: 1.5em;
-    color: #67f6dc;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1em;
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0;
-    margin: 0;
-    border-radius: 50%;
-    background-color: #011650;
-    border: none;
-  } */
 
   .modalPointer {
     position: absolute;
-    top: -10em;
-    right: 1em;
+    top: -19.5em;
+    right: 5em;
       visibility: hidden;
       opacity: 0;
       margin: 0;
@@ -151,20 +124,20 @@
     }
 
     @keyframes bounce {
-      0% 100% { transform: translateY(0%) ; }
-      50% { transform: translateY(-200%) ; }
-
+      0%, 100% { transform: translateY(0%)}
+      50% { transform: translateY(-100%)}
       } 
 
       
 @media (max-width: 770px) {
 .modal {
-  transform: translateX(-0.5em);
-  margin-top: 2em;
+  transform: translateX(-0.25em);
+  margin-top: 1em;
 }
   .modalPointer img {
-    width: 20%;
+    width: 30%;
     transform: translateX(10em);
+    margin-top: -12em;
   }
   .modal__close2 {
     transform: translateX(1.5em);

@@ -4,6 +4,9 @@
     color: red;
     z-index: 2;
 }
+#resumeBtn:hover {
+  color: red;
+}
 
 .hero-image {
 background: transparent;
@@ -21,14 +24,15 @@ position: relative;
 
 .hero-title 
 {
-font-size: 40px;
+font-size: 2.25em;
 font-weight: bolder;
 position: relative;
-font-family: "Source Code Pro", monospace;
+font-family: 'Montaga', serif;
 position: relative;
 width: max-content;
-color: hsl(49 37% 94%);
-font-weight: 800;
+color: hsl(51, 97%, 44%);
+font-weight: 400;
+letter-spacing: 3px;
 }
 
 .hero-title::before,
@@ -43,11 +47,12 @@ left: 0;
 
 .hero-title::before {
 background-color: black;
+height: 1.25em;
 animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1.5s forwards;
 }
 .hero-title::after {
 width: 0.25em;
-background: hsl(49 37% 94%);
+background: hsl(51, 97%, 44%);
 animation: 
     typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1.5s forwards, 
     blink 750ms steps(18) infinite;
@@ -55,12 +60,12 @@ animation:
 
 .subtitle {
 color: hsl(0, 0%, 0% / 0.7);
-font-size: 17px;
+font-size: 1em;
 opacity: 0;
 transform: translateY(-2rem);
 animation: fadeInY 2s ease 
 calc(var(--typewriterSpeed) + 0.5s) forwards;
-color: hsl(49 37% 94%);
+color: hsl(0, 0%, 100%);
 font-weight: 400;
 margin-top: 2px;
 }
@@ -98,7 +103,7 @@ opacity: 0;
   
   .neon-button {
     background-color: transparent;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family:'Source Sans Pro', sans-serif;
     color: var(--clr-neon);
     display: inline-block;
@@ -152,7 +157,6 @@ opacity: 0;
   
   .neon-button:hover, 
   .neon-button:focus {    
-    color: black;
     text-shadow: none;    
   }
   
@@ -164,5 +168,6 @@ opacity: 0;
   .neon-button:hover::after,
   .neon-button:focus::after {
     opacity: 1;
+    
   }
   

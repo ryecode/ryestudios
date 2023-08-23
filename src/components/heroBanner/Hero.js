@@ -13,11 +13,10 @@ export const Hero = () => {
       </h1>
       <p class="subtitle ">And I'm a Full Stack Web Developer</p>
       <button class="neon-button">
-      <a href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_Resume.pdf" id='resumeBtn' target="_blank" rel="noopener noreferrer"> 
+      <a id='resumeBtn' href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_Resume.pdf" target="_blank" rel="noopener noreferrer"> 
            HIRE ME 
       </a>
       </button>
-
   </div>
 </div>
   )

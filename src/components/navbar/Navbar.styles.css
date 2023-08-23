@@ -254,6 +254,7 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
+  font-family: 'Poppins', sans-serif;
   font-size: large;
   letter-spacing: 10px;
   padding-left: 3em;
