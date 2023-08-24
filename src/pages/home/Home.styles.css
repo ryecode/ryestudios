@@ -14,6 +14,7 @@ video {
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
+    padding-bottom: 5em;
 }
 
 .overlay {
@@ -21,7 +22,7 @@ video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background-color: rgba(0,0,0,.3);
     margin: 0 0 0 0;
     display: flex;
@@ -31,13 +32,13 @@ video {
 
 #heroHome {
     position: relative;
-    margin: -14em 0 0 -52em;
+    margin: -14em 0 0 -49em;
     caret-color: transparent;
 }
 
 #askName {
    position: absolute;
-    margin: 0em -52em -20em 0;
+    margin: 0em -50em -20em 0;
     animation: scale 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
     opacity: 0;
     padding: 2em;
@@ -68,13 +69,13 @@ video {
 
 @media (max-width: 770px) {
     #heroHome {
-        transform: translateX(25.75em);
+        transform: translateX(24.5em);
         margin-top: -17em;
         margin-bottom: 4em;
     }
 
     #askName {
-        margin: 0 -0.5em -22em 0;;
+        margin: 0 0.5em -22em 0;;
     }
 
     #greet {

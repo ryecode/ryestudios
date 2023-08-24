@@ -9,11 +9,11 @@ export const ChangeUserName = () => {
   return (
     <>
       <div id="askName" className="modalTrigger">
-        <h4>
+        <h5>
           Greetings Guest,
           <br />
           please enter your name..
-        </h4>
+        </h5>
         <input
           onChange={(event) => {
             setNewUserName(event.target.value);
@@ -24,7 +24,8 @@ export const ChangeUserName = () => {
             caretColor: "blue",
             background: "#c1bebe",
             borderRadius: "50px",
-            borderColor: "blue",
+            borderColor: "green",
+            width: "65%"
           }}
         />
         <br />

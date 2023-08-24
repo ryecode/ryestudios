@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Profile.styles.css";
 import { motion } from "framer-motion";
 import { useContext } from "react";
@@ -8,7 +8,7 @@ import { AccordionComponent } from "../../components/Accordion";
 
 export const Profile = () => {
 
-  const {userName} = useContext(AppContext)
+  const {userName} = useContext(AppContext);
 
   return (
     <>

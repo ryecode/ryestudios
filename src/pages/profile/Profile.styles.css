@@ -14,8 +14,9 @@
     rgba(0, 185, 0, 0.95),
     rgb(0, 0, 0)
 );  */
-background: -webkit-radial-gradient(circle, #0c0c0c, #434040, #0c0c0c);
-background: radial-gradient(circle, #0c0c0c, #434040, #0c0c0c);
+/* background: -webkit-radial-gradient(circle, #0c0c0c, #434040, #0c0c0c);
+background: radial-gradient(circle, #0c0c0c, #434040, #0c0c0c); */
+background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg");
 }
 
 .profTitle 
