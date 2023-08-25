@@ -107,7 +107,7 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 
 .header-container {
   caret-color: transparent;
-  background: -webkit-radial-gradient(circle, #0c0c0c, #434040, #0c0c0c);
+  background: -webkit-radial-gradient(circle, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
   background: radial-gradient(circle, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
   flex: 1;
   width: 450px;
@@ -122,34 +122,14 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   position: absolute;
   transform: translateX(15em);
   opacity: 1;
-  z-index: 1;
 
-}
-
-.skills-container {
-  caret-color: transparent;
-  background: linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
-  flex: 1;
-  width: 450px;
-  height: 610px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-  margin: 5em 2em 5em 2em;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transform: translateX(15em);
-  position: absolute;
-  opacity: 1;
-  z-index: 0;
 }
 
 .details-container {
   caret-color: transparent;
   background: #000000;
-  background: -webkit-linear-gradient(to top, #0c0c0c, #434040, #0c0c0c);
-  background: linear-gradient(to right, #0c0c0c, #434040, #0c0c0c);
+  background: -webkit-linear-gradient(to right, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
+  background: linear-gradient(to right, hsl(114, 81%, 19%), hsl(113, 24%, 50%), hsl(114, 96%, 21%));
   flex: 1;
   width: 450px;
   height: 610px;
@@ -163,27 +143,41 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   transform: translateX(15em);
   position: absolute;
   opacity: 1;
-  z-index: 0;
+
 }
+
+.skills-container {
+  caret-color: transparent;
+  background: linear-gradient(to top, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
+  flex: 1;
+  width: 450px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin: 5em 2em 5em 2em;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateX(15em);
+  position: absolute;
+  opacity: 1;
+
+}
+
 
 @media only screen and (max-width: 770px) {
   .profileCard {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 0.1em;
     width: 100%;
   }
 
-  .header-container {
-    margin-left: -28em;
-    margin-top: 10em;
-    padding: 1em;
-    width: 95%;
-  }
 
   .details-container {
-    margin-left: -28em;
-    margin-top: 10em;
+    margin-left: -30.5em;
+    margin-top: 16.35em;
     padding: 1em;
     width: 95%;
     height: 620px;
@@ -191,21 +185,27 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   }
 
   .skills-container {
-    background: linear-gradient(to top, #434343, #000000);
     margin-left: -28em;
-    margin-top: 10em;
+    margin-top: 15em;
+    padding: 1em;
+    width: 95%;
+  }
+  
+  .header-container {
+    margin-left: -28em;
+    margin-top: 15em;
     padding: 1em;
     width: 95%;
   }
 
   #title {
-    transform: translateY(-0.5em);
+    transform: translateY(1.5em);
     font-size: large;
-    padding: 0.75em 0 0 0;
+    padding: 0.75em 0 0 0.5em;
   }
 
   #title1 {
-    transform: translateY(-0.5em);
+    transform: translateY(1.25em);
     font-size: large;
     padding: 0 0.5em 0 0.5em;
   }
@@ -221,6 +221,10 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 
   .skillButtons {
     transform: translateX(0em);
+  }
+
+  .toggleBtns {
+    margin: 1em 0 1em 0;
   }
 
 }
@@ -247,8 +251,9 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   font-weight: bold;
 }
 
+
 .gradienttext {
-  background-image: linear-gradient(to right, #140098 0%, #0123fd 50%, #140098 100%);
+  background-image: linear-gradient(to right, #140098 0%, #2c48fe 50%, #140098 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -269,34 +274,11 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 #aboutMe {
   margin: 0;
   padding: 0;
-  font-size: 0.74em;
-  letter-spacing: 0.1em;
-  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.15em;
+  color: aliceblue;
   overflow-y: auto;
 }
-/* 
-.table {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 280px;
-  border-collapse: collapse;
-}
-
-.td {
-
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  color: aliceblue;
-}
-
-.td:first-child {
-  font-weight: bold;
-} */
-
 
 
 .skillButtons {
@@ -467,7 +449,7 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 
 .accordionContainer {
   margin: 0;
-  padding: 1em;
+  padding: 0;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -477,4 +459,12 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  /* position: absolute; */
+  font-size: larger;
+}
+
+ul button {
+  background-color: transparent;
+  border: none;
+  color: hsl(126, 97%, 39%);
 }

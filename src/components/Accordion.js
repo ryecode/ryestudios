@@ -77,23 +77,22 @@ export const AccordionComponent = () => {
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <h6 style={{color:'greenyellow'}} >EDUCATIONAL ATTAINMENT</h6>
-            <p>
+            <h6 style={{color:'darkblue'}} >EDUCATIONAL ATTAINMENT</h6>
+            <p style={{color:'aliceblue'}}>
             <b>○ KodeGo-Bootcamp (Feb.2023-Jul.2023)</b><br/>
             • Full-Stack Web Development <br/>
             ♦ Best in Coding Award<br/><br/>
             <b>○ AMA University (2001-2004, 2010-2011)</b><br/>
             • B.S. Electronics & Communications Engineering
             </p>
-            <h6 style={{color:'greenyellow'}} >WORK EXPERIENCE</h6>
-            <p><b>
+            <h6 style={{color:'darkblue'}} >WORK EXPERIENCE</h6>
+            <p style={{color:'aliceblue'}}><b>
             ○ TelePerformance Antipolo (2020-2023)</b><br/>
             ■ <i>Technical Support Representative</i>
-            <p style={{fontSize:'0.7em'}}>
+            <p style={{fontSize:'0.7em', color:'aliceblue'}}>
             • Troubleshooted devices and service issues for customers of AT&T U-verse, DirecTV, and Mobility accounts.
             </p>
-            </p>
-
+            </p>            
           </Card.Body>
         </Accordion.Collapse>
       </Card>

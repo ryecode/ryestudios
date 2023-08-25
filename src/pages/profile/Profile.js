@@ -9,6 +9,36 @@ import { AccordionComponent } from "../../components/Accordion";
 export const Profile = () => {
 
   const {userName} = useContext(AppContext);
+  const [index1, setIndex1] = useState(0);
+  const [index2, setIndex2] = useState(0);
+  const [index3, setIndex3] = useState(0);
+  const [color1, setColor1] = useState(0);
+  const [color2, setColor2] = useState(0);
+  const [color3, setColor3] = useState(0);
+  const changeIndex1 = () => {
+    setIndex1(1)
+    setIndex2(0)
+    setIndex3(0)
+    setColor1('hsl(113, 100%, 86%)')
+    setColor2('hsl(126, 97%, 39%)')
+    setColor3('hsl(126, 97%, 39%)')
+  }
+  const changeIndex2 = () => {
+    setIndex1(0)
+    setIndex2(1)
+    setIndex3(0)
+    setColor1('hsl(126, 97%, 39%)')
+    setColor2('hsl(113, 100%, 86%)')
+    setColor3('hsl(126, 97%, 39%)')
+  }
+  const changeIndex3 = () => {
+    setIndex1(0)
+    setIndex2(0)
+    setIndex3(1)
+    setColor1('hsl(126, 97%, 39%)')
+    setColor2('hsl(126, 97%, 39%)')
+    setColor3('hsl(113, 100%, 86%)')
+  }
 
   return (
     <>
@@ -26,79 +56,41 @@ export const Profile = () => {
         // exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
       >
 
-
         <div className="profileCard">
-
         <div id="profileTitle">
-            <h1 class="profTitle " id="title">
+            <h1 id="title">
             <b>Hi{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>!</b>
           </h1>
           <h1 id="title1">
             <b>Allow me to Introduce myself..</b>
           </h1>
           <ul className="toggleBtns">
-            <li>Chapter I</li>
-            <li>Chapter II</li>
-            <li>Chapter III</li>  
+            <ul><button onClick={changeIndex1} style={{color: color1}}>Chapter I</button></ul>
+            <ul><button onClick={changeIndex2}  style={{color: color2}}>Chapter II</button></ul>
+            <ul><button onClick={changeIndex3}  style={{color: color3}}>Chapter III</button></ul> 
           </ul>
         </div>
 
-        <motion.div className="header-container"
-            initial={{
-              x: 100,
-              opacity: 0
-            }}
-            animate={{
-              x: 240,
-              opacity: 1,
-              transition: {
-                delay: 0.3,
-                duration: 3
-              }
-            }}
-            exit={{
-              opacity: 0
-            }}
-            >
-            <img
-              className="profileImage"
-              src="https://ryecode.github.io/portfolio/ImageBank/RyeFormal3.png"
-              alt="Profile"
-            />
-            <h1 id="h2" className="gradienttext">
-              Ryan Corral
-            </h1>
-            <p id="role">Full-Stack Web Developer</p>
-            <p id="qoute">
-              <i>
-              <q>When you love coding, it's not considered work. I call it fun!</q>
-              </i>
-            </p>
-            <p>
-              <a
-                href="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
-                  alt="certificate"
-                  width={"90%"}
-                />
-              </a>
-            </p>
-          </motion.div>
-
-          <div className="details-container" id="pCardDetails">
-            <h3 id="h3" className="gradienttext">
-              Profile Details
-            </h3>
-            <div className="accordionContainer">
-              <AccordionComponent />
-            </div>
-          </div>
-
-          <div className="skills-container" id="pCardSkills">
+          <motion.div className="skills-container" id="pCardSkills"
+                      initial={{
+                        y: -700,
+                        x: 240,
+                        opacity: 0
+                      }}
+                      animate={{
+                        y: 1,
+                        x: 240,
+                        opacity: 1,
+                        transition: {
+                          delay: 1.3,
+                          duration: 1
+                        }
+                      }}
+                      exit={{
+                        opacity: 0
+                      }}
+                      style={{zIndex: index3}}
+          >
             <h3 id="h3" className="gradienttext">
               Programming Skills
             </h3>
@@ -253,7 +245,81 @@ export const Profile = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
+          
+          <motion.div className="details-container" id="pCardDetails"
+                      initial={{
+                        x: 700,
+                        opacity: 0
+                      }}
+                      animate={{
+                        x: 240,
+                        opacity: 1,
+                        transition: {
+                          delay: 2.6,
+                          duration: 1
+                        }
+                      }}
+                      exit={{
+                        opacity: 0
+                      }}
+                      style={{zIndex: index2}}
+          >
+            <h3 id="h3" className="gradienttext">
+              Profile Details
+            </h3>
+            <div className="accordionContainer">
+              <AccordionComponent />
+            </div>
+          </motion.div>
+
+          <motion.div className="header-container"
+            initial={{
+              x: -200,
+              opacity: 0
+            }}
+            animate={{
+              x: 240,
+              opacity: 1,
+              transition: {
+                delay: 3.9,
+                duration: 1
+              }
+            }}
+            exit={{
+              opacity: 0
+            }}
+            style={{zIndex: index1}}
+            >
+            <img
+              className="profileImage"
+              src="https://ryecode.github.io/portfolio/ImageBank/RyeFormal3.png"
+              alt="Profile"
+            />
+            <h1 id="h2" className="gradienttext">
+              Ryan Corral
+            </h1>
+            <p id="role">Full-Stack Web Developer</p>
+            <p id="qoute">
+              <i>
+              <q>When you love coding, it's not considered work. I call it fun!</q>
+              </i>
+            </p>
+            <p>
+              <a
+                href="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                  alt="certificate"
+                  width={"90%"}
+                />
+              </a>
+            </p>
+          </motion.div>
+
         </div>
       </motion.div>
     </>
