@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Luckiest+Guy&family=Montaga&family=Montserrat+Alternates&family=Poppins&family=VT323&display=swap');
+
 :root {
   --typewriterSpeed: 3s;
   --typewriterSteps: 20;
@@ -254,9 +256,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 1 1 #011108;
+  text-shadow: none;
   caret-color: transparent;
-  font-family: 'Montaga', cursive;
+  font-family: 'Carter One', cursive;
 }
 
 #role {

@@ -59,7 +59,7 @@ export const Profile = () => {
         <div className="profileCard">
         <div id="profileTitle">
             <h1 id="title">
-            <b>Hello{""} <span className="gradientUser" style={{textTransform: "uppercase", textShadow: 'none'}}>{userName}</span>!</b>
+            <b>Hello{""} <span className="gradientUser" style={{textTransform: "uppercase", textShadow: 'none'}}>{userName}</span>{""} !</b>
           </h1>
           <h1 className="subtitle" id="title1" style={{color:'hsl(126, 65%, 62%)', textShadow: '2px 2px black'}}>
             <b>Allow me to Introduce myself..</b>
