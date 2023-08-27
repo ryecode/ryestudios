@@ -52,25 +52,25 @@
   position: relative;
   width: 40em;
   max-width: 100%;
-  background: linear-gradient(to right, #339010f5, #00471a, #339010f5);
-  padding: 1.25em;
+  background: linear-gradient(to right, #268105f5, #00471a, #268105f5);
+  padding: 1em 1.5em 1.5em 1.5em;
   height: 100%;
   color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(74, 73, 73, 0.802), 0 6px 20px 0 rgba(95, 95, 95, 0.723);
 }
 
 .modal__content>h1 {
   color: #38f9d7;
   text-align: center;
-  font-size: 1.75em;
+  font-size: 1.6em;
 }
 
 .modal__footer {
   text-align: center;
   color: white;
   text-decoration: none;
-  font-size: 0.75em;
-
+  font-size: 0.6em;
+  letter-spacing: 1px;
 }
 
 /*    
@@ -88,8 +88,8 @@
 
 .modal__close2 {
   position: absolute;
-  top: 10.25em;
-  right: 9.5em;
+  top: 9em;
+  right: 8em;
   color: #38f9d7;
   text-decoration: none;
   font-family: 'Poppins';
@@ -147,8 +147,8 @@
 
   .modalPointer img {
     width: 30%;
-    transform: translateX(10em);
-    margin-top: -14em;
+    transform: translateX(12em);
+    margin-top: -13em;
   }
 
   .modal__close2 {

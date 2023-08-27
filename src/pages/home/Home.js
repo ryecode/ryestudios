@@ -60,7 +60,7 @@ export const Home = () => {
         </div>
         <div class="subtitle" id="greet">
         <h1 >
-          WELCOME{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>
+          WELCOME{""} <span className="gradientUser" style={{textTransform: "uppercase"}}>{userName}</span>
          <br />To Rye Zone
          </h1>
         </div>

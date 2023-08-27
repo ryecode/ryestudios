@@ -9,11 +9,11 @@ export const ChangeUserName = () => {
   return (
     <>
       <div id="askName" className="modalTrigger">
-        <h5>
+        <h6>
           Greetings Guest,
           <br />
           please enter your name..
-        </h5>
+        </h6>
         <input
           onChange={(event) => {
             setNewUserName(event.target.value);
@@ -45,7 +45,7 @@ export const ChangeUserName = () => {
           <div class="modal__content">
             <h1>
               Hi{""}{" "}
-              <span style={{ color: "#FFFB7D", textTransform: "uppercase" }}>
+              <span className="gradientUser" style={{textTransform: "uppercase" }}>
                 {userName}
               </span>
               !

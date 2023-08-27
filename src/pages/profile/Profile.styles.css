@@ -4,27 +4,19 @@
 }
 
 .profileBody {
-  margin-top: -3em;
-
-  padding: 0;
-  height: 110vh;
-  /* background: linear-gradient(
-    to top,
-    rgb(0, 0, 0),
-    rgba(0, 185, 0, 0.95),
-    rgb(0, 0, 0)
-);  */
-/* background: -webkit-radial-gradient(circle, #0c0c0c, #434040, #0c0c0c);
-background: radial-gradient(circle, #0c0c0c, #434040, #0c0c0c); */
-background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg");
+  margin-top: 1em;
+  padding: 5em 0 15em 0;
+  height: 115vh;
+  background-image: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.profTitle 
-  {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    text-align: left;    
-  }
+.profTitle {
+  position: relative;
+  text-align: left;
+  caret-color: transparent;
+}
 
 .profTitle::before,
 .profTitle::after {
@@ -69,32 +61,26 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   background: transparent;
   border: none;
   transform: translate(-150%, -40%);
+  caret-color: transparent;
 }
 
 
 #title {
   font-size: 2rem;
-  color: hsl(126, 61%, 46%);
-  /* -webkit-text-fill-color: rgba(139, 223, 139, 0);
-  text-shadow: 0px 0px #ff0000; */
-  /* background-image: linear-gradient(
-    -225deg,
-    #21D4FD 0%,
-    #ff2121 29%,
-    #85FFBD 67%,
-    #008000 100%
-  ); */
-
-
+  color: hsl(126, 65%, 62%);
+  padding: 0;
+  caret-color: transparent;
+  text-shadow: 2px 2px black;
 }
 
 #title1 {
   font-size: 1rem;
+  caret-color: transparent;
 }
 
 .profileCard {
 
-  padding: 2em ;
+  padding: 2em;
   margin: 3em 0 3em 0;
   width: 100%;
   height: 100vh;
@@ -107,8 +93,8 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 
 .header-container {
   caret-color: transparent;
-  background: -webkit-radial-gradient(circle, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
-  background: radial-gradient(circle, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
+  background: -webkit-radial-gradient(circle, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
+  background: radial-gradient(circle, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
   width: 450px;
   height: 610px;
@@ -128,8 +114,8 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 .details-container {
   caret-color: transparent;
   background: #000000;
-  background: -webkit-linear-gradient(to right, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
-  background: linear-gradient(to right, hsl(114, 81%, 19%), hsl(113, 24%, 50%), hsl(114, 96%, 21%));
+  background: -webkit-linear-gradient(to right, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
+  background: linear-gradient(to right, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
   width: 450px;
   height: 610px;
@@ -148,7 +134,7 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 
 .skills-container {
   caret-color: transparent;
-  background: linear-gradient(to top, hsl(114, 81%, 19%), hsl(113, 30%, 52%), hsl(114, 96%, 21%));
+  background: linear-gradient(to top, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
   width: 450px;
   height: 610px;
@@ -177,10 +163,9 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 
   .details-container {
     margin-left: -30.5em;
-    margin-top: 16.35em;
+    margin-top: 15.9em;
     padding: 1em;
     width: 95%;
-    height: 620px;
     font-size: 0.93em;
   }
 
@@ -190,7 +175,7 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
     padding: 1em;
     width: 95%;
   }
-  
+
   .header-container {
     margin-left: -28em;
     margin-top: 15em;
@@ -201,13 +186,12 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   #title {
     transform: translateY(1.5em);
     font-size: large;
-    padding: 0.75em 0 0 0.5em;
+    padding: 1em 0 1em 0.25em;
   }
 
   #title1 {
-    transform: translateY(1.25em);
     font-size: large;
-    padding: 0 0.5em 0 0.5em;
+    padding: 0.5em 0.5em 0 0.25em;
   }
 
   #profileTitle {
@@ -224,7 +208,8 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   }
 
   .toggleBtns {
-    margin: 1em 0 1em 0;
+    margin: 0 0 1em 0;
+    transform: translateX(5px);
   }
 
 }
@@ -242,6 +227,7 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   font-size: 2.5em;
   margin-bottom: 0px;
   font-weight: bold;
+  caret-color: transparent;
 }
 
 #h3 {
@@ -249,14 +235,28 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   font-size: 1.5em;
   margin-top: 0.5em;
   font-weight: bold;
+  caret-color: transparent;
 }
 
 
 .gradienttext {
-  background-image: linear-gradient(to right, #140098 0%, #2c48fe 50%, #140098 100%);
+  background-image: linear-gradient(to top, #0077ff 0%, #041bb4 50%,  #014b9f  100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  text-shadow: 0 1 1 #85FFBD;
+  caret-color: transparent;
+  font-family: 'Montaga', cursive;
+}
+
+.gradientUser {
+  background-image: linear-gradient(to top, #d4e302 0%, #e6edaa 50%,  #d4e302  100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 1 1 #011108;
+  caret-color: transparent;
+  font-family: 'Montaga', cursive;
 }
 
 #role {
@@ -264,11 +264,13 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   margin-bottom: 0px;
   color: rgb(61, 211, 245);
   text-shadow: 0 0 1 #000000;
+  caret-color: transparent;
 }
 
 #qoute {
   font-size: 0.75em;
-  color: #ffffff;
+  color: white;
+  caret-color: transparent;
 }
 
 #aboutMe {
@@ -276,8 +278,9 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   padding: 0;
   font-size: 0.8em;
   letter-spacing: 0.15em;
-  color: aliceblue;
+  color: white;
   overflow-y: auto;
+  caret-color: transparent;
 }
 
 
@@ -288,7 +291,9 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  caret-color: transparent;
 }
+
 .skillButtons li {
   position: relative;
   list-style: none;
@@ -297,7 +302,9 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   margin: 0;
   border-radius: 25px;
   box-sizing: border-box;
+  caret-color: transparent;
 }
+
 .skillButtons li:before,
 .skillButtons li:after {
   content: "";
@@ -313,13 +320,16 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   transition: 1s;
   z-index: -1;
 }
+
 .skillButtons li:after {
   filter: blur(40px);
 }
+
 .skillButtons li:hover:after,
 .skillButtons li:hover:before {
   opacity: 1;
 }
+
 .skillButtons li a {
   position: absolute;
   top: 10px;
@@ -350,99 +360,100 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
 
 .skillButtons li:nth-child(1) a,
 .skillButtons li:nth-child(1):before,
-.skillButtons li:nth-child(1):after{
+.skillButtons li:nth-child(1):after {
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .skillButtons li:nth-child(2) a,
 .skillButtons li:nth-child(2):before,
-.skillButtons li:nth-child(2):after{
+.skillButtons li:nth-child(2):after {
   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 }
 
 .skillButtons li:nth-child(3) a,
 .skillButtons li:nth-child(3):before,
-.skillButtons li:nth-child(3):after{
+.skillButtons li:nth-child(3):after {
   background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 .skillButtons li:nth-child(4) a,
 .skillButtons li:nth-child(4):before,
-.skillButtons li:nth-child(4):after{
+.skillButtons li:nth-child(4):after {
   background: linear-gradient(to right, #185a9d, #43cea2);
 }
 
 .skillButtons li:nth-child(5) a,
 .skillButtons li:nth-child(5):before,
-.skillButtons li:nth-child(5):after{
+.skillButtons li:nth-child(5):after {
   background: linear-gradient(to right, #185a9d, #43cea2);
 }
+
 .skillButtons li:nth-child(6) a,
 .skillButtons li:nth-child(6):before,
-.skillButtons li:nth-child(6):after{
+.skillButtons li:nth-child(6):after {
   background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 .skillButtons li:nth-child(7) a,
 .skillButtons li:nth-child(7):before,
-.skillButtons li:nth-child(7):after{
+.skillButtons li:nth-child(7):after {
   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-  
+
 }
 
 .skillButtons li:nth-child(8) a,
 .skillButtons li:nth-child(8):before,
-.skillButtons li:nth-child(8):after{
+.skillButtons li:nth-child(8):after {
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-  
+
 }
 
 
 .skillButtons li:nth-child(9) a,
 .skillButtons li:nth-child(9):before,
-.skillButtons li:nth-child(9):after{
+.skillButtons li:nth-child(9):after {
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .skillButtons li:nth-child(n+10) a,
 .skillButtons li:nth-child(n+10):before,
-.skillButtons li:nth-child(n+10):after{
+.skillButtons li:nth-child(n+10):after {
   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 }
 
 .skillButtons li:nth-child(n+11) a,
 .skillButtons li:nth-child(n+11):before,
-.skillButtons li:nth-child(n+11):after{
+.skillButtons li:nth-child(n+11):after {
   background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 .skillButtons li:nth-child(n+12) a,
 .skillButtons li:nth-child(n+12):before,
-.skillButtons li:nth-child(n+12):after{
+.skillButtons li:nth-child(n+12):after {
   background: linear-gradient(to right, #185a9d, #43cea2);
 }
 
 .skillButtons li:nth-child(n+13) a,
 .skillButtons li:nth-child(n+13):before,
-.skillButtons li:nth-child(n+13):after{
+.skillButtons li:nth-child(n+13):after {
   background: linear-gradient(to right, #185a9d, #43cea2);
 }
 
 .skillButtons li:nth-child(n+14) a,
 .skillButtons li:nth-child(n+14):before,
-.skillButtons li:nth-child(n+14):after{
+.skillButtons li:nth-child(n+14):after {
   background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 .skillButtons li:nth-child(n+15) a,
 .skillButtons li:nth-child(n+15):before,
-.skillButtons li:nth-child(n+15):after{
+.skillButtons li:nth-child(n+15):after {
   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 }
 
 .skillButtons li:nth-child(n+16) a,
 .skillButtons li:nth-child(n+16):before,
-.skillButtons li:nth-child(n+16):after{
+.skillButtons li:nth-child(n+16):after {
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
@@ -461,10 +472,16 @@ background-image: url("https://ryecode.github.io/portfolio/ImageBank/greenBG.jpg
   flex-wrap: wrap;
   /* position: absolute; */
   font-size: larger;
+  color: hsl(126, 65%, 62%);
+  padding: 0 0 0 0.8em;
+  caret-color: transparent;
+  text-shadow: 2px 2px black;
 }
 
-ul button {
+ul li button {
   background-color: transparent;
   border: none;
-  color: hsl(126, 97%, 39%);
+  color: hsl(126, 65%, 62%);
+  caret-color: transparent;
+  text-shadow: 2px 2px black;
 }

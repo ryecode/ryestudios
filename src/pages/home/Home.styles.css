@@ -2,6 +2,9 @@ video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
+    position: fixed;
 }
 
 .content {
@@ -13,7 +16,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(4, 4, 4);
     padding-bottom: 5em;
 }
 
@@ -22,8 +25,8 @@ video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 95vh;
-    background-color: rgba(0,0,0,.3);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
     margin: 0 0 0 0;
     display: flex;
     justify-content: center;
@@ -37,7 +40,7 @@ video {
 }
 
 #askName {
-   position: absolute;
+    position: absolute;
     margin: 0em -50em -20em 0;
     animation: scale 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
     opacity: 0;
@@ -53,18 +56,21 @@ video {
 
 #greet {
     color: hsl(0, 0%, 0% / 0.7);
-    font-size: 1em;
+    font-size: 0.5em;
     opacity: 0;
     transform: translateY(-2em);
-    animation: fadeInY 2s ease 
-    calc(var(--typewriterSpeed) + 1.5s) forwards;
-    color: hsl(128, 85%, 52%);
+    animation: fadeInY 2s ease calc(var(--typewriterSpeed) + 1.5s) forwards;
     font-weight: 400;
     margin-top: -2em;
-    backdrop-filter: blur(20px);
     padding: 1em;
     caret-color: transparent;
-    font-family: 'Carter One', cursive;
+    font-family: 'Poppins', cursive;
+    background-image: linear-gradient(to top, #d4e302 0%, #e6edaa 50%, #d4e302 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 1 1 #011108;
+    caret-color: transparent;
 }
 
 @media (max-width: 770px) {
@@ -75,7 +81,8 @@ video {
     }
 
     #askName {
-        margin: 0 0.5em -22em 0;;
+        margin: 0 0.5em -22em 0;
+        ;
     }
 
     #greet {

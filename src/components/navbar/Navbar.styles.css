@@ -72,8 +72,8 @@
   align-items: center;
   justify-content: space-between;
   caret-color: transparent;
-  /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(40, 40, 40, 0.873)); */
-  backdrop-filter: blur(10px);
+  background-image: linear-gradient(to left top, #000000, #100504, #180c03, #1c1200, #1a1900, #191f00, #122600, #012d07, #013408, #023c08, #064307, #0b4b04);
+  /* backdrop-filter: blur(10px); */
   height: 3em;
   padding: 1em;
   box-sizing: border-box;

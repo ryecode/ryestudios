@@ -1,11 +1,11 @@
 #resumeBtn {
     text-decoration: none;
     text-shadow: none;
-    color: red;
+    color: hsl(51, 97%, 44%);
     z-index: 2;
 }
 #resumeBtn:hover {
-  color: red;
+  color: hsl(51, 97%, 44%);
 }
 
 .hero-image {
@@ -30,7 +30,7 @@ position: relative;
 font-family: 'Montaga', serif;
 position: relative;
 width: max-content;
-color: hsl(51, 97%, 44%);
+color: hsl(218, 98%, 60%);
 font-weight: 400;
 letter-spacing: 3px;
 }

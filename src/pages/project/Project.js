@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 export const Project = () => {
   return (
-    <motion.div style={{ marginTop: '5%'}}
+    <motion.div 
       className="projectBody"
-        initial={{ height: "100%" }}
+        initial={{ height: "0%" }}
         animate={{ height: "100%" }}
         exit={{ y: "-110%", transition: {duration: 0.6, delay: 0.1 }}}
 
@@ -20,7 +20,8 @@ export const Project = () => {
       // animate={{ scale: 1, transition: { duration: 1, delay: 0.2}}}
       // exit={{ scale: 0, transition: { duration: 1, delay: 0.2}}}
     >
-        <div id="projectTitle">
+      <div>
+      <div id="projectTitle">
           <h1 class="projTitle gradientTitle" id="titleID">
             <b>CHECK MY PROJECTS OUT!</b>
           </h1>
@@ -30,6 +31,8 @@ export const Project = () => {
           <Card3D />
         </div>
       </div>
+      </div>
+
     </motion.div>
   );
 };

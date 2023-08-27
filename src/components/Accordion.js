@@ -45,7 +45,7 @@ export const AccordionComponent = () => {
           <Card.Body>
             
           <p id="aboutMe">
-              Greetings{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>! I'm Rye, a Full-Stack Web Developer based in
+              Greetings{""} <span className="gradientUser" style={{fontWeight:'bolder', textTransform: "uppercase"}}>{userName}</span>! I'm Rye, a Full-Stack Web Developer based in
               Antipolo City, Philippines. I recently graduated from KodeGo's
               Full-Stack Web Development Bootcamp this past June 2023. Where I
               was awarded <br />"

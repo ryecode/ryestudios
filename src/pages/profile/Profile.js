@@ -12,7 +12,7 @@ export const Profile = () => {
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [index3, setIndex3] = useState(0);
-  const [color1, setColor1] = useState(0);
+  const [color1, setColor1] = useState('hsl(113, 100%, 86%)');
   const [color2, setColor2] = useState(0);
   const [color3, setColor3] = useState(0);
   const changeIndex1 = () => {
@@ -20,23 +20,23 @@ export const Profile = () => {
     setIndex2(0)
     setIndex3(0)
     setColor1('hsl(113, 100%, 86%)')
-    setColor2('hsl(126, 97%, 39%)')
-    setColor3('hsl(126, 97%, 39%)')
+    setColor2('hsl(126, 65%, 62%)')
+    setColor3('hsl(126, 65%, 62%)')
   }
   const changeIndex2 = () => {
     setIndex1(0)
     setIndex2(1)
     setIndex3(0)
-    setColor1('hsl(126, 97%, 39%)')
+    setColor1('hsl(126, 65%, 62%)')
     setColor2('hsl(113, 100%, 86%)')
-    setColor3('hsl(126, 97%, 39%)')
+    setColor3('hsl(126, 65%, 62%)')
   }
   const changeIndex3 = () => {
     setIndex1(0)
     setIndex2(0)
     setIndex3(1)
-    setColor1('hsl(126, 97%, 39%)')
-    setColor2('hsl(126, 97%, 39%)')
+    setColor1('hsl(126, 65%, 62%)')
+    setColor2('hsl(126, 65%, 62%)')
     setColor3('hsl(113, 100%, 86%)')
   }
 
@@ -59,15 +59,15 @@ export const Profile = () => {
         <div className="profileCard">
         <div id="profileTitle">
             <h1 id="title">
-            <b>Hi{""} <span style={{color:'#FFFB7D', textTransform: "uppercase"}}>{userName}</span>!</b>
+            <b>Hello{""} <span className="gradientUser" style={{textTransform: "uppercase", textShadow: 'none'}}>{userName}</span>!</b>
           </h1>
-          <h1 id="title1">
+          <h1 className="subtitle" id="title1" style={{color:'hsl(126, 65%, 62%)', textShadow: '2px 2px black'}}>
             <b>Allow me to Introduce myself..</b>
           </h1>
           <ul className="toggleBtns">
-            <ul><button onClick={changeIndex1} style={{color: color1}}>Chapter I</button></ul>
-            <ul><button onClick={changeIndex2}  style={{color: color2}}>Chapter II</button></ul>
-            <ul><button onClick={changeIndex3}  style={{color: color3}}>Chapter III</button></ul> 
+            <li className="subtitle"><button onClick={changeIndex1} style={{color: color1}}>Chapter I</button></li>
+            <li className="subtitle"><button onClick={changeIndex2}  style={{color: color2}}>Chapter II</button></li>
+            <li className="subtitle"><button onClick={changeIndex3}  style={{color: color3}}>Chapter III</button></li> 
           </ul>
         </div>
 
@@ -135,11 +135,11 @@ export const Profile = () => {
 
                 <li>
                   <a
-                    href="https://www.figma.com/"
+                    href="https://greensock.com/gsap/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>FIGMA</span>
+                    <span>GSAP3</span>
                   </a>
                 </li>
                 <li>
@@ -199,11 +199,11 @@ export const Profile = () => {
                 </li>
                 <li>
                   <a
-                    href="https://react-bootstrap.netlify.app/"
+                    href="https://www.figma.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>REACT BOOTSTRAP</span>
+                    <span>FIGMA</span>
                   </a>
                 </li>
 
@@ -213,7 +213,7 @@ export const Profile = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>BOOTSTRAP v5.3</span>
+                    <span>BOOTSTRAPS</span>
                   </a>
                 </li>
                 <li>

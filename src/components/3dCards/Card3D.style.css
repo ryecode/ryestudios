@@ -136,6 +136,7 @@ p {
     transform-origin: left top;
     transition: 0.5s;
     pointer-events: none;
+    overflow: hidden;
 }
 
 .card-fg p.case-study {

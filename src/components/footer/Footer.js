@@ -3,7 +3,7 @@ import "./Footer.styles.css";
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" >
       <button class="btn">
         <span class="words">© RYAN CORRAL 2023</span>
       </button>
@@ -25,10 +25,11 @@ export const Footer = () => {
         >
           vecteezy.com
         </a>
+        
         <div
           class="sub"
           id="footerQuery"
-          style={{ zIndex: 1, width: "100%", textAlign: "right" }}
+          style={{ zIndex: 1, width: "100%", textAlign: "right", padding:'0' }}
         >
           <a href="tel:+639179219988">
             <img
