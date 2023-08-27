@@ -48,9 +48,7 @@ p {
 }
 
 @media(max-width: 770px) {
-    body {
-        height: 100%;
-    }
+
     .container {
         padding: 10em;
         height: 100%;

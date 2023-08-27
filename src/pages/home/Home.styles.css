@@ -31,6 +31,7 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -6em;
 }
 
 #heroHome {
@@ -89,7 +90,4 @@ video {
         transform: translateY(6em);
     }
 
-    body {
-        height: 100vh;
-    }
 }

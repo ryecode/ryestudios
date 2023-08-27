@@ -6,8 +6,9 @@
 }
 
 .profileBody {
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 5em 0 15em 0;
+  width: 100%;
   height: 115vh;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
   background-size: cover;
@@ -166,8 +167,8 @@
   .details-container {
     margin-left: -30.5em;
     margin-top: 15.9em;
-    padding: 1em;
-    width: 95%;
+    padding: 0 0 1em 0;
+    width: 90%;
     font-size: 0.93em;
   }
 
@@ -175,14 +176,14 @@
     margin-left: -28em;
     margin-top: 15em;
     padding: 1em;
-    width: 95%;
+    width: 90%;
   }
 
   .header-container {
     margin-left: -28em;
     margin-top: 15em;
     padding: 1em;
-    width: 95%;
+    width: 90%;
   }
 
   #title {
