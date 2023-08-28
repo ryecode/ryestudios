@@ -43,7 +43,13 @@ export const AccordionComponent = () => {
   return (
     <Accordion defaultActiveKey="0" flush>
       <Card style={{ background: "transparent", border: "none" }}>
-        <Card.Header style={{ background: "#434040", fontSize: "small", fontFamily:'Montaga' }}>
+        <Card.Header
+          style={{
+            background: "#434040",
+            fontSize: "small",
+            fontFamily: "Montaga",
+          }}
+        >
           <ContextAwareToggle eventKey="0">INTRODUCTION</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
@@ -85,13 +91,28 @@ export const AccordionComponent = () => {
         </Accordion.Collapse>
       </Card>
       <Card style={{ background: "transparent", border: "none" }}>
-        <Card.Header style={{ background: "#434040", fontSize: "small", fontFamily:'Montaga' }}>
+        <Card.Header
+          style={{
+            background: "#434040",
+            fontSize: "small",
+            fontFamily: "Montaga",
+          }}
+        >
           <ContextAwareToggle eventKey="1">BACKGROUND</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <h6 style={{ color: "blue", fontFamily:'Montaga' }}>EDUCATIONAL ATTAINMENT</h6>
-            <p style={{ color: "aliceblue", textShadow: '1px 1px black' }}>
+            <h6 style={{ color: "blue", fontFamily: "Montaga" }}>
+              EDUCATIONAL ATTAINMENT
+            </h6>
+            <p
+              style={{
+                color: "white",
+                textShadow: "1px 1px black",
+                fontFamily: "Montserrat",
+                fontSize: "0.85em",
+              }}
+            >
               <b>○ KodeGo-Bootcamp (Feb.2023-Jul.2023)</b>
               <br />
               • Full-Stack Web Development <br />
@@ -101,11 +122,25 @@ export const AccordionComponent = () => {
               <b>○ AMA University (2001-2004, 2010-2011)</b>
               <br />• B.S. Electronics & Communications Engineering
             </p>
-            <h6 style={{ color: "blue", fontFamily:'Montaga' }}>WORK EXPERIENCE</h6>
-            <p style={{ color: "aliceblue", textShadow: '1px 1px black' }}>
-              <b>○ TelePerformance Antipolo (2020-2023)</b>
+            <h6 style={{ color: "blue", fontFamily: "Montaga" }}>
+              WORK EXPERIENCE
+            </h6>
+            <p
+              style={{
+                color: "white",
+                fontFamily: "Montserrat",
+                textShadow: "1px 1px black",
+              }}
+            >
+              <b>○ TelePerformance (2020-2023)</b>
               <br />■ <i>Technical Support Representative</i>
-              <p style={{ fontSize: "0.7em", color: "aliceblue" }}>
+              <p
+                style={{
+                  fontSize: "0.75em",
+                  fontFamily: "Montserrat",
+                  color: "aliceblue",
+                }}
+              >
                 • Troubleshooted devices and service issues for customers of
                 AT&T U-verse, DirecTV, and Mobility.
               </p>

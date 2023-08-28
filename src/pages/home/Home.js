@@ -47,8 +47,7 @@ export const Home = () => {
             </button>
           </div>
         </div>
-        <div class="subtitle" id="greet">
-          <h1>
+        <div class="subtitle" id="greet">          
             WELCOME{""}{" "}
             <span
               className="gradientUser"
@@ -57,8 +56,7 @@ export const Home = () => {
               {userName}
             </span>
             <br />
-            To Rye Zone
-          </h1>
+            To Rye Zone          
         </div>
         <ChangeUserName />
       </div>

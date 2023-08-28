@@ -54,7 +54,7 @@
 .modal__content>h1 {
   color: #38f9d7;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 .modal__footer {
@@ -68,7 +68,7 @@
 .modal__close2 {
   position: absolute;
   top: 8em;
-  right: 8em;
+  right: 9.5em;
   color: #38f9d7;
   text-decoration: none;
   font-family: 'Poppins';
@@ -82,8 +82,8 @@
 
 .modalPointer {
   position: absolute;
-  top: -17em;
-  right: 5em;
+  top: -19.5em;
+  right: 1em;
   visibility: hidden;
   opacity: 0;
   margin: 0;
@@ -121,13 +121,13 @@
 @media (max-width: 770px) {
   .modal {
     transform: translateX(0em);
-    margin-top: 1em;
+    margin-top: -0.5em;
   }
 
   .modalPointer img {
     width: 30%;
-    transform: translateX(10.5em);
-    margin-top: -13em;
+    transform: translateX(5.5em);
+    margin-top: -8em;
   }
 
   .modal__close2 {

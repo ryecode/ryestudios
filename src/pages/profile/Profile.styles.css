@@ -26,7 +26,7 @@
   width: fit-content;
   background: transparent;
   border: none;
-  transform: translate(-170%, -40%);
+  transform: translate(-150%, -40%);
   caret-color: transparent;
 }
 
@@ -189,7 +189,7 @@
   font-size: 1em;
   margin-bottom: 5px;
   color: rgb(61, 211, 245);
-  text-shadow: 0 0 1 #000000;
+  text-shadow: 1px 1px #000000;
   caret-color: transparent;
 }
 
@@ -197,6 +197,7 @@
   font-size: 0.7em;
   color: white;
   caret-color: transparent;
+  text-shadow: 1px 1px #000000;
 }
 
 #aboutMe {
@@ -208,6 +209,7 @@
   overflow-y: auto;
   caret-color: transparent;
   text-shadow: 1px 1px black;
+  font-family: 'Montserrat';
 }
 
 
@@ -224,7 +226,7 @@
 .skillButtons li {
   position: relative;
   list-style: none;
-  width: 8em;
+  width: 8.5em;
   height: 4em;
   margin: 0;
   padding: 0;
@@ -416,7 +418,7 @@ ul li button {
 
 
 
-@media only screen and (max-width: 770px) {
+@media (max-width: 770px) {
   .profileBody {
     height: 100vh;
     margin-bottom: 10em;

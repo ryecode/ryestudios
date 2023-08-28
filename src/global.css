@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Luckiest+Guy&family=Montaga&family=Montserrat+Alternates&family=Poppins&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Luckiest+Guy&family=Montaga&family=Montserrat&family=Montserrat+Alternates&family=Poppins&display=swap');
 
 :root {
   --typewriterSpeed: 3s;
@@ -23,6 +23,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  letter-spacing: 1px;
 
 }
 

@@ -36,13 +36,13 @@ video {
 
 #heroHome {
     position: relative;
-    margin: -14em 0 0 -49em;
+    margin: -7em 0 0 -35em;
     caret-color: transparent;
 }
 
 #askName {
     position: absolute;
-    margin: 0em -50em -20em 0;
+    margin: 0em -35em -23em 0;
     animation: scale 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
     opacity: 0;
     padding: 2em;
@@ -57,7 +57,7 @@ video {
 
 #greet {
     color: hsl(0, 0%, 0% / 0.7);
-    font-size: 0.5em;
+    font-size: 2.7em;
     opacity: 0;
     transform: translateY(-2em);
     animation: fadeInY 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
@@ -65,7 +65,7 @@ video {
     margin-top: -2em;
     padding: 1em;
     caret-color: transparent;
-    font-family: 'Poppins', cursive;
+    font-family: 'Luckiest guy', cursive;
     background-image: linear-gradient(to top, #02e328 0%, #aaedca 50%, #02e328 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -76,9 +76,7 @@ video {
 
 @media (max-width: 770px) {
     #heroHome {
-        transform: translateX(24.5em);
-        margin-top: -17em;
-        margin-bottom: 4em;
+        transform: translate(17em, -5em);
     }
 
     #askName {
@@ -87,7 +85,7 @@ video {
     }
 
     #greet {
-        transform: translateY(6em);
+        margin-top: -3.5em;
     }
 
 }
