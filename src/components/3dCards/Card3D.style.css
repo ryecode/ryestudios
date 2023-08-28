@@ -47,25 +47,6 @@ p {
     text-align: center;
 }
 
-@media(max-width: 770px) {
-
-    .container {
-        padding: 10em;
-        height: 100%;
-    }
-    .projects {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-    .cardContainer {
-        padding: 10em 0em 10em 0em;
-    }
-    .card-fg {
-        pointer-events: none;
-    }
-}
-
 .folder {
     position: relative;
     width: 200px;
@@ -95,6 +76,7 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
+    z-index: 1;
 }
 
 .card-cta {
@@ -112,10 +94,10 @@ p {
 .card-cta a {
     position: absolute;
     top: 45%;
-    right: -35%;
+    right: -45%;
     transform: rotate(90deg);
     color: #fff;
-    font-size: 0.688em;
+    font-size: 0.64em;
     font-weight: light;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -164,10 +146,16 @@ p {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .folder:hover .card-cta {
     transform: translateX(40px) rotateZ(7deg);
+}
+
+.folder:hover .card-cta a {
+    z-index: 2;
 }
 
 .folder:hover .card-fg {
@@ -176,4 +164,25 @@ p {
 
 .detailButton {
     margin-top: 335px;
+}
+
+
+
+@media(max-width: 770px) {
+
+    .container {
+        padding: 10em;
+        height: 100%;
+    }
+    .projects {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .cardContainer {
+        padding: 10em 0em 10em 0em;
+    }
+    .card-fg {
+        pointer-events: none;
+    }
 }

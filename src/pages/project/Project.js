@@ -21,12 +21,7 @@ export const Project = () => {
       // exit={{ scale: 0, transition: { duration: 1, delay: 0.2}}}
     >
       <div>
-      <div id="projectTitle">
-          <h1 class="projTitle gradientTitle" id="titleID">
-            <b>CHECK MY PROJECTS OUT!</b>
-          </h1>
-        </div>
-      <div className="profileCard">
+      <div className="projectCard">
         <div>
           <Card3D />
         </div>

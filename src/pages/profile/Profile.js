@@ -50,7 +50,7 @@ export const Profile = () => {
 
         initial={{ opacity: 0, transition: { duration: 1, delay: 0 } }}
         animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
-        exit={{ opacity: 0, transition: { duration: 1, delay: 0 } }}
+        exit={{ opacity: 0, transition: { duration: 0.5, delay: 0.5 } }}
 
         // initial={{scale: 0, transition: {duration: 2, delay: 1.02}}}
         // animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
@@ -88,7 +88,12 @@ export const Profile = () => {
                         }
                       }}
                       exit={{
-                        opacity: 0
+                        y: -150,
+                        x: 240,
+                        opacity: 0,
+                        transition: {
+                          duration: 0.5
+                        }
                       }}
                       style={{zIndex: index3}}
           >
@@ -262,7 +267,11 @@ export const Profile = () => {
                         }
                       }}
                       exit={{
-                        opacity: 0
+                        x: 500,
+                        opacity: 0,
+                        transition: {
+                          duration: 0.5
+                        }
                       }}
                       style={{zIndex: index2}}
           >
@@ -288,7 +297,11 @@ export const Profile = () => {
               }
             }}
             exit={{
-              opacity: 0
+              x: -100,
+              opacity: 0,
+              transition: {
+                duration: 0.5
+              }
             }}
             style={{zIndex: index1}}
             >
