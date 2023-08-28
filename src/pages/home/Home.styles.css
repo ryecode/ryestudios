@@ -43,7 +43,7 @@ video {
 #askName {
     position: absolute;
     margin: 0em -50em -20em 0;
-    animation: scale 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+    animation: scale 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
     opacity: 0;
     padding: 2em;
     caret-color: transparent;
@@ -60,7 +60,7 @@ video {
     font-size: 0.5em;
     opacity: 0;
     transform: translateY(-2em);
-    animation: fadeInY 2s ease calc(var(--typewriterSpeed) + 1.5s) forwards;
+    animation: fadeInY 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
     font-weight: 400;
     margin-top: -2em;
     padding: 1em;

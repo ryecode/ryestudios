@@ -48,13 +48,13 @@ left: 0;
 .hero-title::before {
 background-color: black;
 height: 1.25em;
-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1.5s forwards;
+animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
 }
 .hero-title::after {
 width: 0.25em;
 background: hsl(51, 97%, 44%);
 animation: 
-    typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1.5s forwards, 
+    typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards, 
     blink 750ms steps(18) infinite;
 }
 
@@ -63,8 +63,8 @@ color: hsl(0, 0%, 0% / 0.7);
 font-size: 0.75em;
 opacity: 0;
 transform: translateY(-2rem);
-animation: fadeInY 2s ease 
-calc(var(--typewriterSpeed) + 1s) forwards;
+animation: fadeInY 1s ease 
+calc(var(--typewriterSpeed) + 0.5s) forwards;
 color: hsl(0, 0%, 100%);
 font-weight: 400;
 margin-top: 2px;
@@ -115,7 +115,7 @@ opacity: 0;
     position: relative;
     font-weight: 700;
     opacity: 0;
-    animation: scale 2s ease-in-out
+    animation: scale 0.75s ease-in-out
     calc(var(--typewriterSpeed) + 1s) forwards;
   
     text-shadow: 

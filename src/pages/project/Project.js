@@ -8,9 +8,9 @@ export const Project = () => {
   return (
     <motion.div 
       className="projectBody"
-        initial={{ height: "0%" }}
-        animate={{ height: "100%" }}
-        exit={{ y: "-110%", transition: {duration: 0.6, delay: 0.1 }}}
+        initial={{ y: "100%", transition: {duration: 1, delay: 0}}}
+        animate={{ y: "0%", transition: {duration: 1, delay: 1}}}
+        exit={{ y: "-110%", transition: {duration: 1, delay: 0 }}}
 
       // initial={{opacity: 0, transition: {duration: 1, delay: 0.2}}}
       // animate={{opacity: 1, transition: {duration: 1, delay: 0.2}}}

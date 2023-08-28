@@ -80,7 +80,35 @@
 #title1 {
   font-size: 1rem;
   caret-color: transparent;
+    opacity: 0;
+  transform: translateY(-2rem);
+  animation: fadeInY 0.5s ease-in
+  3.5s forwards;
 }
+
+.chapter1 {
+  opacity: 0;
+  transform: translateY(-2rem);
+  animation: fadeInY 0.5s ease-in
+  4s forwards;
+  margin-top: 2px;
+  }
+
+  .chapter2 {
+    opacity: 0;
+    transform: translateY(-2rem);
+    animation: fadeInY 0.5s ease-in 
+    4.5s forwards;
+    margin-top: 2px;
+    }
+
+    .chapter3 {
+      opacity: 0;
+      transform: translateY(-2rem);
+      animation: fadeInY 0.5s ease-in
+      5s forwards;
+      margin-top: 2px;
+      }
 
 .profileCard {
 

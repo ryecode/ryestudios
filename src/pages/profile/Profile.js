@@ -3,7 +3,7 @@ import "./Profile.styles.css";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { AppContext } from "../../App";
-import "../../global.css";
+
 
 import { AccordionComponent } from "../../components/Accordion";
 
@@ -48,9 +48,9 @@ export const Profile = () => {
         // animate={{ height: "100%" }}
         // exit={{ y: "-100%", transition: {duration: 0.6, delay: 0.1 } }}
 
-        initial={{ opacity: 0, transition: { duration: 1, delay: 0.2 } }}
-        animate={{ opacity: 1, transition: { duration: 1, delay: 0.2 } }}
-        exit={{ opacity: 0, transition: { duration: 1, delay: 0.2 } }}
+        initial={{ opacity: 0, transition: { duration: 1, delay: 0 } }}
+        animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
+        exit={{ opacity: 0, transition: { duration: 1, delay: 0 } }}
 
         // initial={{scale: 0, transition: {duration: 2, delay: 1.02}}}
         // animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
@@ -66,9 +66,9 @@ export const Profile = () => {
             <b>Allow me to Introduce myself..</b>
           </h1>
           <ul className="toggleBtns">
-            <li className="subtitle"><button onClick={changeIndex1} style={{color: color1}}>Chapter I</button></li>
-            <li className="subtitle"><button onClick={changeIndex2}  style={{color: color2}}>Chapter II</button></li>
-            <li className="subtitle"><button onClick={changeIndex3}  style={{color: color3}}>Chapter III</button></li> 
+            <li className="chapter1"><button onClick={changeIndex1} style={{color: color1}}>Chapter I</button></li>
+            <li className="chapter2"><button onClick={changeIndex2}  style={{color: color2}}>Chapter II</button></li>
+            <li className="chapter3"><button onClick={changeIndex3}  style={{color: color3}}>Chapter III</button></li> 
           </ul>
         </div>
 
@@ -84,7 +84,7 @@ export const Profile = () => {
                         opacity: 1,
                         transition: {
                           delay: 1.3,
-                          duration: 1
+                          duration: 0.7
                         }
                       }}
                       exit={{
@@ -257,8 +257,8 @@ export const Profile = () => {
                         x: 240,
                         opacity: 1,
                         transition: {
-                          delay: 2.6,
-                          duration: 1
+                          delay: 2,
+                          duration: 0.7
                         }
                       }}
                       exit={{
@@ -283,8 +283,8 @@ export const Profile = () => {
               x: 240,
               opacity: 1,
               transition: {
-                delay: 3.9,
-                duration: 1
+                delay: 2.7,
+                duration: 0.7
               }
             }}
             exit={{
