@@ -26,7 +26,7 @@ export const Footer = () => {
         >
           vecteezy.com
         </a>
-        
+        </div>
         <div
           class="sub"
           id="footerQuery"
@@ -73,7 +73,7 @@ export const Footer = () => {
             />
           </a>
         </div>
-      </div>
+
     </div>
   );
 };

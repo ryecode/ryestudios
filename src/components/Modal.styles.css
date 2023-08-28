@@ -67,15 +67,15 @@
 
 .modal__close2 {
   position: absolute;
-  top: 9em;
+  top: 8em;
   right: 8em;
   color: #38f9d7;
   text-decoration: none;
   font-family: 'Poppins';
-  font-size: 0.75em;
+  font-size: 0.85em;
   font-weight: 800;
   width: 7em;
-  height: 6em;
+  height: 5.35em;
   padding: 0;
   background-image: linear-gradient(19deg, #21D4FD 0%, #3f21ff 100%);
 }
@@ -126,7 +126,7 @@
 
   .modalPointer img {
     width: 30%;
-    transform: translateX(12em);
+    transform: translateX(10.5em);
     margin-top: -13em;
   }
 

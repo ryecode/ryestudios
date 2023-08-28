@@ -189,6 +189,11 @@
   .menu>li:not(:last-child) {
     border-bottom: 5px solid #444;
   }
+
+  .top-nav {
+    width: 101%;
+  }
+
 }
 
 

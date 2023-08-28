@@ -12,7 +12,7 @@ export const ChangeUserName = () => {
         <h6>
           Greetings Guest,
           <br />
-          please enter your name..
+          may I know your name please?
         </h6>
         <input
           onChange={(event) => {

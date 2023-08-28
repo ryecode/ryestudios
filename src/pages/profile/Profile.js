@@ -69,7 +69,7 @@ export const Profile = () => {
                 textShadow: "2px 2px black",
               }}
             >
-              <b>Allow me to Introduce myself..</b>
+              <b>Allow me to introduce myself..</b>
             </h1>
             <ul className="toggleBtns">
               <li className="chapter1">
@@ -340,7 +340,8 @@ export const Profile = () => {
             <p id="qoute">
               <i>
                 <q>
-                  When you love coding, it's not considered hard work. <br/>I call it fun!
+                  When you love coding, it's not considered hard work. <br />I
+                  call it fun!
                 </q>
               </i>
             </p>
@@ -354,7 +355,11 @@ export const Profile = () => {
                   src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
                   alt="certificate"
                   width={"90%"}
-                  style={{margin:'1em'}}
+                  style={{
+                    margin: "1em",
+                    boxShadow:
+                      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  }}
                 />
               </a>
             </p>
