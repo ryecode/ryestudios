@@ -86,8 +86,8 @@
   background: -webkit-radial-gradient(circle, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   background: radial-gradient(circle, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
-  width: 450px;
-  height: 610px;
+  width: 25em;
+  height: 37.98em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,8 +107,8 @@
   background: -webkit-linear-gradient(to right, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   background: linear-gradient(to right, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
-  width: 450px;
-  height: 610px;
+  width: 25em;
+  height: 37.98em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,8 +126,8 @@
   caret-color: transparent;
   background: linear-gradient(to top, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
-  width: 450px;
-  height: 610px;
+  width: 25em;
+  height: 37.98em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +138,6 @@
   transform: translateX(15em);
   position: absolute;
   opacity: 1;
-
 }
 
 
@@ -160,17 +159,16 @@
 
 
   .details-container {
-    margin-left: -30.5em;
-    margin-top: 15.9em;
-    padding: 0 0 1em 0;
+    margin-left: -28em;
+    margin-top: 15em;
+    padding: 1em 0 1em 0;
     width: 90%;
-    font-size: 0.93em;
   }
 
   .skills-container {
     margin-left: -28em;
     margin-top: 15em;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     width: 90%;
   }
 
@@ -214,10 +212,10 @@
 
 
 .profileImage {
-  width: 200px;
-  height: 200px;
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
-  margin: 10px;
+  margin: 1.5em 1em 1em 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -259,22 +257,22 @@
 
 #role {
   font-size: 1em;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   color: rgb(61, 211, 245);
   text-shadow: 0 0 1 #000000;
   caret-color: transparent;
 }
 
 #qoute {
-  font-size: 0.75em;
+  font-size: 0.7em;
   color: white;
   caret-color: transparent;
 }
 
 #aboutMe {
   margin: 0;
-  padding: 0;
-  font-size: 0.8em;
+  padding: 1em;
+  font-size: 0.7em;
   letter-spacing: 0.15em;
   color: white;
   overflow-y: auto;
@@ -283,7 +281,7 @@
 
 
 .skillButtons {
-  margin: 0 1em 1em 1em;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -295,9 +293,10 @@
 .skillButtons li {
   position: relative;
   list-style: none;
-  width: 8.45em;
+  width: 8em;
   height: 4em;
   margin: 0;
+  padding: 0;
   border-radius: 25px;
   box-sizing: border-box;
   caret-color: transparent;
@@ -337,7 +336,7 @@
   text-align: center;
   color: #000;
   background: #000;
-  font-size: 0.65em;
+  font-size: 0.55em;
   border-radius: 25px;
   line-height: 50px;
   text-decoration: none;

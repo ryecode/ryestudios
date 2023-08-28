@@ -340,7 +340,7 @@ export const Profile = () => {
             <p id="qoute">
               <i>
                 <q>
-                  When you love coding, it's not considered work. I call it fun!
+                  When you love coding, it's not considered hard work. <br/>I call it fun!
                 </q>
               </i>
             </p>
@@ -354,6 +354,7 @@ export const Profile = () => {
                   src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
                   alt="certificate"
                   width={"90%"}
+                  style={{margin:'1em'}}
                 />
               </a>
             </p>
