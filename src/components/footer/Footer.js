@@ -1,9 +1,10 @@
 import React from "react";
 import "./Footer.styles.css";
+import "../../global.css";
 
 export const Footer = () => {
   return (
-    <div className="footer" >
+    <div className="footer fixed-bottom" >
       <button class="btn">
         <span class="words">© RYAN CORRAL 2023</span>
       </button>

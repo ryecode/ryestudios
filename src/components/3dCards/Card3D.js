@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card3D.style.css";
+import "../../global.css";
 
 
 const Card3D = () => {

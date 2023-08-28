@@ -3,6 +3,7 @@ import "./Profile.styles.css";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { AppContext } from "../../App";
+import "../../global.css";
 
 import { AccordionComponent } from "../../components/Accordion";
 
@@ -73,7 +74,7 @@ export const Profile = () => {
 
           <motion.div className="skills-container" id="pCardSkills"
                       initial={{
-                        y: -700,
+                        y: -150,
                         x: 240,
                         opacity: 0
                       }}
@@ -249,7 +250,7 @@ export const Profile = () => {
           
           <motion.div className="details-container" id="pCardDetails"
                       initial={{
-                        x: 700,
+                        x: 500,
                         opacity: 0
                       }}
                       animate={{
@@ -275,7 +276,7 @@ export const Profile = () => {
 
           <motion.div className="header-container"
             initial={{
-              x: -200,
+              x: -100,
               opacity: 0
             }}
             animate={{

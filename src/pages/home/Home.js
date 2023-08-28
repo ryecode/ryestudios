@@ -4,8 +4,9 @@ import videoBG from "../../assets/videoBG.mp4";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { AppContext } from "../../App";
-import { ChangeUserName } from "../../components/ChangeUserName"
-import '../../components/Modal.styles.css'
+import { ChangeUserName } from "../../components/ChangeUserName";
+import '../../components/Modal.styles.css';
+import "../../global.css";
 
 export const Home = () => {
   const { userName } = useContext(AppContext);

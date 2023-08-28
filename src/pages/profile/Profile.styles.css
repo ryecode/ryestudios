@@ -6,13 +6,14 @@
 }
 
 .profileBody {
-  margin-top: 2em;
-  padding: 5em 0 15em 0;
+
+  padding: 3em 0 5em 0;
   width: 100%;
-  height: 115vh;
+  height: 100vh;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profTitle {
@@ -159,8 +160,10 @@
   .profileCard {
     display: inline-flex;
     flex-direction: column;
-    margin-top: 0.1em;
+    margin: 3em 0 3em 0;
     width: 100%;
+    transform: translateY(1em);
+    
   }
 
 

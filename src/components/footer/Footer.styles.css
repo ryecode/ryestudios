@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .footer {
-  background-image: linear-gradient(to right bottom, #000000, #050101, #090301, #0a0600, #090900, #0d1100, #0d1802, #091e08, #0a290b, #09340b, #093f09, #0b4b04);
+  background: linear-gradient(to right bottom, #000000, #050101, #090301, #0a0600, #090900, #0d1100, #0d1802, #091e08, #0a290b, #09340b, #093f09, #0b4b04);
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0.5em 0 1em 1em;
-  position: absolute;
+  position: relative;
+  height: 100%;
 }
 
 .btn {
@@ -168,7 +169,7 @@
   text-align: left;
   color: rgb(218, 227, 235);
   opacity: 1;
-  margin: 2em 0 1em -45em;
+  margin: 2.75em 0 0 -45em;
   display: inline-block;
 }
 
@@ -221,7 +222,6 @@
 
   .footer {
     height: 10em;
-    transform: translateY(-4em);
   }
 
 
