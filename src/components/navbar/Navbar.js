@@ -3,7 +3,6 @@ import "./Navbar.styles.css";
 import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
-
   return (
     <>
       <div>
@@ -39,16 +38,28 @@ export const Navbar = () => {
           </label>
           <ul className="menu">
             <li className="nav-item neon-button1">
-              <NavLink className="nav-link" to="/"> Home </NavLink>
+              <NavLink className="nav-link" to="/">
+                {" "}
+                Home{" "}
+              </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <NavLink  className="nav-link" to="/profile"> Profile </NavLink>
+              <NavLink className="nav-link" to="/profile">
+                {" "}
+                Profile{" "}
+              </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <NavLink  className="nav-link" to="/project"> Projects </NavLink>
+              <NavLink className="nav-link" to="/project">
+                {" "}
+                Projects{" "}
+              </NavLink>
             </li>
             <li className="nav-item neon-button1">
-              <NavLink  className="nav-link" to="/contact"> Contact </NavLink>
+              <NavLink className="nav-link" to="/contact">
+                {" "}
+                Contact{" "}
+              </NavLink>
             </li>
           </ul>
         </nav>

@@ -35,9 +35,7 @@
 }
 
 .galaxyBackground {
-  /* animation: scale 2s ease calc(var(--typewriterSpeed) + 0.5s) forwards; */
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/contactWallpaper.jpg");
-
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;

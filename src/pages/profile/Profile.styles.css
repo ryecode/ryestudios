@@ -16,44 +16,6 @@
   background-position: center;
 }
 
-.profTitle {
-  position: relative;
-  text-align: left;
-  caret-color: transparent;
-}
-
-.profTitle::before,
-.profTitle::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.profTitle1::before,
-.profTitle1::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.profTitle::before {
-  background: rgb(91, 196, 73);
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
-  border-radius: 5px;
-}
-
-.profTitle1::before {
-  background: rgb(31, 194, 2);
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
-  border-radius: 5px;
-}
-
 #profileTitle {
   display: flex;
   justify-content: left;
@@ -80,35 +42,31 @@
 #title1 {
   font-size: 1rem;
   caret-color: transparent;
-    opacity: 0;
+  opacity: 0;
   transform: translateY(-2rem);
-  animation: fadeInY 0.5s ease-in
-  3.4s forwards;
+  animation: fadeInY 0.5s ease-in 3.4s forwards;
 }
 
 .chapter1 {
   opacity: 0;
   transform: translateY(-2rem);
-  animation: fadeInY 0.5s ease-in
-  3.9s forwards;
+  animation: fadeInY 0.5s ease-in 3.9s forwards;
   margin-top: 2px;
-  }
+}
 
-  .chapter2 {
-    opacity: 0;
-    transform: translateY(-2rem);
-    animation: fadeInY 0.5s ease-in 
-    4.4s forwards;
-    margin-top: 2px;
-    }
+.chapter2 {
+  opacity: 0;
+  transform: translateY(-2rem);
+  animation: fadeInY 0.5s ease-in 4.4s forwards;
+  margin-top: 2px;
+}
 
-    .chapter3 {
-      opacity: 0;
-      transform: translateY(-2rem);
-      animation: fadeInY 0.5s ease-in
-      4.9s forwards;
-      margin-top: 2px;
-      }
+.chapter3 {
+  opacity: 0;
+  transform: translateY(-2rem);
+  animation: fadeInY 0.5s ease-in 4.9s forwards;
+  margin-top: 2px;
+}
 
 .profileCard {
   margin: 0;
@@ -116,11 +74,11 @@
   height: 100vh;
   background: transparent;
   border: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 6em 0 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 6em 0 3em 0;
 }
 
 .header-container {
@@ -185,19 +143,19 @@
 
 
 @media only screen and (max-width: 770px) {
-.profileBody {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
+  .profileBody {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
 
   .profileCard {
     display: flex;
     flex-direction: column;
-    margin:0;
+    margin: 0;
     width: 100%;
     transform: translateY(-1em);
-    
+
   }
 
 
@@ -280,7 +238,7 @@
 
 
 .gradienttext {
-  background-image: linear-gradient(to top, #0077ff 0%, #041bb4 50%,  #014b9f  100%);
+  background-image: linear-gradient(to top, #0077ff 0%, #041bb4 50%, #014b9f 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -290,7 +248,7 @@
 }
 
 .gradientUser {
-  background-image: linear-gradient(to top, #d4e302 0%, #e6edaa 50%,  #d4e302  100%);
+  background-image: linear-gradient(to top, #d4e302 0%, #e6edaa 50%, #d4e302 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

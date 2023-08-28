@@ -5,7 +5,7 @@
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0.5em 0 1em 1em;
+  padding: 0 0 1.5em 1em;
   position: relative;
   height: 100%;
 }
@@ -171,11 +171,13 @@
   opacity: 1;
   margin: 2.75em 0 0 -45em;
   display: inline-block;
+  pointer-events: none;
 }
 
 .credit a {
   text-decoration: none;
   color: rgb(16, 137, 0);
+  pointer-events: all;
 }
 
 .sub {
@@ -185,7 +187,7 @@
   background: transparent;
   border: none;
   margin-left: -41em;
-  z-index: 1;
+  z-index: 2;
   pointer-events: all;
   margin-top: -4em;
   position: absolute;

@@ -1,21 +1,15 @@
 :root {
-    --container-bg: radial-gradient(
-        circle,
-        rgb(68, 68, 68) 0%,
-        rgb(22, 22, 22) 100%
-    );
+    --container-bg: radial-gradient(circle,
+            rgb(68, 68, 68) 0%,
+            rgb(22, 22, 22) 100%);
     --card-bg-bg: #07040e;
-    --card-cta-bg: radial-gradient(
-        circle,
-        rgba(100, 47, 210, 1) 0%,
-        rgba(37, 17, 92, 1) 100%
-    );
-    --card-fg-bg: radial-gradient(
-        circle,
-        rgba(39, 105, 210, 0.95) 0%,
-        rgba(13, 16, 39, 0.95) 50%,
-        rgba(11, 11, 36, 0.95) 100%
-    ); 
+    --card-cta-bg: radial-gradient(circle,
+            rgba(100, 47, 210, 1) 0%,
+            rgba(37, 17, 92, 1) 100%);
+    --card-fg-bg: radial-gradient(circle,
+            rgba(39, 105, 210, 0.95) 0%,
+            rgba(13, 16, 39, 0.95) 50%,
+            rgba(11, 11, 36, 0.95) 100%);
     --card-bg-border: rgba(67, 155, 62, 0.483);
     --card-cta-border: rgba(82, 62, 155, 0.5);
     --card-fg-border: rgba(67, 155, 62, 0.483);
@@ -166,22 +160,31 @@ p {
     margin-top: 335px;
 }
 
-
+.card-image {
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
 
 @media(max-width: 770px) {
-
     .container {
         padding: 10em;
         height: 100%;
     }
+
     .projects {
         flex-direction: column;
         margin: 0;
         padding: 0;
     }
+
     .cardContainer {
         padding: 10em 0em 10em 0em;
     }
+
     .card-fg {
         pointer-events: none;
     }

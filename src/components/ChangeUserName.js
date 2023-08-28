@@ -25,7 +25,7 @@ export const ChangeUserName = () => {
             background: "#c1bebe",
             borderRadius: "50px",
             borderColor: "green",
-            width: "65%"
+            width: "65%",
           }}
         />
         <br />
@@ -45,7 +45,10 @@ export const ChangeUserName = () => {
           <div class="modal__content">
             <h1>
               Hi{""}{" "}
-              <span className="gradientUser" style={{textTransform: "uppercase" }}>
+              <span
+                className="gradientUser"
+                style={{ textTransform: "uppercase" }}
+              >
                 {userName}
               </span>
               !

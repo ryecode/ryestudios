@@ -2,9 +2,7 @@ import React from "react";
 import "./Card3D.style.css";
 import "../../global.css";
 
-
 const Card3D = () => {
-
   return (
     <>
       <div>
@@ -123,19 +121,11 @@ const Card3D = () => {
                 src="https://ryecode.github.io/portfolio/ImageBank/RyeStudiosSS.jpeg"
                 alt="website screenshot"
               />
-              {/* <p className='case-study'>Etiket.com</p>
-                    <p className='review'>
-                        sit esse et et amet pariatur Lorem Lorem proident voluptate do quis magna laboris sit voluptate et dolor nulla nisi minim amet laborum aliquip do
-                    </p>
-                    <div className='logo'>
-                        <img src='https://ryecode.github.io/portfolio/ImageBank/RYELogoBLackSphere.png' alt='logo' />
-                    </div> */}
             </div>
             <div className="detailButton">
               <button>DETAILS</button>
             </div>
           </div>
-          
         </div>
       </div>
     </>

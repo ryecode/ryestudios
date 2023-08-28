@@ -4,98 +4,118 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 
-
 import { AccordionComponent } from "../../components/Accordion";
 
 export const Profile = () => {
-
-  const {userName} = useContext(AppContext);
+  const { userName } = useContext(AppContext);
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [index3, setIndex3] = useState(0);
-  const [color1, setColor1] = useState('hsl(113, 100%, 86%)');
+  const [color1, setColor1] = useState("hsl(113, 100%, 86%)");
   const [color2, setColor2] = useState(0);
   const [color3, setColor3] = useState(0);
   const changeIndex1 = () => {
-    setIndex1(1)
-    setIndex2(0)
-    setIndex3(0)
-    setColor1('hsl(113, 100%, 86%)')
-    setColor2('hsl(126, 65%, 62%)')
-    setColor3('hsl(126, 65%, 62%)')
-  }
+    setIndex1(1);
+    setIndex2(0);
+    setIndex3(0);
+    setColor1("hsl(113, 100%, 86%)");
+    setColor2("hsl(126, 65%, 62%)");
+    setColor3("hsl(126, 65%, 62%)");
+  };
   const changeIndex2 = () => {
-    setIndex1(0)
-    setIndex2(1)
-    setIndex3(0)
-    setColor1('hsl(126, 65%, 62%)')
-    setColor2('hsl(113, 100%, 86%)')
-    setColor3('hsl(126, 65%, 62%)')
-  }
+    setIndex1(0);
+    setIndex2(1);
+    setIndex3(0);
+    setColor1("hsl(126, 65%, 62%)");
+    setColor2("hsl(113, 100%, 86%)");
+    setColor3("hsl(126, 65%, 62%)");
+  };
   const changeIndex3 = () => {
-    setIndex1(0)
-    setIndex2(0)
-    setIndex3(1)
-    setColor1('hsl(126, 65%, 62%)')
-    setColor2('hsl(126, 65%, 62%)')
-    setColor3('hsl(113, 100%, 86%)')
-  }
+    setIndex1(0);
+    setIndex2(0);
+    setIndex3(1);
+    setColor1("hsl(126, 65%, 62%)");
+    setColor2("hsl(126, 65%, 62%)");
+    setColor3("hsl(113, 100%, 86%)");
+  };
 
   return (
     <>
-      <motion.div className="profileBody"
-        // initial={{ height: "100%" }}
-        // animate={{ height: "100%" }}
-        // exit={{ y: "-100%", transition: {duration: 0.6, delay: 0.1 } }}
-
+      <motion.div
+        className="profileBody"
         initial={{ opacity: 0, transition: { duration: 1, delay: 0 } }}
         animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
         exit={{ opacity: 0, transition: { duration: 0.5, delay: 0.5 } }}
-
-        // initial={{scale: 0, transition: {duration: 2, delay: 1.02}}}
-        // animate={{scale: 1, transition: {duration: 1, delay: 0.2}}}
-        // exit={{scale: 0, transition: {duration: 1, delay: 0.2}}}
       >
-
         <div className="profileCard">
-        <div id="profileTitle">
+          <div id="profileTitle">
             <h1 id="title">
-            <b>Hello{""} <span className="gradientUser" style={{textTransform: "uppercase", textShadow: 'none'}}>{userName}</span>{""} !</b>
-          </h1>
-          <h1 className="subtitle" id="title1" style={{color:'hsl(126, 65%, 62%)', textShadow: '2px 2px black'}}>
-            <b>Allow me to Introduce myself..</b>
-          </h1>
-          <ul className="toggleBtns">
-            <li className="chapter1"><button onClick={changeIndex1} style={{color: color1}}>Chapter I</button></li>
-            <li className="chapter2"><button onClick={changeIndex2}  style={{color: color2}}>Chapter II</button></li>
-            <li className="chapter3"><button onClick={changeIndex3}  style={{color: color3}}>Chapter III</button></li> 
-          </ul>
-        </div>
+              <b>
+                Hello{""}{" "}
+                <span
+                  className="gradientUser"
+                  style={{ textTransform: "uppercase", textShadow: "none" }}
+                >
+                  {userName}
+                </span>
+                {""} !
+              </b>
+            </h1>
+            <h1
+              className="subtitle"
+              id="title1"
+              style={{
+                color: "hsl(126, 65%, 62%)",
+                textShadow: "2px 2px black",
+              }}
+            >
+              <b>Allow me to Introduce myself..</b>
+            </h1>
+            <ul className="toggleBtns">
+              <li className="chapter1">
+                <button onClick={changeIndex1} style={{ color: color1 }}>
+                  Chapter I
+                </button>
+              </li>
+              <li className="chapter2">
+                <button onClick={changeIndex2} style={{ color: color2 }}>
+                  Chapter II
+                </button>
+              </li>
+              <li className="chapter3">
+                <button onClick={changeIndex3} style={{ color: color3 }}>
+                  Chapter III
+                </button>
+              </li>
+            </ul>
+          </div>
 
-          <motion.div className="skills-container" id="pCardSkills"
-                      initial={{
-                        y: -150,
-                        x: 240,
-                        opacity: 0
-                      }}
-                      animate={{
-                        y: 1,
-                        x: 240,
-                        opacity: 1,
-                        transition: {
-                          delay: 1.3,
-                          duration: 0.7
-                        }
-                      }}
-                      exit={{
-                        y: -150,
-                        x: 240,
-                        opacity: 0,
-                        transition: {
-                          duration: 0.5
-                        }
-                      }}
-                      style={{zIndex: index3}}
+          <motion.div
+            className="skills-container"
+            id="pCardSkills"
+            initial={{
+              y: -150,
+              x: 240,
+              opacity: 0,
+            }}
+            animate={{
+              y: 1,
+              x: 240,
+              opacity: 1,
+              transition: {
+                delay: 1.3,
+                duration: 0.7,
+              },
+            }}
+            exit={{
+              y: -150,
+              x: 240,
+              opacity: 0,
+              transition: {
+                duration: 0.5,
+              },
+            }}
+            style={{ zIndex: index3 }}
           >
             <h3 id="h3" className="gradienttext">
               Programming Skills
@@ -252,28 +272,30 @@ export const Profile = () => {
               </ul>
             </div>
           </motion.div>
-          
-          <motion.div className="details-container" id="pCardDetails"
-                      initial={{
-                        x: 500,
-                        opacity: 0
-                      }}
-                      animate={{
-                        x: 240,
-                        opacity: 1,
-                        transition: {
-                          delay: 2,
-                          duration: 0.7
-                        }
-                      }}
-                      exit={{
-                        x: 500,
-                        opacity: 0,
-                        transition: {
-                          duration: 0.5
-                        }
-                      }}
-                      style={{zIndex: index2}}
+
+          <motion.div
+            className="details-container"
+            id="pCardDetails"
+            initial={{
+              x: 500,
+              opacity: 0,
+            }}
+            animate={{
+              x: 240,
+              opacity: 1,
+              transition: {
+                delay: 2,
+                duration: 0.7,
+              },
+            }}
+            exit={{
+              x: 500,
+              opacity: 0,
+              transition: {
+                duration: 0.5,
+              },
+            }}
+            style={{ zIndex: index2 }}
           >
             <h3 id="h3" className="gradienttext">
               Profile Details
@@ -283,28 +305,29 @@ export const Profile = () => {
             </div>
           </motion.div>
 
-          <motion.div className="header-container"
+          <motion.div
+            className="header-container"
             initial={{
               x: -100,
-              opacity: 0
+              opacity: 0,
             }}
             animate={{
               x: 240,
               opacity: 1,
               transition: {
                 delay: 2.7,
-                duration: 0.7
-              }
+                duration: 0.7,
+              },
             }}
             exit={{
               x: -100,
               opacity: 0,
               transition: {
-                duration: 0.5
-              }
+                duration: 0.5,
+              },
             }}
-            style={{zIndex: index1}}
-            >
+            style={{ zIndex: index1 }}
+          >
             <img
               className="profileImage"
               src="https://ryecode.github.io/portfolio/ImageBank/RyeFormal3.png"
@@ -316,7 +339,9 @@ export const Profile = () => {
             <p id="role">Full-Stack Web Developer</p>
             <p id="qoute">
               <i>
-              <q>When you love coding, it's not considered work. I call it fun!</q>
+                <q>
+                  When you love coding, it's not considered work. I call it fun!
+                </q>
               </i>
             </p>
             <p>
@@ -333,7 +358,6 @@ export const Profile = () => {
               </a>
             </p>
           </motion.div>
-
         </div>
       </motion.div>
     </>
