@@ -1,45 +1,163 @@
-#contactCardQuery {
-  height: 350px;
+.bodyContact {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  animation: crashRight 3s ease-in calc(var(--typewriterSpeed) + 1.1s) forwards;
-  animation-iteration-count: initial;
-  transform: translateX(120%);
-  z-index: 1;
-  margin-top: 0px;
-  border: 5px hsl(112, 100%, 50%);
-  border-style: ridge;
-}
-
-#cardQuery {
-  text-align: center;
-  margin-top: 35px;
-  width: 80%;
-  z-index: 1;
-  opacity: 1;
+  height: 100vh;
+  background: url("https://ryecode.github.io/portfolio/ImageBank/heroBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #tilter {
-  animation: crashLeft 3s ease-in calc(var(--typewriterSpeed) + 1s) forwards;
+  animation: scale 1s ease-in calc(var(--typewriterSpeed) + 1s) forwards;
   animation-iteration-count: initial;
   text-align: center;
-  transform: translateX(-110%);
   z-index: 1;
+  margin-top: 0;
+  opacity: 0;
 }
 
 #rowDaw {
-  margin: 0em 5px 0px 0;
-  padding: 5em;
+  margin: 0;
+  padding: 0;
   color: aliceblue;
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
-.galaxyBackground {
-  background-image: url("https://ryecode.github.io/portfolio/ImageBank/contactWallpaper.jpg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#heroBox {
+  margin: 0;
+}
+
+
+
+/* TILT BOX EFFECT */
+
+.tilt-box-wrap {
+  width: 90%;
+  height: 400px;
   position: relative;
-  background-color: aquamarine;
+  perspective: 1000px;
+  caret-color: transparent;
+
+}
+
+.tilt-box-wrap:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+
+.tilt-box {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  transition: all 0.6s ease-out;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin-left: 30px;
+  padding: 0.2em;
+  caret-color: transparent;
+}
+
+.tilt-box strong {
+  transform: translateZ(40px);
+}
+
+.t_over {
+  width: 33.333%;
+  height: 33.333%;
+  position: absolute;
+  z-index: 1;
+}
+
+.t_over:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.t_over:nth-child(2) {
+  left: 33.333%;
+  top: 0;
+}
+
+.t_over:nth-child(3) {
+  left: 66.666%;
+  top: 0;
+}
+
+.t_over:nth-child(4) {
+  left: 0;
+  top: 33.333%;
+}
+
+.t_over:nth-child(5) {
+  left: 33.333%;
+  top: 33.333%;
+}
+
+.t_over:nth-child(6) {
+  left: 66.666%;
+  top: 66.666%;
+}
+
+.t_over:nth-child(7) {
+  left: 0;
+  top: 66.666%;
+}
+
+.t_over:nth-child(8) {
+  left: 33.333%;
+  top: 66.666%;
+}
+
+.t_over:nth-child(9) {
+  left: 66.666%;
+  top: 66.666%;
+}
+
+.t_over:nth-child(1):hover~.tilt-box {
+  transform: rotateX(-20deg) rotateY(20deg);
+}
+
+.t_over:nth-child(2):hover~.tilt-box {
+  transform: rotateX(-20deg) rotateY(0deg);
+}
+
+.t_over:nth-child(3):hover~.tilt-box {
+  transform: rotateX(-20deg) rotateY(-20deg);
+}
+
+.t_over:nth-child(4):hover~.tilt-box {
+  transform: rotateX(0deg) rotateY(20deg);
+}
+
+.t_over:nth-child(5):hover~.tilt-box {
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+.t_over:nth-child(6):hover~.tilt-box {
+  transform: rotateX(0deg) rotateY(-20deg);
+}
+
+.t_over:nth-child(7):hover~.tilt-box {
+  transform: rotateX(20deg) rotateY(20deg);
+}
+
+.t_over:nth-child(8):hover~.tilt-box {
+  transform: rotateX(20deg) rotateY(0deg);
+}
+
+.t_over:nth-child(9):hover~.tilt-box {
+  transform: rotateX(20deg) rotateY(-20deg);
 }

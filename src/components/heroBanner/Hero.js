@@ -4,11 +4,11 @@ import "./Hero.styles.css";
 export const Hero = () => {
   return (
     <div class="hero-image">
-      <img
+      {/* <img
         class="hero-bg"
         src="https://ryecode.github.io/portfolio/ImageBank/heroBG.jpg"
         alt="Hero BG"
-      />
+      /> */}
       <div class="hero-text">
         <h1 class="hero-title">
           <b>I'am Ryan Corral</b>

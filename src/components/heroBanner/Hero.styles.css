@@ -1,12 +1,12 @@
 #resumeBtn {
   text-decoration: none;
   text-shadow: none;
-  color: hsl(51, 97%, 44%);
+  color: hsl(0, 97%, 44%);
   z-index: 2;
 }
 
 #resumeBtn:hover {
-  color: hsl(51, 97%, 44%);
+  color: hsl(0, 97%, 44%);
 }
 
 .hero-image {
@@ -14,9 +14,7 @@
   position: absolute;
   width: 100%;
   box-sizing: border-box;
-  margin-top: -1em;
-  margin-bottom: 1em;
-  height: 250px;
+  height: 220px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,11 +26,12 @@
   font-weight: bolder;
   position: relative;
   font-family: 'Montaga', serif;
-  position: relative;
   width: max-content;
-  color: hsl(218, 98%, 60%);
+  color: hsl(233, 95%, 56%);
   font-weight: 400;
   letter-spacing: 3px;
+  text-shadow: 1px 1px #2da4c2;
+  padding-top: 2em;
 }
 
 .hero-title::before,
@@ -48,12 +47,15 @@
 .hero-title::before {
   background-color: black;
   height: 1.25em;
+  margin-top: 2em;
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards;
 }
 
 .hero-title::after {
   width: 0.25em;
-  background: hsl(218, 98%, 60%);
+  height: 1.25em;
+  margin-top: 2em;
+  background: hsl(233, 95%, 56%);
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
 }
 

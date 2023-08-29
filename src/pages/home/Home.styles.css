@@ -50,7 +50,7 @@ video {
 }
 
 #askName button {
-    color: #3367f8;
+    color: hsl(233, 95%, 56%);
     text-shadow: none;
 }
 
@@ -65,11 +65,10 @@ video {
     padding: 1em;
     caret-color: transparent;
     font-family: 'Luckiest guy', cursive;
-    background-image: linear-gradient(to top, #02e328 0%, #aaedca 50%, #02e328 100%);
+    background-image: linear-gradient(to top, #047216 0%, #aaedca 50%, #047216 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 0 1 1 #011108;
     caret-color: transparent;
 }
 

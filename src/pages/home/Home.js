@@ -16,7 +16,7 @@ export const Home = () => {
       className="overlay"
       initial={{ scale: 0, transition: { duration: 1, delay: 0 } }}
       animate={{ scale: 1, transition: { duration: 0.75, delay: 1.5 } }}
-      exit={{ scale: 0, transition: { duration: 0.5, delay: 0.75 } }}
+      exit={{ scale: 0, transition: { duration: 0.75, delay: 0.75 } }}
     >
       <video
         src={videoBG}
@@ -32,7 +32,7 @@ export const Home = () => {
         <motion.div class="hero-image" id="heroHome"
           exit={{ x: "-100vw", scale:'0', transition: { duration: 0.75, delay: 0 } }}
         >
-          <div class="hero-text">
+          <div class="hero-text" style={{marginTop:'-2em'}}>
             <h1 class="hero-title">
               <b>I'am Ryan Corral</b>
             </h1>
