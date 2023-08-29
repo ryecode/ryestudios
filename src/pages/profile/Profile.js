@@ -112,7 +112,7 @@ export const Profile = () => {
               x: 240,
               opacity: 0,
               transition: {
-                duration: 0.75,
+                duration: 0.5,
               },
             }}
             style={{ zIndex: index3 }}
@@ -292,7 +292,7 @@ export const Profile = () => {
               x: 500,
               opacity: 0,
               transition: {
-                duration: 0.75,
+                duration: 0.5,
               },
             }}
             style={{ zIndex: index2 }}
@@ -323,7 +323,7 @@ export const Profile = () => {
               x: -100,
               opacity: 0,
               transition: {
-                duration: 0.75,
+                duration: 0.5,
               },
             }}
             style={{ zIndex: index1 }}

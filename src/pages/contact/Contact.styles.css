@@ -10,7 +10,7 @@
 }
 
 #tilter {
-  animation: scale 1s ease-in calc(var(--typewriterSpeed) + 1s) forwards;
+  animation: scale 1s ease-in calc(var(--typewriterSpeed) + 3s) forwards;
   animation-iteration-count: initial;
   text-align: center;
   z-index: 1;
@@ -19,7 +19,7 @@
 }
 
 #rowDaw {
-  margin: 0;
+  margin: 1em 0 0 0;
   padding: 0;
   color: aliceblue;
   display: flex;
@@ -32,6 +32,63 @@
   margin: 0;
 }
 
+.callingCardImage {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 1.5em 1em 1em 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  transform: translate(-17em, -11em);
+}
+
+.callingCardName {
+  background-image: radial-gradient(circle, #785802, #906a02, #a87c03, #c18e03, #dba104, #dba104, #dba104, #dba104, #c18e03, #a87c03, #906a02, #785802);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Poppins', cursive;
+  position: absolute;
+  transform: translate(-9em, 2em);
+  font-size: 2.5em;
+  font-weight: bold;
+  caret-color: transparent;
+  width: max-content;
+}
+
+#job {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: rgb(177, 211, 3);
+  text-shadow: 1px 1px #000000;
+  caret-color: transparent;
+  font-family: 'Poppins', cursive;
+  width: max-content;
+  position: absolute;
+  transform: translate(-16.5em, 5.5em);
+}
+
+#contactDetails {
+  font-size: 0.7em;
+  color: white;
+  caret-color: transparent;
+  text-shadow: 1px 1px black;
+  font-family: 'Poppins', cursive;
+  width: max-content;
+  position: absolute;
+  transform: translate(-60em, -12.5em);
+  text-transform: none;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    color: "white";
+    text-shadow: "1px 1px black";
+    opacity:'0';
+}
 
 
 /* TILT BOX EFFECT */
@@ -47,7 +104,7 @@
 
 .tilt-box-wrap:hover {
   transition: all 0.3s linear;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .tilt-box {
@@ -57,17 +114,18 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   color: #fff;
-  font-size: 90px;
+  font-size: 1em;
   text-transform: uppercase;
   transition: all 0.6s ease-out;
   perspective: 1000px;
   transform-style: preserve-3d;
   margin-left: 30px;
-  padding: 0.2em;
   caret-color: transparent;
+  border: 1px solid rgb(117, 100, 2);
+  box-shadow: -3px 3px rgb(71, 69, 1);
 }
 
 .tilt-box strong {
@@ -160,4 +218,44 @@
 
 .t_over:nth-child(9):hover~.tilt-box {
   transform: rotateX(20deg) rotateY(-20deg);
+}
+
+
+@media (max-width: 770px) {
+  .bodyContact {
+    overflow-y: scroll;
+  }
+
+
+
+  .tilt-box {
+    height: 70%;
+    width: 92%;
+    margin: 2em 0 0 1.75em;
+  }
+
+  .download {
+    margin-top: -2em;
+  }
+
+  .callingCardImage {
+    width: 5em;
+    height: 5em;
+    margin: 70px 0 0 160px;
+  }
+
+  #contactDetails {
+    font-size: 0.35em;
+    transform: translateX(-335px);
+    margin-top: -18em;
+  }
+
+  .callingCardName {
+    font-size: 1.5em;
+  }
+
+  #job {
+    font-size: 1em;
+  }
+
 }
