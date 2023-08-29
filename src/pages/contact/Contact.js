@@ -8,7 +8,7 @@ export const Contact = () => {
       class="galaxyBackground"
       style={{ marginTop: "2%" }}
       initial={{ x: "-100%", transition: { duration: 1, delay: 0 } }}
-      animate={{ x: "0%", transition: { duration: 1, delay: 1 } }}
+      animate={{ x: "0%", transition: { duration: 1, delay: 1.5 } }}
       exit={{ x: "110%", transition: { duration: 1, delay: 0 } }}
     >
       <div>

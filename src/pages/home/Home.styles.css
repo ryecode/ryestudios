@@ -36,14 +36,13 @@ video {
 
 #heroHome {
     position: relative;
-    margin: -7em 0 0 -35em;
+    margin: -10em 0 0 -35em;
     caret-color: transparent;
 }
 
 #askName {
     position: absolute;
-    margin: 0em -35em -23em 0;
-    animation: scale 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
+    margin: 0em -33em -19em 0;
     opacity: 0;
     padding: 2em;
     caret-color: transparent;
@@ -58,9 +57,9 @@ video {
 #greet {
     color: hsl(0, 0%, 0% / 0.7);
     font-size: 2.7em;
-    opacity: 0;
-    transform: translateY(-2em);
-    animation: fadeInY 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
+    opacity: 1;
+    /* transform: translateY(-2em); */
+    /* animation: fadeInY 1s ease calc(var(--typewriterSpeed) + 1s) forwards; */
     font-weight: 400;
     margin-top: -2em;
     padding: 1em;

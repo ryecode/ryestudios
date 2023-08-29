@@ -15,8 +15,8 @@ export const Home = () => {
     <motion.div
       className="overlay"
       initial={{ scale: 0, transition: { duration: 1, delay: 0 } }}
-      animate={{ scale: 1, transition: { duration: 1, delay: 1 } }}
-      exit={{ scale: 0, transition: { duration: 1, delay: 0 } }}
+      animate={{ scale: 1, transition: { duration: 0.75, delay: 1.5 } }}
+      exit={{ scale: 0, transition: { duration: 0.5, delay: 0.75 } }}
     >
       <video
         src={videoBG}
@@ -29,7 +29,9 @@ export const Home = () => {
       />
 
       <div className="content">
-        <div class="hero-image" id="heroHome">
+        <motion.div class="hero-image" id="heroHome"
+          exit={{ x: "-100vw", scale:'0', transition: { duration: 0.75, delay: 0 } }}
+        >
           <div class="hero-text">
             <h1 class="hero-title">
               <b>I'am Ryan Corral</b>
@@ -46,8 +48,12 @@ export const Home = () => {
               </a>
             </button>
           </div>
-        </div>
-        <div class="subtitle" id="greet">          
+        </motion.div>
+        <motion.div id="greet"
+              initial={{ y: "-100vh", opacity:'0', transition: { duration: 1, delay: 0 } }}
+              animate={{ y: "0%", opacity:'1', transition: {type:'spring', bounce:'0.65', duration: 1.25, delay: 6.3 } }}
+              exit={{ y: "-100vh", scale:'0', transition: { duration: 0.75, delay: 0 } }}
+        >          
             WELCOME{""}{" "}
             <span
               className="gradientUser"
@@ -57,7 +63,7 @@ export const Home = () => {
             </span>
             <br />
             To Rye Zone          
-        </div>
+        </motion.div>
         <ChangeUserName />
       </div>
     </motion.div>

@@ -48,13 +48,13 @@
 .hero-title::before {
   background-color: black;
   height: 1.25em;
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards;
 }
 
 .hero-title::after {
   width: 0.25em;
-  background: hsl(51, 97%, 44%);
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 1s forwards, blink 750ms steps(18) infinite;
+  background: hsl(218, 98%, 60%);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
 }
 
 .subtitle {
@@ -62,7 +62,7 @@
   font-size: 0.75em;
   opacity: 0;
   transform: translateY(-2rem);
-  animation: fadeInY 1s ease calc(var(--typewriterSpeed) + 0.5s) forwards;
+  animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
   color: hsl(0, 0%, 100%);
   font-weight: 400;
   margin-top: 2px;
@@ -114,7 +114,7 @@
   position: relative;
   font-weight: 700;
   opacity: 0;
-  animation: scale 0.75s ease-in-out calc(var(--typewriterSpeed) + 1s) forwards;
+  animation: scale 0.25s linear calc(var(--typewriterSpeed) + 2.75s) forwards;
 
   text-shadow:
     0 0 0.11em whitesmoke,
@@ -167,5 +167,4 @@
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
-
 }
