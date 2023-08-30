@@ -23,7 +23,7 @@ export const Contact = () => {
             transition: {
               type: "spring",
               bounce: "0.5",
-              duration: 0.75,
+              duration: 1,
               delay: 0,
             },
           }}
@@ -97,7 +97,7 @@ export const Contact = () => {
                 transition: {
                   type: "spring",
                   bounce: "0.5",
-                  duration: 0.75,
+                  duration: 1,
                   delay: 0,
                 },
               }}
@@ -110,7 +110,7 @@ export const Contact = () => {
               </span>
               Download Calling card&nbsp;
               <a
-                href="https://ryecode.github.io/portfolio/ImageBank/RyeCallingCard.png"
+                href="https://ryecode.github.io/portfolio/ImageBank/Ryan_Corral_WebDeveloper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textShadow: "none", color: "hsl(112, 100%, 50%)" }}

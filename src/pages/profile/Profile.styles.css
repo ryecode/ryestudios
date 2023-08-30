@@ -26,7 +26,7 @@
   width: fit-content;
   background: transparent;
   border: none;
-  transform: translate(-150%, -40%);
+  transform: translate(-80%, -40%);
   caret-color: transparent;
 }
 
@@ -165,14 +165,12 @@
 
 
 .gradienttext {
-  background-image: radial-gradient(circle, #0077ff, #0067f2, #0057e4, #0046d6, #0035c8, #0032c1, #0030b9, #002db2, #0037af, #003eab, #0045a5, #014b9f);
+  background-image: linear-gradient(to right bottom, #0f13f8, #1611f8, #1b0ef8, #1f0bf7, #2307f7, #240af7, #250df8, #260ff8, #2516fa, #241bfb, #2220fd, #2124fe);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 1 1 #85FFBD;
   caret-color: transparent;
-  font-family: 'Montaga', cursive;
-  text-shadow: 2px -1.5px rgb(17, 2, 189);
+  font-family: 'Carter One', 'Poppins';
 }
 
 .gradientUser {
@@ -403,7 +401,7 @@
   /* position: absolute; */
   font-size: larger;
   color: hsl(126, 65%, 62%);
-  padding: 0 0 0 0.8em;
+  padding: 0 0 0 1.1em;
   caret-color: transparent;
   text-shadow: 2px 2px black;
 }
@@ -436,21 +434,21 @@ ul li button {
 
 
   .details-container {
-    margin-left: -29em;
+    margin-left: -24em;
     margin-top: 15em;
     padding: 1em 0 1em 0;
     width: 90%;
   }
 
   .skills-container {
-    margin-left: -28em;
+    margin-left: -23em;
     margin-top: 15em;
-    padding: 1em 0 1em 0;
+    padding: 1em 1em 1em 1em;
     width: 90%;
   }
 
   .header-container {
-    margin-left: -28em;
+    margin-left: -23em;
     margin-top: 15em;
     padding: 1em;
     width: 90%;

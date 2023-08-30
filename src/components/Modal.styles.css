@@ -62,14 +62,14 @@
   text-align: center;
   color: white;
   text-decoration: none;
-  font-size: 0.6em;
+  font-size: 0.75em;
   letter-spacing: 1px;
 }
 
 .modal__close2 {
   position: absolute;
-  top: 8em;
-  right: 9.5em;
+  top: 8.5em;
+  right: 9em;
   color: #38f9d7;
   text-decoration: none;
   font-family: 'Poppins';
@@ -115,7 +115,7 @@
 .enterBtn {
   background-color: transparent;
   font-size: 1rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Carter One', sans-serif;
   color: var(--clr-neon);
   display: inline-block;
   cursor: pointer;

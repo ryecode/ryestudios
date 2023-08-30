@@ -88,6 +88,8 @@
     color: "white";
     text-shadow: "1px 1px black";
     opacity:'0';
+    font-family: 'Carter One';
+    caret-color: transparent;
 }
 
 
@@ -226,8 +228,6 @@
     overflow-y: scroll;
   }
 
-
-
   .tilt-box {
     height: 70%;
     width: 92%;
@@ -235,7 +235,7 @@
   }
 
   .download {
-    margin-top: -2em;
+    margin-top: -3.5em;
   }
 
   .callingCardImage {

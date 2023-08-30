@@ -9,15 +9,34 @@ export const ChangeUserName = () => {
   const { userName } = useContext(AppContext);
   return (
     <>
-      <motion.div id="askName" className="modalTrigger"
-                    initial={{ y: "-100vh", opacity:'0', transition: { duration: 1, delay: 0 } }}
-                    animate={{ y: "0%", opacity:'1', transition: {type:'spring', bounce:'0.65', duration: 1.25, delay: 6.7 } }}
-                    exit={{ x: "100vh", scale:'0', transition: { duration: 0.75, delay: 0 } }}
+      <motion.div
+        id="askName"
+        className="modalTrigger"
+        initial={{
+          y: "-100vh",
+          opacity: "0",
+          transition: { duration: 1, delay: 0 },
+        }}
+        animate={{
+          y: "0%",
+          opacity: "1",
+          transition: {
+            type: "spring",
+            bounce: "0.65",
+            duration: 1.25,
+            delay: 6.7,
+          },
+        }}
+        exit={{
+          x: "100vh",
+          scale: "0",
+          transition: { duration: 0.75, delay: 0 },
+        }}
       >
         <h6>
-          Greetings Guest,
+          Greetings!!
           <br />
-          may I know your name please?
+          May I know your name please?
         </h6>
         <input
           onChange={(event) => {
@@ -32,6 +51,7 @@ export const ChangeUserName = () => {
             borderColor: "green",
             width: "65%",
           }}
+          maxLength={"8"}
         />
         <br />
         <a href="#demo-modal" style={{ padding: "1em" }}>
@@ -42,7 +62,15 @@ export const ChangeUserName = () => {
               setUserName(newUserName);
             }}
             initial={{ scale: 0 }}
-            animate={{ scale: 1, transition: {type:'spring', bounce:'0.5', duration: 0.5, delay: 8 } }}
+            animate={{
+              scale: 1,
+              transition: {
+                type: "spring",
+                bounce: "0.5",
+                duration: 0.5,
+                delay: 8,
+              },
+            }}
             exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
           >
             ENTER
@@ -52,7 +80,7 @@ export const ChangeUserName = () => {
         <div id="demo-modal" className="modal wrapper">
           <div class="modal__content">
             <h1>
-              Hi{""}{" "}
+              Hi&nbsp;
               <span
                 className="gradientUser"
                 style={{ textTransform: "uppercase" }}
@@ -74,7 +102,13 @@ export const ChangeUserName = () => {
                 width={"55%"}
                 style={{ zIndex: 1 }}
               />
-              <p style={{ color: "black", fontSize: "0.5em", textShadow:'none' }}>
+              <p
+                style={{
+                  color: "black",
+                  fontSize: "0.5em",
+                  textShadow: "none",
+                }}
+              >
                 START EXPLORING!
               </p>
             </a>

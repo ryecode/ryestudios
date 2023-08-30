@@ -46,7 +46,8 @@ video {
     opacity: 0;
     padding: 2em;
     caret-color: transparent;
-    color: aliceblue;
+    color: rgb(184, 221, 253);
+    font-family: 'Carter One';
 }
 
 #askName button {

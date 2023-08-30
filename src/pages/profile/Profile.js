@@ -51,14 +51,14 @@ export const Profile = () => {
           <div id="profileTitle">
             <h1 id="title">
               <b>
-                Hello{""}{" "}
+                Hello&nbsp;
                 <span
                   className="gradientUser"
                   style={{ textTransform: "uppercase", textShadow: "none" }}
                 >
                   {userName}
                 </span>
-                {""} !
+                !
               </b>
             </h1>
             <h1
@@ -95,12 +95,12 @@ export const Profile = () => {
             id="pCardSkills"
             initial={{
               y: -150,
-              x: 240,
+              x: 200,
               opacity: 0,
             }}
             animate={{
               y: 1,
-              x: 240,
+              x: 200,
               opacity: 1,
               transition: {
                 delay: 1.3,
@@ -109,7 +109,7 @@ export const Profile = () => {
             }}
             exit={{
               y: -150,
-              x: 240,
+              x: 200,
               opacity: 0,
               transition: {
                 duration: 0.5,
@@ -281,7 +281,7 @@ export const Profile = () => {
               opacity: 0,
             }}
             animate={{
-              x: 240,
+              x: 200,
               opacity: 1,
               transition: {
                 delay: 2,
@@ -312,7 +312,7 @@ export const Profile = () => {
               opacity: 0,
             }}
             animate={{
-              x: 240,
+              x: 200,
               opacity: 1,
               transition: {
                 delay: 2.7,

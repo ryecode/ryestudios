@@ -9,16 +9,15 @@ export const Footer = () => {
         <span class="words">© RYAN CORRAL 2023</span>
       </button>
       <div class="credit">
-        Some background and images from{" "}
+        Some background and images from&nbsp;
         <a
           href="http://www.pngtree.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           pngtree.com
-        </a>{" "}
-        &{" "}
+        </a>
+        &nbsp;&&nbsp;
         <a
           href="https://www.vecteezy.com/"
           target="_blank"
