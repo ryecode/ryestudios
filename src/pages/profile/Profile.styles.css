@@ -37,6 +37,7 @@
   padding: 0;
   caret-color: transparent;
   text-shadow: 2px 2px black;
+  font-family: 'Carter One';
 }
 
 #title1 {
@@ -103,7 +104,7 @@
 
 .details-container {
   caret-color: transparent;
-  background: #000000;
+  background: #56a1eb;
   background: -webkit-linear-gradient(to right, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   background: linear-gradient(to right, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
