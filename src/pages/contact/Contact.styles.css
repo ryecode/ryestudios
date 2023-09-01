@@ -3,10 +3,11 @@
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: url("https://ryecode.github.io/portfolio/ImageBank/heroBG.jpg");
+  background: url("https://ryecode.github.io/portfolio/ImageBank/contactBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: 1em;
 }
 
 #tilter {
@@ -235,7 +236,11 @@
 
 @media (max-width: 770px) {
   .bodyContact {
-    overflow-y: scroll;
+    overflow: hidden;
+    background: url("https://ryecode.github.io/portfolio/ImageBank/heroBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 
   .tilt-box {
@@ -245,7 +250,7 @@
   }
 
   .download {
-    margin-top: -3.5em;
+    margin-top: -5em;
   }
 
   .callingCardImage {

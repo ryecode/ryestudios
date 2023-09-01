@@ -349,9 +349,9 @@ export const Profile = () => {
                 <img
                   src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
                   alt="certificate"
-                  width={"90%"}
+                  width={"85%"}
                   style={{
-                    margin: "1em",
+                    margin: "0 0 1em 0",
                     boxShadow:
                       "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   }}

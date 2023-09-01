@@ -4,7 +4,7 @@ import "../../global.css";
 
 export const Footer = () => {
   return (
-    <div className="footer fixed-bottom" >
+    <div className="footer" >
       <button className="btn">
         <span className="words">© RYAN CORRAL 2023</span>
       </button>

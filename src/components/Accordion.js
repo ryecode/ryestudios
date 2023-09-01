@@ -49,7 +49,7 @@ export const AccordionComponent = () => {
         <Card.Header
           style={{
             background: "#434040",
-            fontSize: "small",
+            fontSize: "x-small",
             fontFamily: "Carter One",
           }}
         >
@@ -97,7 +97,7 @@ export const AccordionComponent = () => {
         <Card.Header
           style={{
             background: "#434040",
-            fontSize: "small",
+            fontSize: "x-small",
             fontFamily: "Carter One",
           }}
         >
@@ -144,7 +144,7 @@ export const AccordionComponent = () => {
                   color: "aliceblue",
                 }}
               >
-                • Troubleshooted devices and service issues for customers of
+                • Troubleshooted service issues for customers of
                 AT&T U-verse, DirecTV, and Mobility.
               </span>
             </p>

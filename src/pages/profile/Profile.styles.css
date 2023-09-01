@@ -6,13 +6,15 @@
 }
 
 .profileBody {
-  margin: 0;
+  margin: 0 0 -5.93em 0;
   padding: 0 0 0 5em;
   width: 100%;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/projectBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 1%;
+  background-position: center;
+  background-position-y: 5%;
+  overflow-y: hidden;
 }
 
 #profileTitle {
@@ -87,7 +89,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 6em 0 3em 0;
+  padding: 0;
 }
 
 .header-container {
@@ -96,17 +98,17 @@
   background: radial-gradient(circle, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
   width: 25em;
-  height: 37.98em;
+  height: 32em;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  margin: 5em 2em 5em 2em;
+  margin: 2em 2em 5em 2em;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
   transform: translateX(15em);
-  opacity: 1;
+  opacity: 0;
 
 }
 
@@ -117,17 +119,17 @@
   background: linear-gradient(to right, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
   width: 25em;
-  height: 37.98em;
+  height: 32em;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  margin: 5em 1em 5em 1em;
+  margin: 2em 1em 5em 1em;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: translateX(15em);
   position: absolute;
-  opacity: 1;
+  opacity: 0;
 
 }
 
@@ -136,24 +138,24 @@
   background: linear-gradient(to top, hsl(114, 81%, 19%), hsl(115, 29%, 38%), hsl(114, 96%, 21%));
   flex: 1;
   width: 25em;
-  height: 37.98em;
+  height: 32em;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  margin: 5em 2em 5em 2em;
+  margin: 2em 2em 5em 2em;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: translateX(15em);
   position: absolute;
-  opacity: 1;
+  opacity: 0;
 }
 
 .profileImage {
-  width: 10em;
-  height: 10em;
+  width: 9em;
+  height: 9em;
   border-radius: 50%;
-  margin: 1.5em 1em 1em 1em;
+  margin: 0.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -201,7 +203,7 @@
 }
 
 #qoute {
-  font-size: 0.7em;
+  font-size: 0.6em;
   color: white;
   caret-color: transparent;
   text-shadow: 1px 1px #000000;
@@ -209,7 +211,7 @@
 
 #aboutMe {
   margin: 0;
-  padding: 1em 0 1em 0;
+  padding: 0;
   font-size: 0.7em;
   letter-spacing: 0.15em;
   color: white;
@@ -233,8 +235,8 @@
 .skillButtons li {
   position: relative;
   list-style: none;
-  width: 8.5em;
-  height: 4em;
+  width: 8em;
+  height: 3.25em;
   margin: 0;
   padding: 0;
   border-radius: 25px;
@@ -276,9 +278,9 @@
   text-align: center;
   color: #000;
   background: #000;
-  font-size: 0.55em;
+  font-size: 0.5em;
   border-radius: 25px;
-  line-height: 50px;
+  line-height: 32px;
   text-decoration: none;
 }
 
@@ -427,39 +429,39 @@ ul li button {
 
 @media (max-width: 770px) {
   .profileBody {
-    height: 100vh;
-    margin-bottom: 10em;
-    padding: 0;
+    height: 115vh;
+    margin-top: -2em;
+    margin-bottom: -5.93em;
+    padding: 0 0 6em 0;
     background-position-x: 60% ;
   }
 
   .profileCard {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 0 6em 0;
     width: 100%;
-    transform: translateY(-0.75em);
-
+    transform: translateY(1em);
   }
 
 
   .details-container {
     margin-left: -24em;
-    margin-top: 15em;
+    margin-top: 10em;
     padding: 1em 0 1em 0;
     width: 90%;
   }
 
   .skills-container {
     margin-left: -23em;
-    margin-top: 15em;
+    margin-top: 10em;
     padding: 1em 1em 1em 1em;
     width: 90%;
   }
 
   .header-container {
     margin-left: -23em;
-    margin-top: 15em;
+    margin-top: 10em;
     padding: 1em;
     width: 90%;
   }
@@ -472,16 +474,12 @@ ul li button {
 
   #title1 {
     font-size: large;
-    padding: 0.5em 0.5em 0 0.25em;
+    padding: 0em 0.5em 0 0.25em;
   }
 
   #profileTitle {
-    transform: translateY(-20em);
+    transform: translateY(-21em);
 
-  }
-
-  .profTitle::before {
-    transform: translateY(0.2em);
   }
 
   .skillButtons {
@@ -489,7 +487,7 @@ ul li button {
   }
 
   .toggleBtns {
-    margin: 0 0 1em 0;
+    margin: 0 0 0 0;
     transform: translateX(5px);
   }
 

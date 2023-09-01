@@ -17,7 +17,7 @@ export const Contact = () => {
       exit={{ scale: 0, transition: { duration: 0.75, delay: 0.75 } }}
     >
       <div>
-        <motion.span
+        <motion.div
           exit={{
             x: "100vw",
             scale: "0",
@@ -30,12 +30,12 @@ export const Contact = () => {
           }}
         >
           <Hero />
-        </motion.span>
+        </motion.div>
         <div id="rowDaw">
           <div className="col-sm-6 mb-3 mb-sm-0" id="tilter">
             <motion.div
               className="tilt-box-wrap"
-              exit={{ opacity: 0, transition: { duration: 0.75, delay: 0.25 } }}
+              exit={{ scale: 0, transition: { duration: 0.75, delay: 0.25 } }}
             >
               <span className="t_over"></span>
               <span className="t_over"></span>
