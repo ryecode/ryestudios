@@ -78,19 +78,23 @@ export const Contact = () => {
               </div>
             </motion.div>
 
-            <motion.p
+          </div>
+          
+          <motion.div
               className="download"
               initial={{
                 y: "-100vh",
+                opacity: '0',
                 transition: { duration: 0, delay: 0 },
               }}
               animate={{
                 y: "0%",
                 opacity: "1",
+                zIndex: "3",
                 transition: {
                   type: "spring",
                   bounce: "0.65",
-                  duration: 1.25,
+                  duration: 2,
                   delay: 6.5,
                 },
               }}
@@ -121,8 +125,7 @@ export const Contact = () => {
                 <b>here</b>
               </a>
               .
-            </motion.p>
-          </div>
+            </motion.div>
         </div>
       </div>
     </motion.div>

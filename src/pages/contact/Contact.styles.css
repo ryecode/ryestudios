@@ -95,12 +95,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 28.5em;
     color: "white";
     text-shadow: "1px 1px black";
     opacity:'0';
     font-family: 'Carter One';
     caret-color: transparent;
+    position: absolute;
 }
 
 
