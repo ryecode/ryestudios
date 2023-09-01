@@ -10,7 +10,7 @@
 }
 
 #tilter {
-  animation: scale 1s ease-in calc(var(--typewriterSpeed) + 3s) forwards;
+  animation: scale 0.5s ease-in calc(var(--typewriterSpeed) + 3s) forwards;
   animation-iteration-count: initial;
   text-align: center;
   z-index: 1;
@@ -32,14 +32,24 @@
   margin: 0;
 }
 
-.callingCardImage {
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
+.imageContainer {
+  background-image: url("https://ryecode.github.io/portfolio/ImageBank/chipBG.png");
+  background-size: 13em 10em;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  border-radius: 10%;
   margin: 1.5em 1em 1em 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
-  transform: translate(-17em, -11em);
+  transform: translate(-17em, -9em);
+  width: 8em;
+  height: 5em;
+}
+
+.callingCardImage {
+  position: absolute;
+  margin: 1em 0 0 1.1em ;
 }
 
 .callingCardName {
@@ -76,7 +86,7 @@
   font-family: 'Poppins', cursive;
   width: max-content;
   position: absolute;
-  transform: translate(-60em, -12.5em);
+  transform: translate(-60em, -13em);
   text-transform: none;
 }
 
@@ -126,8 +136,8 @@
   transform-style: preserve-3d;
   margin-left: 30px;
   caret-color: transparent;
-  border: 1px solid rgb(117, 100, 2);
-  box-shadow: -3px 3px rgb(71, 69, 1);
+  border: 2px solid rgb(144, 123, 1);
+  box-shadow: -3px 3px rgb(28, 28, 5);
 }
 
 .tilt-box strong {
@@ -239,9 +249,16 @@
   }
 
   .callingCardImage {
+    width: 4em;
+    height: 3em;
+    margin: 7.5px 0 0 140px;
+    transform: translateX(-8.35em)
+  }
+
+  .imageContainer {
     width: 5em;
-    height: 5em;
-    margin: 70px 0 0 160px;
+    height: 4em;
+    margin: 40px 0 0 150px;
   }
 
   #contactDetails {

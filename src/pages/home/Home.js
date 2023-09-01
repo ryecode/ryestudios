@@ -30,7 +30,7 @@ export const Home = () => {
 
       <div className="content">
         <motion.div
-          class="hero-image"
+          className="hero-image"
           id="heroHome"
           exit={{
             x: "-100vw",
@@ -38,11 +38,11 @@ export const Home = () => {
             transition: { duration: 0.75, delay: 0 },
           }}
         >
-          <div class="hero-text" style={{ marginTop: "-2em" }}>
-            <h1 class="hero-title">
+          <div className="hero-text" style={{ marginTop: "-2em" }}>
+            <h1 className="hero-title">
               <b>I'am Ryan Corral</b>
             </h1>
-            <p class="subtitle">And I'm a Full Stack Web Developer</p>
+            <p className="subtitle">And I'm a Full Stack Web Developer</p>
 
             <a
               href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_Resume.pdf"
@@ -50,7 +50,7 @@ export const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button class="neon-button">HIRE ME</button>
+              <button className="neon-button">HIRE ME</button>
             </a>
           </div>
         </motion.div>
@@ -81,7 +81,6 @@ export const Home = () => {
           <span className="gradientUser" style={{ textTransform: "uppercase" }}>
             {userName}
           </span>
-          <br />
           To Rye Zone
         </motion.div>
         <ChangeUserName />

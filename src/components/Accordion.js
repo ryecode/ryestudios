@@ -21,7 +21,8 @@ function ContextAwareToggle({ children, eventKey, callback }) {
   const isCurrentEventKey = activeEventKey === eventKey;
 
   return (
-    <button
+    <>
+        <button
       type="button"
       style={{
         backgroundColor: isCurrentEventKey ? PINK : BLUE,
@@ -34,6 +35,7 @@ function ContextAwareToggle({ children, eventKey, callback }) {
     >
       {children}
     </button>
+    </>
   );
 }
 
@@ -41,6 +43,7 @@ export const AccordionComponent = () => {
   const { userName } = useContext(AppContext);
 
   return (
+    <>
     <Accordion defaultActiveKey="0" flush>
       <Card style={{ background: "transparent", border: "none" }}>
         <Card.Header
@@ -70,7 +73,7 @@ export const AccordionComponent = () => {
                 href="https://youtu.be/Hq0qzBNZzQA"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "hsl(45, 100%, 53%)", zIndex: 1 }}
+                style={{ color: "rgb(253, 230, 23)", zIndex: 1 }}
               >
                 Best in Coding
               </a>
@@ -102,7 +105,7 @@ export const AccordionComponent = () => {
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <h6 style={{ color: "#1d3852", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
+            <h6 style={{ color: "rgb(236, 219, 60)", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
               EDUCATIONAL ATTAINMENT
             </h6>
             <p
@@ -122,7 +125,7 @@ export const AccordionComponent = () => {
               <b>○ AMA University (2001-2004, 2010-2011)</b>
               <br />• B.S. Electronics & Communications Engineering
             </p>
-            <h6 style={{ color: "#1d3852", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
+            <h6 style={{ color: "rgb(236, 219, 60)", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
               WORK EXPERIENCE
             </h6>
             <p
@@ -134,7 +137,7 @@ export const AccordionComponent = () => {
             >
               <b>○ TelePerformance (2020-2023)</b>
               <br />■ <i>Technical Support Representative</i>
-              <p
+              <span
                 style={{
                   fontSize: "0.75em",
                   fontFamily: "Montserrat",
@@ -143,11 +146,12 @@ export const AccordionComponent = () => {
               >
                 • Troubleshooted devices and service issues for customers of
                 AT&T U-verse, DirecTV, and Mobility.
-              </p>
+              </span>
             </p>
           </Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>
+    </>
   );
 };

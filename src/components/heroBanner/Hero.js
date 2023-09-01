@@ -3,17 +3,13 @@ import "./Hero.styles.css";
 
 export const Hero = () => {
   return (
-    <div class="hero-image">
-      {/* <img
-        class="hero-bg"
-        src="https://ryecode.github.io/portfolio/ImageBank/heroBG.jpg"
-        alt="Hero BG"
-      /> */}
-      <div class="hero-text">
-        <h1 class="hero-title">
+    <>
+        <div className="hero-image">
+      <div className="hero-text">
+        <h1 className="hero-title">
           <b>I'am Ryan Corral</b>
         </h1>
-        <p class="subtitle ">And I'm a Full Stack Web Developer</p>
+        <p className="subtitle ">And I'm a Full Stack Web Developer</p>
 
           <a
             id="resumeBtn"
@@ -21,12 +17,14 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-                    <button class="neon-button">
+                    <button className="neon-button">
             HIRE ME
             </button>
           </a>
 
       </div>
     </div>
+    </>
+
   );
 };

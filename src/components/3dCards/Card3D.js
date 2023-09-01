@@ -27,7 +27,7 @@ const Card3D = () => {
             </div>
             <div className="card-fg">
               <img
-                class="card-image"
+                className="card-image"
                 src="https://ryecode.github.io/portfolio/ImageBank/RyePortfolioSS.jpeg"
                 alt="website screenshot"
               />
@@ -57,7 +57,7 @@ const Card3D = () => {
             </div>
             <div className="card-fg">
               <img
-                class="card-image"
+                className="card-image"
                 src="https://ryecode.github.io/portfolio/ImageBank/EtiketSS.jpeg"
                 alt="website screenshot"
               />
@@ -87,7 +87,7 @@ const Card3D = () => {
             </div>
             <div className="card-fg">
               <img
-                class="card-image"
+                className="card-image"
                 src="https://ryecode.github.io/portfolio/ImageBank/RyeTicTacToeSS.jpeg"
                 alt="website screenshot"
               />
@@ -117,7 +117,7 @@ const Card3D = () => {
             </div>
             <div className="card-fg">
               <img
-                class="card-image"
+                className="card-image"
                 src="https://ryecode.github.io/portfolio/ImageBank/RyeStudiosSS.jpeg"
                 alt="website screenshot"
               />

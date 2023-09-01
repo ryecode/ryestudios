@@ -56,7 +56,7 @@ export const ChangeUserName = () => {
         <br />
         <a href="#demo-modal" style={{ padding: "1em" }}>
           <motion.button
-            class="enterBtn"
+            className="enterBtn"
             style={{ marginTop: "1em" }}
             onClick={() => {
               setUserName(newUserName);
@@ -68,7 +68,7 @@ export const ChangeUserName = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 0.5,
-                delay: 8,
+                delay: 7.7,
               },
             }}
             exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -78,7 +78,7 @@ export const ChangeUserName = () => {
         </a>
 
         <div id="demo-modal" className="modal wrapper">
-          <div class="modal__content">
+          <div className="modal__content">
             <h1>
               Hi&nbsp;
               <span
@@ -95,7 +95,7 @@ export const ChangeUserName = () => {
               <br />
             </p>
 
-            <a href="#pointer" class="modal__close2">
+            <a href="#pointer" className="modal__close2">
               <img
                 src="https://ryecode.github.io/portfolio/ImageBank/rocket.png"
                 alt="rocket ship"

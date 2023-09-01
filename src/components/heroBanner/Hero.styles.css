@@ -83,16 +83,6 @@
   font-weight: 800;
 }
 
-.hero-bg {
-  position: relative;
-  align-self: center;
-  height: 100%;
-  width: 100%;
-  animation: scale 2s ease calc(var(--typewriterSpeed) + 0.5s) forwards;
-  opacity: 0;
-
-}
-
 :root {
   --clr-neon: hsl(112, 100%, 50%);
   --clr-bg: hsl(320, 43%, 96%);

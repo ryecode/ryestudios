@@ -11,32 +11,32 @@ export const Profile = () => {
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [index3, setIndex3] = useState(0);
-  const [color1, setColor1] = useState("hsl(113, 100%, 86%)");
+  const [color1, setColor1] = useState("rgb(236, 219, 60)");
   const [color2, setColor2] = useState(0);
   const [color3, setColor3] = useState(0);
   const changeIndex1 = () => {
     setIndex1(1);
     setIndex2(0);
     setIndex3(0);
-    setColor1("hsl(113, 100%, 86%)");
-    setColor2("hsl(126, 65%, 62%)");
-    setColor3("hsl(126, 65%, 62%)");
+    setColor1("rgb(236, 219, 60)");
+    setColor2("#31d47d");
+    setColor3("#31d47d");
   };
   const changeIndex2 = () => {
     setIndex1(0);
     setIndex2(1);
     setIndex3(0);
-    setColor1("hsl(126, 65%, 62%)");
-    setColor2("hsl(113, 100%, 86%)");
-    setColor3("hsl(126, 65%, 62%)");
+    setColor1("#31d47d");
+    setColor2("rgb(236, 219, 60)");
+    setColor3("#31d47d");
   };
   const changeIndex3 = () => {
     setIndex1(0);
     setIndex2(0);
     setIndex3(1);
-    setColor1("hsl(126, 65%, 62%)");
-    setColor2("hsl(126, 65%, 62%)");
-    setColor3("hsl(113, 100%, 86%)");
+    setColor1("#31d47d");
+    setColor2("#31d47d");
+    setColor3("rgb(236, 219, 60)");
   };
 
   return (
@@ -62,12 +62,7 @@ export const Profile = () => {
               </b>
             </h1>
             <h1
-              className="subtitle"
               id="title1"
-              style={{
-                color: "hsl(126, 65%, 62%)",
-                textShadow: "2px 2px black",
-              }}
             >
               <b>Allow me to introduce myself..</b>
             </h1>

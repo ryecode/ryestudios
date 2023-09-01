@@ -9,11 +9,10 @@
   margin: 0;
   padding: 0 0 0 5em;
   width: 100%;
-
-  background-image: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
+  background-image: url("https://ryecode.github.io/portfolio/ImageBank/projectBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 1%;
 }
 
 #profileTitle {
@@ -22,7 +21,7 @@
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  color: hsl(126, 97%, 39%);
+  color: rgb(236, 219, 60);;
   width: fit-content;
   background: transparent;
   border: none;
@@ -33,7 +32,7 @@
 
 #title {
   font-size: 2rem;
-  color: hsl(126, 65%, 62%);
+  color: #31d47d;
   padding: 0;
   caret-color: transparent;
   text-shadow: 2px 2px black;
@@ -46,6 +45,12 @@
   opacity: 0;
   transform: translateY(-2rem);
   animation: fadeInY 0.5s ease-in 3.4s forwards;
+  color: #31d47d;
+  font-weight: 400;
+  margin-top: 2px;
+  font-family: 'Carter One';
+  caret-color: transparent;
+  text-shadow: 2px 2px black;
 }
 
 .chapter1 {
@@ -166,7 +171,7 @@
 
 
 .gradienttext {
-  background-image: linear-gradient(to right bottom, #0f13f8, #1611f8, #1b0ef8, #1f0bf7, #2307f7, #240af7, #250df8, #260ff8, #2516fa, #241bfb, #2220fd, #2124fe);
+  background-image: linear-gradient(to right bottom, #b2a009, #c5b507, #d9ca05, #ece003, #fff600);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -175,7 +180,7 @@
 }
 
 .gradientUser {
-  background-image: linear-gradient(to top, #e8c100 0%, #e4ec9b 50%, #e8c100 100%);
+  background-image: linear-gradient(to top, #b89a04 0%, rgb(255, 236, 61) 50%, #b89a04 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -187,7 +192,7 @@
 #role {
   font-size: 1em;
   margin-bottom: 5px;
-  color: rgb(61, 211, 245);
+  color: rgb(236, 219, 60);
   text-shadow: 1px 1px #000000;
   caret-color: transparent;
 }
@@ -401,7 +406,7 @@
   flex-wrap: wrap;
   /* position: absolute; */
   font-size: larger;
-  color: hsl(126, 65%, 62%);
+
   padding: 0 0 0 1.1em;
   caret-color: transparent;
   text-shadow: 2px 2px black;
@@ -410,7 +415,7 @@
 ul li button {
   background-color: transparent;
   border: none;
-  color: hsl(126, 65%, 62%);
+  color: #31d47d;
   caret-color: transparent;
   text-shadow: 2px 2px black;
 }
@@ -422,6 +427,7 @@ ul li button {
     height: 100vh;
     margin-bottom: 10em;
     padding: 0;
+    background-position-x: 60% ;
   }
 
   .profileCard {
@@ -429,7 +435,7 @@ ul li button {
     flex-direction: column;
     margin: 0;
     width: 100%;
-    transform: translateY(-1em);
+    transform: translateY(-0.75em);
 
   }
 
