@@ -115,7 +115,7 @@ export const Contact = () => {
               >
                 {userName}&nbsp;
               </span>
-              Download Calling card&nbsp;
+              Download my Calling card&nbsp;
               <a
                 href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_WebDeveloper.pdf"
                 target="_blank"
