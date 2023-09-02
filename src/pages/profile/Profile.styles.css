@@ -432,17 +432,16 @@ ul li button {
 
 @media (max-width: 770px) {
   .profileBody {
-    height: 115vh;
-    margin-top: -2em;
+    margin-top: 0;
     margin-bottom: -5.93em;
-    padding: 0 0 6em 0;
+    padding: 0 0 5.93em 0;
     background-position-x: 60% ;
   }
 
   .profileCard {
     display: flex;
     flex-direction: column;
-    margin: 0 0 6em 0;
+    margin: 0 0 0 0;
     width: 100%;
     transform: translateY(1em);
   }
