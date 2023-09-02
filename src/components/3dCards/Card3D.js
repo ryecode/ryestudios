@@ -32,9 +32,9 @@ const Card3D = () => {
                 alt="website screenshot"
               />
             </div>
-            <div className="detailButton">
+            {/* <div className="detailButton">
               <button>DETAILS</button>
-            </div>
+            </div> */}
           </div>
 
           <div className="folder">
@@ -62,9 +62,9 @@ const Card3D = () => {
                 alt="website screenshot"
               />
             </div>
-            <div className="detailButton">
+            {/* <div className="detailButton">
               <button>DETAILS</button>
-            </div>
+            </div> */}
           </div>
 
           <div className="folder">
@@ -92,9 +92,9 @@ const Card3D = () => {
                 alt="website screenshot"
               />
             </div>
-            <div className="detailButton">
+            {/* <div className="detailButton">
               <button>DETAILS</button>
-            </div>
+            </div> */}
           </div>
 
           <div className="folder">
@@ -122,9 +122,9 @@ const Card3D = () => {
                 alt="website screenshot"
               />
             </div>
-            <div className="detailButton">
+            {/* <div className="detailButton">
               <button>DETAILS</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

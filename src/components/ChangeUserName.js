@@ -68,7 +68,7 @@ export const ChangeUserName = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 0.5,
-                delay: 7.7,
+                delay: 7.5,
               },
             }}
             exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}

@@ -220,7 +220,7 @@
   border-radius: 50%;
   cursor: pointer;
   margin-left: -50%;
-  animation: scale 0.75s ease-in calc(var(--typewriterSpeed) + 1s) forwards;
+  animation: scale 0.75s ease-in 0 forwards;
   animation-iteration-count: initial;
   transform: translate(0rem);
   opacity: 0;

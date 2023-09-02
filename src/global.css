@@ -2,7 +2,7 @@
 
 :root {
   --typewriterSpeed: 3s;
-  --typewriterSteps: 26;
+  --typewriterSteps: 20;
 }
 
 html {
@@ -127,7 +127,7 @@ body {
 }
 
 .subscribe {
-  animation: spin 3.25s ease 0.5s forwards;
+  animation: spin 3.25s ease 8s forwards;
   animation-iteration-count: initial;
   z-index: 1;
 }

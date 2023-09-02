@@ -12,11 +12,11 @@ export const Contact = () => {
     <>
         <motion.div
       className="bodyContact"
-      initial={{ scale: 0, transition: { duration: 1, delay: 0 } }}
-      animate={{ scale: 1, transition: { duration: 0.75, delay: 1.5 } }}
-      exit={{ scale: 0, transition: { duration: 0.75, delay: 0.75 } }}
+      initial={{ y: "-200%", transition: { duration: 0, delay: 0 } }}
+      animate={{ y: "0%", opacity: '1', transition: { type:"spring", bounce: "0.4", duration: 0.75, delay: 1.5 } }}
+      exit={{ y: "100%", transition: { duration: 0.75, delay: 0.75 } }}
     >
-      <div>
+      <div className="backdrop">
         <motion.div
           exit={{
             x: "100vw",
