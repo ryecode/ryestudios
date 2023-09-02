@@ -127,7 +127,7 @@ body {
 }
 
 .subscribe {
-  animation: spin 3.25s ease 8s forwards;
+  animation: spin 3.25s ease 0.5s forwards;
   animation-iteration-count: initial;
   z-index: 1;
 }
