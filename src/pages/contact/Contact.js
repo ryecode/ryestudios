@@ -59,7 +59,7 @@ export const Contact = () => {
                     className="callingCardImage"
                     src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
                     alt="Profile"
-                    width={"70%"}
+                    width={"60%"}
                   />
                   </div>
 

@@ -19,23 +19,23 @@ export const Profile = () => {
     setIndex2(0);
     setIndex3(0);
     setColor1("rgb(236, 219, 60)");
-    setColor2("#31d47d");
-    setColor3("#31d47d");
+    setColor2("#fdfdfd");
+    setColor3("#fdfdfd");
   };
   const changeIndex2 = () => {
     setIndex1(0);
     setIndex2(1);
     setIndex3(0);
-    setColor1("#31d47d");
+    setColor1("#fdfdfd");
     setColor2("rgb(236, 219, 60)");
-    setColor3("#31d47d");
+    setColor3("#fdfdfd");
   };
   const changeIndex3 = () => {
     setIndex1(0);
     setIndex2(0);
     setIndex3(1);
-    setColor1("#31d47d");
-    setColor2("#31d47d");
+    setColor1("#fdfdfd");
+    setColor2("#fdfdfd");
     setColor3("rgb(236, 219, 60)");
   };
 

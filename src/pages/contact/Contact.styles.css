@@ -1,13 +1,12 @@
 .bodyContact {
-  margin: 0;
+  margin: 0 0 -5.9em 0;
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: url("https://ryecode.github.io/portfolio/ImageBank/contactBG.jpg");
+  background: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: 1em;
 }
 
 #tilter {
@@ -20,7 +19,7 @@
 }
 
 #rowDaw {
-  margin: 1em 0 0 0;
+  margin: 1em 0 0 10em;
   padding: 0;
   color: aliceblue;
   display: flex;
@@ -35,22 +34,22 @@
 
 .imageContainer {
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/chipBG.png");
-  background-size: 13em 10em;
+  background-size: 10em 7em;
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
   border-radius: 10%;
-  margin: 1.5em 1em 1em 1em;
+  margin: 2em 1em 1em 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
-  transform: translate(-17em, -9em);
-  width: 8em;
-  height: 5em;
+  transform: translate(-12em, -8em);
+  width: 7em;
+  height: 4em;
 }
 
 .callingCardImage {
   position: absolute;
-  margin: 1em 0 0 1.1em ;
+  margin: 0.85em 0 0 1.25em ;
 }
 
 .callingCardName {
@@ -60,15 +59,15 @@
   color: transparent;
   font-family: 'Poppins', cursive;
   position: absolute;
-  transform: translate(-9em, 2em);
-  font-size: 2.5em;
+  transform: translate(-9em, 1.5em);
+  font-size: 2em;
   font-weight: bold;
   caret-color: transparent;
   width: max-content;
 }
 
 #job {
-  font-size: 1.5em;
+  font-size: 0.75em;
   margin-bottom: 5px;
   color: rgb(177, 211, 3);
   text-shadow: 1px 1px #000000;
@@ -76,11 +75,11 @@
   font-family: 'Poppins', cursive;
   width: max-content;
   position: absolute;
-  transform: translate(-16.5em, 5.5em);
+  transform: translate(-22em, 7em);
 }
 
 #contactDetails {
-  font-size: 0.7em;
+  font-size: 0.5em;
   color: white;
   caret-color: transparent;
   text-shadow: 1px 1px black;
@@ -95,21 +94,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 28.5em;
+    margin-top: 25em;
     color: "white";
     text-shadow: "1px 1px black";
     opacity:'0';
     font-family: 'Carter One';
     caret-color: transparent;
     position: absolute;
+    padding-right: 10em;
 }
 
 
 /* TILT BOX EFFECT */
 
 .tilt-box-wrap {
-  width: 90%;
-  height: 400px;
+  width: 70%;
+  height: 300px;
   position: relative;
   perspective: 1000px;
   caret-color: transparent;
@@ -238,20 +238,25 @@
 @media (max-width: 770px) {
   .bodyContact {
     overflow: hidden;
-    background: url("https://ryecode.github.io/portfolio/ImageBank/heroBG.jpg");
+    background: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: 15% 30%;
   }
 
   .tilt-box {
-    height: 70%;
-    width: 92%;
-    margin: 2em 0 0 1.75em;
+    width: 200%;
+    margin: 2em 1em 0 1em;
+    transform: translateX(-9em);
   }
 
   .download {
-    margin-top: 20em;
+    display: flex;
+    position: absolute;
+    margin: 35em 12em 0 0;
+    padding: 0 0 0 0;
+    font-size: 0.75em;
+    width: max-content;
   }
 
   .callingCardImage {
@@ -264,7 +269,7 @@
   .imageContainer {
     width: 5em;
     height: 4em;
-    margin: 40px 0 0 150px;
+    margin: 40px 0 0 80px;
   }
 
   #contactDetails {
@@ -274,11 +279,13 @@
   }
 
   .callingCardName {
-    font-size: 1.5em;
+    font-size: 1.25em;
+    margin-top: 1em;
   }
 
   #job {
-    font-size: 1em;
+    font-size: 0.75em;
+    margin-top: 1em;
   }
 
 }

@@ -49,6 +49,7 @@
   background-color: black;
   height: 1.25em;
   margin-top: 2em;
+  border-radius: 8px;
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards;
 }
 
