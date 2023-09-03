@@ -47,12 +47,12 @@ export const Contact = () => {
               <span className="t_over"></span>
               <div className="tilt-box">
                 <img
-                  src="https://ryecode.github.io/portfolio/ImageBank/callingCardBG.jpg"
+                  src="https://ryecode.github.io/portfolio/ImageBank/callingCardSim.jpeg"
                   alt="resume"
                   width="100%"
                   height="100%"
                 ></img>
-                <div>
+                {/* <div>
                   <div className="imageContainer">
                   <img
                     className="callingCardImage"
@@ -73,7 +73,7 @@ export const Contact = () => {
                       <br /> https://www.facebook.com/ryekoralzkie
                     </ul>
                   </span>
-                </div>
+                </div> */}
               </div>
             </motion.div>
 
@@ -118,7 +118,7 @@ export const Contact = () => {
                 href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_WebDeveloper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textShadow: "none", color: "hsl(112, 100%, 50%)" }}
+                style={{ textShadow: "1px 1px black", textDecoration: "none", color: "hsl(112, 100%, 50%)" }}
               >
                 <b>here</b>
               </a>

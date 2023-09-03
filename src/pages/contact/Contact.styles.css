@@ -118,7 +118,7 @@
 }
 
 .tilt-box-wrap:hover {
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
   transform: scale(1.2);
 }
 
@@ -246,9 +246,14 @@
   }
 
   .tilt-box {
-    width: 200%;
-    margin: 2em 1em 0 1em;
-    transform: translateX(-9em);
+    width: 90vw;
+    margin: 2em 0 0 0;
+    transform: translateX(-5.1em);
+  }
+
+  .tilt-box-wrap:hover {
+    transition: all 0.3s linear;
+    transform: scale(1.1);
   }
 
   .download {
