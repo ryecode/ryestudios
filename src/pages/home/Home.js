@@ -15,8 +15,8 @@ export const Home = () => {
     <motion.div
       className="overlay"
       initial={{ scale: 0, transition: { duration: 1, delay: 0 } }}
-      animate={{ scale: 1, transition: { duration: 0.75, delay: 1.5 } }}
-      exit={{ scale: 0, transition: { duration: 0.75, delay: 0.75 } }}
+      animate={{ scale: 1, transition: { duration: 0.5, delay: 2 } }}
+      exit={{ scale: 0, transition: { duration: 1, delay: 1 } }}
     >
       <video
         src={glowingBG}
@@ -35,7 +35,7 @@ export const Home = () => {
           exit={{
             x: "-100vw",
             scale: "0",
-            transition: { duration: 0.75, delay: 0 },
+            transition: { duration: 1, delay: 0 },
           }}
         >
           <div className="hero-text" style={{ marginTop: "-2em" }}>
@@ -59,7 +59,7 @@ export const Home = () => {
           initial={{
             y: "-100vh",
             opacity: "0",
-            transition: { duration: 1, delay: 0 },
+            transition: { delay: 0 },
           }}
           animate={{
             y: "0%",
@@ -74,7 +74,7 @@ export const Home = () => {
           exit={{
             y: "-100vh",
             scale: "0",
-            transition: { duration: 0.75, delay: 0 },
+            transition: { duration: 1, delay: 0 },
           }}
         >
           WELCOME&nbsp;

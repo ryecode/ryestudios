@@ -43,9 +43,9 @@ export const Profile = () => {
     <>
       <motion.div
         className="profileBody"
-        initial={{ opacity: 0, transition: { duration: 1, delay: 0 } }}
-        animate={{ opacity: 1, transition: { duration: 0.75, delay: 1.5 } }}
-        exit={{ opacity: 0, transition: { duration: 0.75, delay: 0.75 } }}
+        initial={{ opacity: 0, transition: { delay: 0 } }}
+        animate={{ opacity: 1, transition: { duration: 0.5, delay: 2 } }}
+        exit={{ opacity: 0, transition: { duration: 1, delay: 1 } }}
       >
         <div className="profileCard">
           <div id="profileTitle">
@@ -98,17 +98,16 @@ export const Profile = () => {
               x: 200,
               opacity: 1,
               transition: {
-                delay: 1.3,
-                duration: 0.7,
+                type: 'spring',
+                bounce:"0.5",
+                delay: 2.5,
+                duration: 1,
               },
             }}
             exit={{
-              y: -150,
-              x: 200,
-              opacity: 0,
-              transition: {
-                duration: 0.5,
-              },
+              y: "-100vh",
+              opacity: "0",
+              transition: { type: 'spring', duration: 1, delay: 0 },
             }}
             style={{ zIndex: index3 }}
           >
@@ -272,23 +271,23 @@ export const Profile = () => {
             className="details-container"
             id="pCardDetails"
             initial={{
-              x: 500,
+              x: "200%",
               opacity: 0,
             }}
             animate={{
               x: 200,
               opacity: 1,
               transition: {
-                delay: 2,
-                duration: 0.7,
+                type: 'spring',
+                bounce:"0.5",
+                delay: 3,
+                duration: 1,
               },
             }}
             exit={{
-              x: 500,
-              opacity: 0,
-              transition: {
-                duration: 0.5,
-              },
+              x: "100vh",
+              opacity: "0",
+              transition: {type: 'spring', duration: 0.75, delay: 0 },
             }}
             style={{ zIndex: index2 }}
           >
@@ -303,23 +302,23 @@ export const Profile = () => {
           <motion.div
             className="header-container"
             initial={{
-              x: -100,
+              x: -200,
               opacity: 0,
             }}
             animate={{
               x: 200,
               opacity: 1,
               transition: {
-                delay: 2.7,
-                duration: 0.7,
+                type: 'spring',
+                bounce:"0.5",
+                delay: 3.5,
+                duration: 1,
               },
             }}
             exit={{
-              x: -100,
-              opacity: 0,
-              transition: {
-                duration: 0.5,
-              },
+              x: -200,
+              opacity: "0",
+              transition: {type: 'spring', duration: 1, delay: 0 },
             }}
             style={{ zIndex: index1 }}
           >

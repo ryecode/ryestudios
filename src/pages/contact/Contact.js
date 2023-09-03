@@ -13,8 +13,8 @@ export const Contact = () => {
         <motion.div
       className="bodyContact"
       initial={{ y: "-200%", transition: { duration: 0, delay: 0 } }}
-      animate={{ y: "0%", opacity: '1', transition: { type:"spring", bounce: "0.4", duration: 0.75, delay: 1.5 } }}
-      exit={{ y: "100%", transition: { duration: 0.75, delay: 0.75 } }}
+      animate={{ y: "0%", opacity: '1', transition: { type:"spring", bounce: "0.5", duration: 1, delay: 2 } }}
+      exit={{ y: "100%", transition: { duration: 1, delay: 1 } }}
     >
       <div className="backdrop">
         <motion.div
@@ -23,7 +23,6 @@ export const Contact = () => {
             scale: "0",
             transition: {
               type: "spring",
-              bounce: "0.5",
               duration: 1,
               delay: 0,
             },
@@ -35,7 +34,7 @@ export const Contact = () => {
           <div className="col-sm-6 mb-3 mb-sm-0" id="tilter">
             <motion.div
               className="tilt-box-wrap"
-              exit={{ scale: 0, transition: { duration: 0.75, delay: 0.25 } }}
+              exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
             >
               <span className="t_over"></span>
               <span className="t_over"></span>
@@ -93,7 +92,7 @@ export const Contact = () => {
                 zIndex: "3",
                 transition: {
                   type: "spring",
-                  bounce: "0.65",
+                  bounce: "0.5",
                   duration: 2,
                   delay: 6.5,
                 },
@@ -103,7 +102,6 @@ export const Contact = () => {
                 scale: "0",
                 transition: {
                   type: "spring",
-                  bounce: "0.5",
                   duration: 1,
                   delay: 0,
                 },
