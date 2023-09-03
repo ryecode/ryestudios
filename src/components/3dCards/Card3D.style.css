@@ -177,7 +177,7 @@ p {
 
     .projects {
         flex-direction: column;
-        margin: 0 0 3em 7em;
+        margin: 0 0 3em 0;
         padding: 0;
     }
 

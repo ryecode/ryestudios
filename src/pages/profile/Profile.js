@@ -49,7 +49,36 @@ export const Profile = () => {
       >
         <div className="profileCard">
           <div id="profileTitle">
-            <h1 id="title">
+            <motion.h1
+              id="title"
+              initial={{
+                translateY: "-100vh",
+                translateX: "-100vw",
+                opacity: "0",
+                transition: { duration: 0, delay: 0 },
+              }}
+              animate={{
+                translateY: 0,
+                translateX: 0,
+                opacity: "1",
+                transition: {
+                  type: "spring",
+                  bounce: "0.4",
+                  duration: 5,
+                  delay: 3.6,
+                },
+              }}
+              exit={{
+                translateY: "-100vh",
+                translateX: "-100vw",
+                scale: "0",
+                transition: {
+                  type: "spring",
+                  duration: 1,
+                  delay: 0,
+                },
+              }}
+            >
               <b>
                 Hello&nbsp;
                 <span
@@ -60,28 +89,143 @@ export const Profile = () => {
                 </span>
                 !
               </b>
-            </h1>
-            <h1
+            </motion.h1>
+            <motion.h1
               id="title1"
+              initial={{
+                translateY: "-100vh",
+                translateX: "-100vw",
+                opacity: 0,
+                transition: { duration: 0, delay: 0 },
+              }}
+              animate={{
+                translateY: 0,
+                translateX: 0,
+                opacity: "1",
+                transition: {
+                  type: "spring",
+                  bounce: "0.4",
+                  duration: 5,
+                  delay: 3.8,
+                },
+              }}
+              exit={{
+                scale: "0",
+                transition: {
+                  type: "spring",
+                  duration: 1,
+                  delay: 0.6,
+                },
+              }}
             >
               <b>Allow me to introduce myself..</b>
-            </h1>
+            </motion.h1>
             <ul className="toggleBtns">
-              <li className="chapter1">
+
+              <motion.li
+                className="chapter1"
+                initial={{
+                  translateY: "-100vh",
+                  translateX: "-100vw",
+                  opacity: "0",
+                  transition: { duration: 0, delay: 0 },
+                }}
+                animate={{
+                  translateY: 0,
+                  translateX: 0,
+                  opacity: "1",
+                  transition: {
+                    type: "spring",
+                    bounce: "0.4",
+                    duration: 5,
+                    delay: 4,
+                  },
+                }}
+                exit={{
+                  translateY: "100vh",
+                  translateX: "-100vw",
+                  scale: "0",
+                  transition: {
+                    type: "spring",
+                    duration: 1,
+                    delay: 0.4,
+                  },
+                }}
+              >
                 <button onClick={changeIndex1} style={{ color: color1 }}>
                   Chapter I
                 </button>
-              </li>
-              <li className="chapter2">
+              </motion.li>
+
+              <motion.li
+                className="chapter2"
+                initial={{
+                  translateY: "-100vh",
+                  translateX: "-100vw",
+                  opacity: "0",
+                  transition: { duration: 0, delay: 0 },
+                }}
+                animate={{
+                  translateY: 0,
+                  translateX: 0,
+                  opacity: "1",
+                  transition: {
+                    type: "spring",
+                    bounce: "0.4",
+                    duration: 5,
+                    delay: 4.2,
+                  },
+                }}
+                exit={{
+                  translateY: "100vh",
+                  translateX: "-100vw",
+                  scale: "0",
+                  transition: {
+                    type: "spring",
+                    duration: 1,
+                    delay: 0.2,
+                  },
+                }}
+              >
                 <button onClick={changeIndex2} style={{ color: color2 }}>
                   Chapter II
                 </button>
-              </li>
-              <li className="chapter3">
+              </motion.li>
+
+              <motion.li
+                className="chapter3"
+                initial={{
+                  translateY: "-100vh",
+                  translateX: "-100vw",
+                  opacity: "0",
+                  transition: { duration: 0, delay: 0 },
+                }}
+                animate={{
+                  translateY: 0,
+                  translateX: 0,
+                  opacity: "1",
+                  transition: {
+                    type: "spring",
+                    bounce: "0.4",
+                    duration: 5,
+                    delay: 4.4,
+                  },
+                }}
+                exit={{
+                  translateY: "100vh",
+                  translateX: "-100vw",
+                  scale: "0",
+                  transition: {
+                    type: "spring",
+                    duration: 1,
+                    delay: 0,
+                  },
+                }}
+              >
                 <button onClick={changeIndex3} style={{ color: color3 }}>
                   Chapter III
                 </button>
-              </li>
+              </motion.li>
             </ul>
           </div>
 
@@ -98,8 +242,8 @@ export const Profile = () => {
               x: 200,
               opacity: 1,
               transition: {
-                type: 'spring',
-                bounce:"0.5",
+                type: "spring",
+                bounce: "0.5",
                 delay: 2.5,
                 duration: 1,
               },
@@ -107,7 +251,7 @@ export const Profile = () => {
             exit={{
               y: "-100vh",
               opacity: "0",
-              transition: { type: 'spring', duration: 1, delay: 0 },
+              transition: { type: "spring", duration: 1, delay: 0 },
             }}
             style={{ zIndex: index3 }}
           >
@@ -278,8 +422,8 @@ export const Profile = () => {
               x: 200,
               opacity: 1,
               transition: {
-                type: 'spring',
-                bounce:"0.5",
+                type: "spring",
+                bounce: "0.5",
                 delay: 3,
                 duration: 1,
               },
@@ -287,7 +431,7 @@ export const Profile = () => {
             exit={{
               x: "100vh",
               opacity: "0",
-              transition: {type: 'spring', duration: 0.75, delay: 0 },
+              transition: { type: "spring", duration: 0.75, delay: 0 },
             }}
             style={{ zIndex: index2 }}
           >
@@ -309,8 +453,8 @@ export const Profile = () => {
               x: 200,
               opacity: 1,
               transition: {
-                type: 'spring',
-                bounce:"0.5",
+                type: "spring",
+                bounce: "0.5",
                 delay: 3.5,
                 duration: 1,
               },
@@ -318,7 +462,7 @@ export const Profile = () => {
             exit={{
               x: -200,
               opacity: "0",
-              transition: {type: 'spring', duration: 1, delay: 0 },
+              transition: { type: "spring", duration: 1, delay: 0 },
             }}
             style={{ zIndex: index1 }}
           >

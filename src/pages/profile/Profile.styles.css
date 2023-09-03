@@ -29,6 +29,7 @@
   border: none;
   transform: translate(-80%, -40%);
   caret-color: transparent;
+  z-index: 4;
 }
 
 
@@ -41,16 +42,12 @@
   font-family: 'Carter One';
   letter-spacing: 3px;
   opacity: 0;
-  transform: translateY(-2rem);
-  animation: fadeInY 0.5s ease-in-out 3.6s forwards;
 }
 
 #title1 {
   font-size: 1rem;
   caret-color: transparent;
   opacity: 0;
-  transform: translateY(-2rem);
-  animation: fadeInY 0.5s ease-in-out 4.1s forwards;
   color: #fdfdfd;
   font-weight: 400;
   margin-top: 2px;
@@ -62,24 +59,18 @@
 
 .chapter1 {
   opacity: 0;
-  transform: translateY(-2rem);
-  animation: fadeInY 0.5s ease-in-out 4.6s forwards;
   margin-top: 2px;
   font-family: 'Carter One';
 }
 
 .chapter2 {
   opacity: 0;
-  transform: translateY(-2rem);
-  animation: fadeInY 0.5s ease-in-out 5.1s forwards;
   margin-top: 2px;
   font-family: 'Carter One';
 }
 
 .chapter3 {
   opacity: 0;
-  transform: translateY(-2rem);
-  animation: fadeInY 0.5s ease-in-out 5.6s forwards;
   margin-top: 2px;
   font-family: 'Carter One';
 }
@@ -475,9 +466,9 @@ ul li button {
   }
 
   #title {
-    transform: translateY(1.5em);
+
     font-size: large;
-    padding: 1em 0 1em 0.25em;
+    padding: 2em 0 0 0.25em;
     letter-spacing: 2px;
   }
 

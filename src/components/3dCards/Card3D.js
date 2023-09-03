@@ -89,7 +89,7 @@ const Card3D = () => {
           <motion.div className="folder"
                 initial={{ y: "-200%", transition: { duration: 0, delay: 0 } }}
                 animate={{ y: "0%", opacity: '1', transition: { type:"spring", bounce: "0.5", duration: 1, delay: 3 } }}
-                exit={{ y:'-200%', scale: 0, transition: { type:"spring", bounce: "0.5", duration: 1, delay: 0.5 } }}
+                exit={{ y:'-200%', x: "-200%", scale: 0, transition: { type:"spring", bounce: "0.5", duration: 1, delay: 0.5 } }}
           >
             <div className="card-bg">
               <p>
@@ -161,7 +161,7 @@ const Card3D = () => {
           <motion.div className="folder"
                           initial={{ y: "-200%", transition: { duration: 0, delay: 0 } }}
                           animate={{ y: "0%", opacity: '1', transition: { type:"spring", bounce: "0.5", duration: 1, delay: 2.8 } }}
-                          exit={{ y:'-200%', scale: 0, transition: { type:"spring", bounce: "0.5", duration: 1, delay: 0.5 } }}
+                          exit={{ y:'-200%', x:"200%", scale: 0, transition: { type:"spring", bounce: "0.5", duration: 1, delay: 0.5 } }}
           >
             <div className="card-bg">
               <p>
