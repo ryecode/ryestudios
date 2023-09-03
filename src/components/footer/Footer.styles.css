@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .footer {
-  background: linear-gradient(to top, rgba(4, 4, 4, 0.875), rgba(32, 32, 31, 0.523));
+  background: linear-gradient(to top, rgba(4, 4, 4, 0.875) 25%, rgba(32, 32, 31, 0.01) 100%);
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
@@ -186,7 +186,7 @@
 .sub {
   width: 50%;
   opacity: 0;
-  animation: scale 1s ease-in-out 8s forwards;
+  animation: scale 1s ease-in-out 2s forwards;
   background: transparent;
   border: none;
   margin-left: -12em;

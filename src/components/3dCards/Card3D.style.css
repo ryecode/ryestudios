@@ -177,7 +177,7 @@ p {
 
     .projects {
         flex-direction: column;
-        margin: 0 0 0 7em;
+        margin: 0 0 3em 7em;
         padding: 0;
     }
 
@@ -188,4 +188,164 @@ p {
     .card-fg {
         pointer-events: none;
     }
+
+    .detailsBtn {
+        margin-bottom: 3em;
+    }
+
+    .folder {
+        margin-bottom: 5em;
+    }
+}
+
+/* WEBSITE DETAILS */
+
+.detail-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding-top: 10%;
+    background-image: linear-gradient(0, rgba(240, 169, 1, 1), rgba(240, 169, 1, 1), rgb(240, 169, 1, 1), rgb(240, 169, 1, 1), rgba(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.8), rgb(240, 169, 1, 0.8), rgb(240, 169, 1, 0.8), rgb(240, 169, 1, 0.7), rgb(240, 169, 1, 0.7), rgb(240, 169, 1, 0.6), rgb(240, 169, 1, 0.5), rgb(240, 169, 1, 0.4), rgb(240, 169, 1, 0.3), rgb(240, 169, 1, 0.2), rgb(240, 169, 1, 0.1), transparent);
+    color: black;
+    transition: opacity 0.45s, height 0.5s;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.detailsModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: all 0.35s;
+    transform-style: preserve-3d;
+    transform-origin: left top;
+    transition: 0.5s;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.folder:hover .detailsModal {
+    transform: rotateY(-40deg);
+}
+
+
+.detail-container a {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-decoration: none;
+    padding: 1em;
+    background-color: #022177;
+    text-transform: uppercase;
+}
+
+.detail-header {
+    width: 100%;
+    font-size: 1em;
+    opacity: 1;
+    color: rgb(3, 217, 255);
+    font-weight: 900;
+    text-align: left;
+    margin: 0em 0 -3em 1em;
+    font-family: 'Carter One';
+    text-shadow: 1px 2px black;
+}
+
+
+.detail-description {
+    width: 100%;
+    font-size: 0.6em;
+    color: rgb(0, 0, 0);
+    padding: 0 1.5em 0 1.5em;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -1em;
+    text-shadow: 0.1px 0.1px black;
+}
+
+.detailsBtn,
+.detailsBtn::before,
+.detailsBtn::after {
+    box-sizing: border-box;
+}
+
+.detailsBtn:hover {
+    color: hsl(0, 97%, 44%);
+    text-shadow: 1px 2px black;
+  }
+
+.detailsBtn {
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: 'Carter One', sans-serif;
+    letter-spacing: 2.5px;
+    color: hsl(0, 97%, 44%);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: var(--clr-neon) 0.25em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    position: relative;
+    font-weight: 700;
+    opacity: 1;
+    caret-color: transparent;
+    text-shadow: 2px 2px black;
+    box-shadow:
+        inset 0 0 0.5em 0 var(--clr-neon),
+        0 0 0.5em 0 var(--clr-neon);
+}
+
+.detailsBtn::before {
+    pointer-events: none;
+    /*use this string to avoid pointer change outside button */
+    content: '';
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+.detailsBtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+    background-color: var(--clr-neon);
+    z-index: -1;
+}
+
+.detailsBtn:hover,
+.detailsBtn:focus {
+    text-shadow: none;
+}
+
+.detailsBtn:hover::before,
+.detailsBtn:focus::before {
+    opacity: 1;
+}
+
+.detailsBtn:hover::after,
+.detailsBtn:focus::after {
+    opacity: 1;
 }
