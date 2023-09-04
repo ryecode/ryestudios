@@ -195,6 +195,7 @@ p {
 
     .folder {
         margin-bottom: 5em;
+        opacity: 0;
     }
 }
 
