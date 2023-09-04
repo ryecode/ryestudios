@@ -273,7 +273,7 @@ const Card3D = () => {
                   <div className="detail-description">
                     <span style={{ color: "blue" }}>Description:</span>
                     <br />
-                    This is a collaborative project by Team IceCode. For this project, I created the whole backend, the database implementation, and the deployment of the website.
+                    A collaborative project by Team IceCode. For this project, I led the team and created the whole backend, database, API integration, some frontend CSS, and the deployment of the website.
                     <br />
                     <br />
                     <span style={{ color: "blue" }}>Tools Used:</span>
