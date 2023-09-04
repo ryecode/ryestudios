@@ -67,9 +67,8 @@ export const AccordionComponent = () => {
               </span>
               ! I' am Rye, a Full-Stack Web Developer based in Antipolo City,
               Philippines. I recently graduated from KodeGo's Full-Stack Web
-              Development Bootcamp this past June 2023. Where I was awarded{" "}
-              <br />"
-              <a
+              Development Bootcamp this past June 2023. Where I was awarded&nbsp;
+              "<a
                 href="https://youtu.be/Hq0qzBNZzQA"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -105,24 +104,26 @@ export const AccordionComponent = () => {
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <h6 style={{ color: "rgb(236, 219, 60)", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
+            <h6 style={{ lineHeight: "1.5em", color: "rgb(236, 219, 60)", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
               EDUCATIONAL ATTAINMENT
             </h6>
             <p
               style={{
+                lineHeight: "1.25em",
+                textAlign: "left",
                 color: "white",
                 textShadow: "1px 1px black",
                 fontFamily: "Montserrat",
                 fontSize: "0.85em",
               }}
             >
-              <b>○ KodeGo-Bootcamp (Feb.2023-Jul.2023)</b>
+              <b> KodeGo-Bootcamp (Feb.2023-Jul.2023)</b>
               <br />
               • Full-Stack Web Development <br />
               ♦ Best in Coding Award
               <br />
               <br />
-              <b>○ AMA University (2001-2004, 2010-2011)</b>
+              <b> AMA University (2001-2004, 2010-2011)</b>
               <br />• B.S. Electronics & Communications Engineering
             </p>
             <h6 style={{ color: "rgb(236, 219, 60)", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
@@ -130,21 +131,24 @@ export const AccordionComponent = () => {
             </h6>
             <p
               style={{
+                lineHeight: "1.25em",
+                textAlign: "left",
                 color: "white",
                 fontFamily: "Montserrat",
                 textShadow: "1px 1px black",
               }}
             >
-              <b>○ TelePerformance (2020-2023)</b>
-              <br />■ <i>Technical Support Representative</i>
+              <b> TelePerformance (2020-2023)</b>
+              <br />•<i>Technical Support Representative</i>
               <span
                 style={{
+                  lineHeight: "1em",
                   fontSize: "0.75em",
                   fontFamily: "Montserrat",
                   color: "aliceblue",
                 }}
-              >
-                • Troubleshooted service issues for customers of
+              ><br/>
+                ■ Troubleshooted service issues for customers of
                 AT&T U-verse, DirecTV, and Mobility.
               </span>
             </p>
