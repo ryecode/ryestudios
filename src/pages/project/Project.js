@@ -53,9 +53,9 @@ export const Project = () => {
                   className="gradientUser"
                   style={{ textTransform: "uppercase", textShadow: "none" }}
                 >
-                  &nbsp;{userName}&nbsp;
+                  &nbsp;{userName}
                 </span>
-                check out my project list!
+                ,&nbsp;check out my project list!
               </b>
             </motion.h3>
           </div>

@@ -430,11 +430,12 @@ const Card3D = () => {
             </div>
             <div className="card-cta">
               <a
-                href="https://ryetictactoe.vercel.app/"
+                href="https://cvhack.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{color: "rgb(255, 78, 78)", textShadow: "1px 1px black"}}
               >
-                Website under reconstruction!
+                <b>Website under reconstruction!</b>
               </a>
             </div>
             <div className="card-fg">

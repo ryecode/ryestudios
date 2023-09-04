@@ -212,7 +212,7 @@ p {
     align-items: center;
     padding-top: 10%;
     background-image: linear-gradient(0, rgba(240, 169, 1, 1), rgba(240, 169, 1, 1), rgb(240, 169, 1, 1), rgb(240, 169, 1, 1), rgba(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.9), rgb(240, 169, 1, 0.8), rgb(240, 169, 1, 0.8), rgb(240, 169, 1, 0.8), rgb(240, 169, 1, 0.7), rgb(240, 169, 1, 0.7), rgb(240, 169, 1, 0.6), rgb(240, 169, 1, 0.5), rgb(240, 169, 1, 0.4), rgb(240, 169, 1, 0.3), rgb(240, 169, 1, 0.2), rgb(240, 169, 1, 0.1), transparent);
-    color: black;
+    color: rgb(0, 0, 0);
     transition: opacity 0.45s, height 0.5s;
     border-radius: 10px;
     pointer-events: none;
