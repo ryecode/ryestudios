@@ -8,6 +8,7 @@ const Card3D = () => {
   const [showDetails2, setShowDetails2] = useState(false);
   const [showDetails3, setShowDetails3] = useState(false);
   const [showDetails4, setShowDetails4] = useState(false);
+  const [showDetails5, setShowDetails5] = useState(false);
 
   return (
     <>
@@ -441,12 +442,12 @@ const Card3D = () => {
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
               onClick={() => {
-                setShowDetails4(!showDetails4);
+                setShowDetails5(!showDetails5);
               }}
             >
               DETAILS
             </motion.button>
-            {showDetails4 === true && (
+            {showDetails5 === true && (
               <div className="detailsModal">
                 <div className="detail-container">
                   <p className="detail-header">
