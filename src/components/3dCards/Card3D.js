@@ -24,7 +24,7 @@ const Card3D = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 1,
-                delay: 3.4,
+                delay: 3.6,
               },
             }}
             exit={{
@@ -72,7 +72,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 3.8,
+                  delay: 4,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -92,13 +92,16 @@ const Card3D = () => {
                   <p className="detail-description">
                     <span style={{ color: "blue" }}>Description:</span>
                     <br />
-                    This is version 2.0 of my portfolio. I migrated it to
-                    React CRA and used new techniques I recently learned, like Framer Motion. I also implemented some React hooks for some interaction with the user.
+                    This is version 2.0 of my portfolio. I migrated it to React
+                    CRA and used new techniques I recently learned, like Framer
+                    Motion. I also implemented some React hooks for some
+                    interaction with the user.
                     <br />
                     <br />
                     <span style={{ color: "blue" }}>Tools Used:</span>
                     <br />
-                    React, Framer Motion, CSS, Javascript, Vercel, and Bootstraps.
+                    React, Framer Motion, CSS, Javascript, Vercel, and
+                    Bootstraps.
                   </p>
                 </div>
               </div>
@@ -115,7 +118,7 @@ const Card3D = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 1,
-                delay: 3.2,
+                delay: 3.4,
               },
             }}
             exit={{
@@ -164,7 +167,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4,
+                  delay: 4.2,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -184,7 +187,10 @@ const Card3D = () => {
                   <p className="detail-description">
                     <span style={{ color: "blue" }}>Description:</span>
                     <br />
-                    This was my very first mini-project I created during our KodeGo Bootcamp. It's a very simple single-page website that I built from scratch, aiming to showcase my current animation skills using old-school CSS at the time.
+                    This was my very first mini-project I created during our
+                    KodeGo Bootcamp. It's a very simple single-page website that
+                    I built from scratch, aiming to showcase my current
+                    animation skills using old-school CSS at the time.
                     <br />
                     <br />
                     <span style={{ color: "blue" }}>Tools Used:</span>
@@ -206,7 +212,7 @@ const Card3D = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 1,
-                delay: 3,
+                delay: 3.2,
               },
             }}
             exit={{
@@ -254,7 +260,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4.2,
+                  delay: 4.4,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -274,7 +280,10 @@ const Card3D = () => {
                   <div className="detail-description">
                     <span style={{ color: "blue" }}>Description:</span>
                     <br />
-                    A collaborative project by Team IceCode. For this project, I led the team and created the whole backend, database, API integration, some frontend CSS, and the deployment of the website.
+                    A collaborative project by Team IceCode. For this project, I
+                    led the team and created the whole backend, database, API
+                    integration, some frontend CSS, and the deployment of the
+                    website.
                     <br />
                     <br />
                     <span style={{ color: "blue" }}>Tools Used:</span>
@@ -297,20 +306,20 @@ const Card3D = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 1,
-                delay: 2.8,
+                delay: 3,
               },
             }}
-              exit={{
-                y: "-200%",
-                x: "200%",
-                scale: 0,
-                transition: {
-                  type: "spring",
-                  bounce: "0.5",
-                  duration: 1,
-                  delay: 0.5,
-                },
-              }}
+            exit={{
+              y: "-200%",
+              x: "200%",
+              scale: 0,
+              transition: {
+                type: "spring",
+                bounce: "0.5",
+                duration: 1,
+                delay: 0.5,
+              },
+            }}
           >
             <div className="card-bg">
               <p>
@@ -346,7 +355,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4.4,
+                  delay: 4.6,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -366,7 +375,10 @@ const Card3D = () => {
                   <p className="detail-description">
                     <span style={{ color: "blue" }}>Description:</span>
                     <br />
-                    This is a mini-game I created for my KodeGo technical exam. I really enjoyed the challenge of figuring out the correct logic for this one. And I'm planning to level up this game with more CSS effects, animations, and functionality.
+                    This is a mini-game I created for my KodeGo technical exam.
+                    I really enjoyed the challenge of figuring out the correct
+                    logic for this one. And I'm planning to level up this game
+                    with more CSS effects, animations, and functionality.
                     <br />
                     <br />
                     <span style={{ color: "blue" }}>Tools Used:</span>
@@ -380,7 +392,13 @@ const Card3D = () => {
 
           <motion.div
             className="folder"
-            initial={{ y: "-200%", transition: { duration: 0, delay: 0 } }}
+            initial={{ 
+              y: "-200%",
+              transition: { 
+                duration: 0,
+                delay: 0 
+              }
+            }}
             animate={{
               y: "0%",
               opacity: 1,
@@ -388,7 +406,7 @@ const Card3D = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 1,
-                delay: 2.6,
+                delay: 2.8,
               },
             }}
             exit={{
@@ -424,7 +442,7 @@ const Card3D = () => {
                 className="card-image"
                 src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
                 alt="website screenshot"
-                style={{width:'40%'}} 
+                style={{ width: "40%" }}
               />
             </div>
             <motion.button
@@ -437,7 +455,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4.6,
+                  delay: 4.8,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -457,18 +475,21 @@ const Card3D = () => {
                   <p className="detail-description">
                     <span style={{ color: "blue" }}>Description:</span>
                     <br />
-                    This was a mini-project for the KodeGo bootcamp. Unfortunately, its Github was ruined, and I'm currently reconstructing it. Stay tuned for the relaunch of this website soon!
+                    This was a mini-project for the KodeGo bootcamp.
+                    Unfortunately, its Github was ruined, and I'm currently
+                    reconstructing it. Stay tuned for the relaunch of this
+                    website soon!
                     <br />
                     <br />
                     <span style={{ color: "blue" }}>Tools Used:</span>
                     <br />
-                    React, Node.js, MongoDB, Framer Motion, Javascript, CSS, and Vercel.
+                    React, Node.js, MongoDB, Framer Motion, Javascript, CSS, and
+                    Vercel.
                   </p>
                 </div>
               </div>
             )}
           </motion.div>
-
         </div>
       </div>
     </>

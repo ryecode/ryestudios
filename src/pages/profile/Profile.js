@@ -3,7 +3,6 @@ import "./Profile.styles.css";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { AppContext } from "../../App";
-
 import { AccordionComponent } from "../../components/Accordion";
 
 export const Profile = () => {
@@ -90,7 +89,7 @@ export const Profile = () => {
                 !
               </b>
             </motion.h1>
-            <motion.h1
+            <motion.h2
               id="title1"
               initial={{
                 translateY: "-100vh",
@@ -119,7 +118,7 @@ export const Profile = () => {
               }}
             >
               <b>Allow me to introduce myself..</b>
-            </motion.h1>
+            </motion.h2>
             <ul className="toggleBtns">
 
               <motion.li
