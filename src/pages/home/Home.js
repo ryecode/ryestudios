@@ -200,6 +200,22 @@ export const Home = () => {
           <div className="carouselBox">
             <motion.div
               className="tilt-box-wrap"
+              initial={{
+                y: "-100vh",
+                opacity: '0',
+                transition: { duration: 0, delay: 0 },
+              }}
+              animate={{
+                y: "0%",
+                opacity: "1",
+                zIndex: "3",
+                transition: {
+                  type: "spring",
+                  bounce: "0.5",
+                  duration: 2,
+                  delay: 9.2,
+                },
+              }}
               exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
               style={{width:"22.25em", height:"15em", margin:"0 0 0 -2em", }}
             >
@@ -214,7 +230,7 @@ export const Home = () => {
               <span className="t_over"></span>
               <div className="tilt-box">
                 <img
-                  src="https://ryecode.github.io/portfolio/ImageBank/callingCardSim.jpeg"
+                  src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
                   alt="resume"
                   width="100%"
                   height="100%"
