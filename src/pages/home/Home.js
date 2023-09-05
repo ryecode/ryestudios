@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { ChangeUserName } from "../../components/ChangeUserName";
 import "../../components/Modal.styles.css";
 import "../../global.css";
+// import CarouselFadeExample from '../../components/carousel/Carousel';
 
 export const Home = () => {
 
@@ -79,53 +80,7 @@ export const Home = () => {
         </motion.div>
         <ChangeUserName />
 
-          <motion.div className="blockGreen"
-                    initial={{
-                      y: "-100%",
-                      x: "-90%",
-                      opacity: "0",
-                      transition: { delay: 0 },
-                    }}
-                    animate={{
-                      y: "-10%",
-                      x: "-90%",
-                      opacity: "1",
-                      transition: {
-                        type: "spring",
-                        duration: 1.25,
-                        delay: 8.2,
-                      },
-                    }}
-                    exit={{
-                      y: "-100vh",
-                      scale: "0",
-                      transition: { duration: 1, delay: 0 },
-                    }}
-          ></motion.div>
-          <motion.div className="blockBlue"
-                              initial={{
-                                y: "100%",
-                                x: "140%",
-                                opacity: "0",
-                                transition: { delay: 0 },
-                              }}
-                              animate={{
-                                y: "40%",
-                                x: "140%",
-                                opacity: "1",
-                                transition: {
-                                  type: "spring",
-                                  duration: 1.25,
-                                  delay: 8.5,
-                                },
-                              }}
-                              exit={{
-                                y: "100vh",
-                                scale: "0",
-                                transition: { duration: 1, delay: 0 },
-                              }}
-          ></motion.div>
-          <motion.div className="blockRed"
+        <motion.div className="blockRed"
                               initial={{
                                 x: "-300%",
                                 y: "-175%",
@@ -148,7 +103,125 @@ export const Home = () => {
                                 transition: { duration: 1, delay: 0 },
                               }}
           ></motion.div>
+          <motion.div className="blockGreen"
+                    initial={{
+                      y: "-100%",
+                      x: "-90%",
+                      opacity: "0",
+                      transition: { delay: 0 },
+                    }}
+                    animate={{
+                      y: "-20%",
+                      x: "-90%",
+                      opacity: "1",
+                      transition: {
+                        type: "spring",
+                        duration: 1.25,
+                        delay: 8,
+                      },
+                    }}
+                    exit={{
+                      y: "-100vh",
+                      scale: "0",
+                      transition: { duration: 1, delay: 0 },
+                    }}
+          ></motion.div>
+          <motion.div className="blockBlue"
+                              initial={{
+                                y: "100%",
+                                x: "140%",
+                                opacity: "0",
+                                transition: { delay: 0 },
+                              }}
+                              animate={{
+                                y: "20%",
+                                x: "140%",
+                                opacity: "1",
+                                transition: {
+                                  type: "spring",
+                                  duration: 1.25,
+                                  delay: 8.3,
+                                },
+                              }}
+                              exit={{
+                                y: "100vh",
+                                scale: "0",
+                                transition: { duration: 1, delay: 0 },
+                              }}
+          ></motion.div>
 
+<motion.div className="blockPurple"
+                              initial={{
+                                y: "-100%",
+                                x: "330%",
+                                opacity: "0",
+                                transition: { delay: 0 },
+                              }}
+                              animate={{
+                                y: "-47%",
+                                x: "330%",
+                                opacity: "1",
+                                transition: {
+                                  type: "spring",
+                                  duration: 1.25,
+                                  delay: 8.6,
+                                },
+                              }}
+                              exit={{
+                                y: "100vh",
+                                scale: "0",
+                                transition: { duration: 1, delay: 0 },
+                              }}
+          ></motion.div>
+
+                    <motion.div className="blockPink"
+                    initial={{
+                      x: "180%",
+                      y: "170%",
+                      opacity: "0",
+                      transition: { delay: 0 },
+                    }}
+                    animate={{
+                      x: "180%",
+                      y: "170%",
+                      opacity: "1",
+                      transition: {
+                        type: "spring",
+                        duration: 5,
+                        delay: 9,
+                      },
+                    }}
+                    exit={{
+                      x: "100%",
+                      scale: "0",
+                      transition: { duration: 1, delay: 0 },
+                    }}
+          ></motion.div>
+          <div className="carouselBox">
+            <motion.div
+              className="tilt-box-wrap"
+              exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
+              style={{width:"22.25em", height:"15em", margin:"0 0 0 -2em", }}
+            >
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <span className="t_over"></span>
+              <div className="tilt-box">
+                <img
+                  src="https://ryecode.github.io/portfolio/ImageBank/callingCardSim.jpeg"
+                  alt="resume"
+                  width="100%"
+                  height="100%"
+                ></img>
+              </div>
+            </motion.div>
+            </div>
       </div>
     </motion.div>
   );

@@ -138,7 +138,7 @@
 
 .modalPointer {
   position: absolute;
-  top: -11em;
+  top: -18em;
   right: -25em;
   visibility: hidden;
   opacity: 0;
@@ -252,8 +252,8 @@
 
   .modalPointer img {
     width: 30%;
-    transform: translateX(-13em);
-    margin-top: -20em;
+    transform: translateX(-14em);
+    margin-top: 10em;
     z-index: 4;
   }
 

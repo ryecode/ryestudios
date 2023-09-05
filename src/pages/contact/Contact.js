@@ -52,28 +52,6 @@ export const Contact = () => {
                   width="100%"
                   height="100%"
                 ></img>
-                {/* <div>
-                  <div className="imageContainer">
-                  <img
-                    className="callingCardImage"
-                    src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
-                    alt="Profile"
-                    width={"60%"}
-                  />
-                  </div>
-
-                  <h1 className="callingCardName">Ryan Corral</h1>
-                  <p id="job">Full-Stack Web Developer</p>
-                  <span id="contactDetails">
-                    <ul>LinkedIn: www.linkedin.com/in/rye-corral</ul>
-                    <ul>E-mail: mr.ryan.corral@gmail.com</ul>
-                    <ul>Contact Number: +63-917-921-9988</ul>
-                    <ul>
-                      Social Media:
-                      <br /> https://www.facebook.com/ryekoralzkie
-                    </ul>
-                  </span>
-                </div> */}
               </div>
             </motion.div>
 

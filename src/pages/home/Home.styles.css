@@ -244,12 +244,34 @@ video {
     opacity: 1;
   }
 
+  .carouselBox {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    width: 22em;
+    height: 15em;
+    border: black;
+    background-color: black;
+    transform: translate(123.5%, 61%);
+    padding: 0;
+    margin: 0;
+  }
+
   /* BACKGROUND BLOCKS */
 
-  .blockGreen {
-    background-color:hsla(134, 95%, 29%, 0.55) ;
+  .blockRed {
+    background-color:hsla(0, 100%, 51%, 0.326) ;
     position: absolute;
-    height: 35em;
+    height: 5em;
+    width: 20em;
+    transform: translate(-49em, -8.78em);
+    z-index: 2;
+  }
+
+  .blockGreen {
+    background-color:hsla(134, 98%, 43%, 0.352) ;
+    position: absolute;
+    height: 41em;
     width: 23em;
     transform: translate(-20.75em, -10%);
     opacity: 0;
@@ -257,7 +279,7 @@ video {
   }
 
   .blockBlue {
-    background-color:hsla(180, 99%, 64%, 0.229) ;
+    background-color:hsla(231, 95%, 58%, 0.547) ;
     position: absolute;
     height: 35em;
     width: 5em;
@@ -265,12 +287,21 @@ video {
     z-index: 2;
   }
 
-  .blockRed {
-    background-color:hsla(0, 100%, 65%, 0.646) ;
+  .blockPurple {
+    background-color:hsla(271, 100%, 48%, 0.692) ;
+    position: absolute;
+    height: 30em;
+    width: 8em;
+    transform: translate(49em, 20%);
+    z-index: 2;
+  }
+
+  .blockPink {
+    background-color:hsla(347, 100%, 60%, 0.402) ;
     position: absolute;
     height: 5em;
-    width: 20em;
-    transform: translate(-49em, -8.78em);
+    width: 30em;
+    transform: translate(100em, -8.78em);
     z-index: 2;
   }
 
@@ -290,14 +321,14 @@ video {
   }
 
   #askName {
-      margin: 0 6em -17em 0;
+      margin: 0 5em -11em 0;
       text-align: left;
   }
 
   #greet {
     width: max-content;
     font-size: 2em;
-      margin-top: 1em;
+      margin-top: -1em;
       left: -0.25em;
   }
 
@@ -314,15 +345,25 @@ video {
 
 .blockBlue {
   left: -5.5em;
-  top: 12em;
+  top: 15em;
+}
+
+.blockPink {
+  background-color:hsla(271, 100%, 48%, 0.692);
+  left: -45em;
+  top: 27em;
 }
 
   .jobTitle {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .heroHeadline {
     font-size: 1.5em;
+  }
+
+  .carouselBox {
+    visibility: hidden;
   }
 
 }
