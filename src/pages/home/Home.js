@@ -2,14 +2,13 @@ import React from "react";
 import "./Home.styles.css";
 import glowingBG from "../../assets/glowingBG.mp4";
 import { motion } from "framer-motion";
-import { useContext } from "react";
-import { AppContext } from "../../App";
+// import { useContext } from "react";
+// import { AppContext } from "../../App";
 import { ChangeUserName } from "../../components/ChangeUserName";
 import "../../components/Modal.styles.css";
 import "../../global.css";
 
 export const Home = () => {
-  const { userName } = useContext(AppContext);
 
   return (
     <motion.div
@@ -30,7 +29,7 @@ export const Home = () => {
 
       <div className="content">
         <motion.div
-          className="hero-image"
+          className="heroIMG"
           id="heroHome"
           exit={{
             x: "-100vw",
@@ -38,19 +37,18 @@ export const Home = () => {
             transition: { duration: 1, delay: 0 },
           }}
         >
-          <div className="hero-text" style={{ marginTop: "-2em" }}>
-            <h1 className="hero-title">
+          <div className="heroText">
+            <h1 className="heroHeadline">
               <b>I'am Ryan Corral</b>
             </h1>
-            <p className="subtitle">And I'm a Full Stack Web Developer</p>
+            <p className="jobTitle">And I'm a Full Stack Web Developer</p>
 
             <a
               href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_Resume.pdf"
-              id="resumeBtn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="neon-button">HIRE ME</button>
+              <button className="hireButton">HIRE ME</button>
             </a>
           </div>
         </motion.div>
@@ -77,13 +75,14 @@ export const Home = () => {
             transition: { duration: 1, delay: 0 },
           }}
         >
-          WELCOME&nbsp;
-          <span className="gradientUser" style={{ textTransform: "uppercase" }}>
-            {userName}
-          </span>
-          To Rye Zone
+          WELCOME to Rye Zone!
         </motion.div>
         <ChangeUserName />
+
+          <div className="blockGreen"></div>
+          <div className="blockBlue"></div>
+          <div className="blockRed"></div>
+
       </div>
     </motion.div>
   );

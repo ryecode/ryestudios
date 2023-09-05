@@ -78,7 +78,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 80%;
+  width: 67%;
   align-items: center;
   justify-content: center;
   color: black;
@@ -204,7 +204,11 @@
   }
 
   .RyeLogo {
-    width: 25%;
+    width: 12%;
+  }
+
+  .animate-charcter {
+    margin-right: -16em;
   }
 
 }
@@ -218,7 +222,7 @@
 .RyeLogo {
   border-radius: 50%;
   cursor: pointer;
-  margin-left: -50%;
+  margin-left: -74%;
   animation: scale 0.75s ease-in 0 forwards;
   animation-iteration-count: initial;
   transform: translate(0rem);
@@ -235,9 +239,11 @@
 .animate-charcter {
   text-transform: uppercase;
   background-image: linear-gradient(-225deg,
-      #21D4FD 0%,
-      #ff2121 29%,
-      #85FFBD 67%,
+      #f5a646 0%,
+      #ff2121 22%,
+      #e8e6e4 39%,
+      #4c4a4a 58%,
+      #85FFBD 73%,
       #008000 100%);
   background-size: auto auto;
   background-clip: border-box;

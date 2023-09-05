@@ -9,7 +9,7 @@
   margin: 0 0 -5.93em 0;
   padding: 0 0 0 0;
   width: 100%;
-  background-image: url("https://ryecode.github.io/portfolio/ImageBank/hexBG.jpg") ;
+  background-image: url("https://ryecode.github.io/portfolio/ImageBank/hexBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,23 +175,22 @@
 
 
 .gradienttext {
-  background-image: linear-gradient(to left bottom, hsl(63, 75%, 40%), hsl(63, 80%, 41%), hsl(63, 85%, 44%), hsl(63, 90%, 47%), hsl(63, 100%, 50%), hsl(63, 89%, 71%));
+  background-image: linear-gradient(-225deg,
+    hsl(63, 100%, 35%),
+    hsl(63, 98%, 42%),
+    hsl(63, 100%, 50%), 
+    hsl(63, 83%, 66%),
+    hsl(63, 100%, 78%),
+    hsl(63, 83%, 66%),
+    hsl(63, 100%, 50%), 
+    hsl(63, 98%, 42%), 
+    hsl(63, 100%, 35%));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   caret-color: transparent;
   font-family: 'Carter One';
   text-shadow: currentColor;
-}
-
-.gradientUser {
-  background-image: linear-gradient(to top, hsl(63, 94%, 40%) 10%, hsl(63, 100%, 50%) 50%, hsl(63, 95%, 38%) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: none;
-  caret-color: transparent;
-  font-family: 'Carter One', cursive;
 }
 
 #role {
@@ -434,7 +433,7 @@ ul li button {
     margin-top: 0;
     margin-bottom: -5.93em;
     padding: 0 0 5.93em 0;
-    background-position-x: 60% ;
+    background-position-x: 60%;
   }
 
   .profileCard {

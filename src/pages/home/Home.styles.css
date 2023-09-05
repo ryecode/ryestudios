@@ -36,53 +36,268 @@ video {
 
 #heroHome {
     position: relative;
-    margin: -10em 0 0 -35em;
+    margin: -26em 0 0 -57.25em;
     caret-color: transparent;
 }
 
 #askName {
     position: absolute;
-    margin: 0em -33em -19em 0;
+    margin: 0em -1em -4.5em 0;
     opacity: 0;
-    padding: 2em;
+    padding: 2em 2em 3em 2em;
     caret-color: transparent;
-    color: rgb(184, 221, 253);
+    color: rgb(255, 255, 255);
     font-family: 'Carter One';
-}
-
-#askName button {
-    color: hsl(228, 96%, 56%);
-    text-shadow: none;
+    text-align: left;
+    z-index: 1;
+    line-height: 1em;
 }
 
 #greet {
+    position: absolute;
     color: hsl(0, 0%, 0% / 0.7);
-    font-size: 2.5em;
-    margin-top: -3em;
+    font-size: 2em;
+    top: 6.25em;
+    left: 19.15em;
     padding: 1em;
     font-family: 'Luckiest guy', cursive;
-    background-image: linear-gradient(to top, #4a5b4c 0%, #f6fffa 50%, #4a5b4c 100%);
+    background-image: linear-gradient(to top, #4c4d4c 20%, #ffffff 50%, #4c4d4c 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     caret-color: transparent;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: left;
+    flex-wrap: no wrap;
+    width: fit-content;
+    z-index: 4;
+
 }
+
+.gradientUser {
+    background-image: linear-gradient(to top, hsl(63, 94%, 40%) 10%, hsl(63, 100%, 50%) 50%, hsl(63, 95%, 38%) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    caret-color: transparent;
+    font-family: 'Carter One', cursive;
+  }
 
 @media (max-width: 770px) {
     #heroHome {
-        transform: translate(17em, -5em);
+        transform: translate(20em, -10em);
+        z-index: 4;
+    }
+
+    .hireButton {
+        margin-left: -20em;
+    }
+
+    .heroHeadline {
+        font-size: 1em;
     }
 
     #askName {
-        margin: 0 0.5em -22em 0;
+        margin: 0 -5em -22em 0;
         ;
     }
 
     #greet {
-        margin-top: -3.5em;
+        margin-top: -2em;
+    }
+
+    .blockGreen {
+        left: 27.5em;
+        top: -11em;
     }
 
 }
+
+/* HERO MODIFICATIONS */
+  
+  .heroIMG {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .heroHeadline {
+    font-size: 2.25em;
+    font-weight: bolder;
+    position: relative;
+    font-family: 'Carter One', serif;
+    width: max-content;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px #00171c;
+    padding-top: 2em;
+    caret-color: transparent;
+  }
+  
+  .heroHeadline::before,
+  .heroHeadline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .heroHeadline::before {
+    background-color: black;
+    height: 1.25em;
+    margin-top: 2em;
+    border-radius: 8px;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards;
+  }
+  
+  .heroHeadline::after {
+    width: 0.25em;
+    height: 1.25em;
+    margin-top: 2em;
+    background: hsl(0, 0%, 100%);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
+  }
+  
+  .jobTitle {
+    font-size: 1.5em;
+    opacity: 0;
+    transform: translateY(-2em);
+    animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
+    color: hsla(0, 0%, 100%, 0.769);
+    font-weight: 400;
+    margin-top: 2px;
+    font-family: 'Carter One';
+    caret-color: transparent;
+  }
+  
+  .heroText {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+    color: white;
+    font-weight: 800;
+    margin-top: -2em;
+    width: 100%;
+    z-index: 4;
+  }
+  
+  :root {
+    --clr-neon: hsl(112, 100%, 50%);
+    --clr-bg: hsl(320, 43%, 96%);
+    ;
+  }
+  
+  .hireButton,
+  .hireButton::before,
+  .hireButton::after {
+    box-sizing: border-box;
+  }
+  
+  .hireButton {
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: 'Carter One', sans-serif;
+    color: hsl(188, 88%, 55%);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    position: absolute;
+    font-weight: 700;
+    opacity: 0;
+    animation: scale 0.25s linear calc(var(--typewriterSpeed) + 2.75s) forwards;
+    text-shadow: none;
+    z-index: 4;
+    box-shadow:
+      inset 0 0 0.5em 0 var(--clr-neon),
+      0 0 0.5em 0 var(--clr-neon);
+    left: 21em;
+  }
+  
+  .hireButton::before {
+    pointer-events: none;
+    /*use this string to avoid pointer change outside button */
+    content: '';
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+  
+  .hireButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+    background-color: var(--clr-neon);
+    z-index: -1;
+  }
+  
+  .hireButton:hover,
+  .hireButton:focus {
+    color: hsl(0, 98%, 50%);
+  }
+  
+  .hireButton:hover::before,
+  .hireButton:focus::before {
+    opacity: 1;
+  }
+  
+  .hireButton:hover::after,
+  .hireButton:focus::after {
+    opacity: 1;
+  }
+
+  /* BACKGROUND BLOCKS */
+
+  .blockGreen {
+    background-color:hsla(134, 95%, 29%, 0.55) ;
+    position: absolute;
+    height: 35em;
+    width: 23em;
+    transform: translate(-20.75em, -10%);
+    z-index: 3;
+  }
+
+  .blockBlue {
+    background-color:hsla(180, 99%, 64%, 0.229) ;
+    position: absolute;
+    height: 35em;
+    width: 5em;
+    transform: translate(49em, 20%);
+    z-index: 1;
+  }
+
+  .blockRed {
+    background-color:hsla(0, 99%, 64%, 0.229) ;
+    position: absolute;
+    height: 5em;
+    width: 20em;
+    transform: translate(-49em, -8.78em);
+    z-index: 1;
+  }

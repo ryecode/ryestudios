@@ -33,11 +33,9 @@ export const ChangeUserName = () => {
           transition: { duration: 0.75, delay: 0 },
         }}
       >
-        <h6>
-          Greetings!!
-          <br />
+        <p>
           May I know your name please?
-        </h6>
+        </p>
         <input
           onChange={(event) => {
             setNewUserName(event.target.value);
@@ -73,14 +71,14 @@ export const ChangeUserName = () => {
             }}
             exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
           >
-            ENTER
+            ENTER NAME
           </motion.button>
         </a>
 
         <div id="demo-modal" className="modal wrapper">
           <div className="modal__content">
             <h1>
-              Hi&nbsp;
+              Greetings&nbsp;
               <span
                 className="gradientUser"
                 style={{ textTransform: "uppercase" }}
@@ -94,24 +92,12 @@ export const ChangeUserName = () => {
               portfolio. Please go ahead, explore, and enjoy!
               <br />
             </p>
-
+            <p>
             <a href="#pointer" className="modal__close2">
-              <img
-                src="https://ryecode.github.io/portfolio/ImageBank/rocket.png"
-                alt="rocket ship"
-                width={"55%"}
-                style={{ zIndex: 1 }}
-              />
-              <p
-                style={{
-                  color: "black",
-                  fontSize: "0.5em",
-                  textShadow: "none",
-                }}
-              >
-                START EXPLORING!
+                START <br/>EXPLORING!
+                </a>
               </p>
-            </a>
+
           </div>
         </div>
 

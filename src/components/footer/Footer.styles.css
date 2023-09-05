@@ -170,7 +170,7 @@
   text-align: left;
   color: rgb(218, 227, 235);
   opacity: 1;
-  margin: 4em 0 0.5em -45em;
+  margin: 4em 0 0.5em -74em;
   display: inline-block;
   pointer-events: none;
   padding-top: 1em;
@@ -189,7 +189,7 @@
   animation: scale 1s ease-in-out 2s forwards;
   background: transparent;
   border: none;
-  margin-left: -12em;
+  margin-left: -10em;
   z-index: 2;
   pointer-events: all;
   margin-top: -3.25em;
@@ -219,7 +219,7 @@
 
   #footerQuery img {
     width: 20%;
-    margin: -6.5em -0.5em 1.5em 0;
+    margin: -6.5em 1.25em 1.5em 0;
   }
 
   .sub a {
