@@ -16,11 +16,11 @@ export const Footer = () => {
       <div className="credit">
         Some background and images from&nbsp;
         <a
-          href="http://www.pngtree.com"
+          href="https://www.freepik.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          pngtree.com
+          freepik.com
         </a>
         &nbsp;&&nbsp;
         <a

@@ -134,7 +134,7 @@ export const Home = () => {
                                 transition: { delay: 0 },
                               }}
                               animate={{
-                                y: "20%",
+                                y: "35.5%",
                                 x: "140%",
                                 opacity: "1",
                                 transition: {
@@ -174,7 +174,7 @@ export const Home = () => {
                               }}
           ></motion.div>
 
-                    <motion.div className="blockPink"
+                    <motion.div className="blockGold"
                     initial={{
                       x: "180%",
                       y: "170%",
