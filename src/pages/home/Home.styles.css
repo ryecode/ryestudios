@@ -250,8 +250,8 @@ video {
     z-index: 4;
     width: 22em;
     height: 15em;
-    border: black;
-    background-color: black;
+    border: none;
+    background-color: transparent;
     transform: translate(123.5%, 61%);
     padding: 0;
     margin: 0;
