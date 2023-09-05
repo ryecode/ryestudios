@@ -42,14 +42,14 @@ video {
 
 #askName {
     position: absolute;
-    margin: 0em -1em -4.5em 0;
+    margin: 0em -1em -18em 0;
     opacity: 0;
     padding: 2em 2em 3em 2em;
     caret-color: transparent;
     color: rgb(255, 255, 255);
     font-family: 'Carter One';
     text-align: left;
-    z-index: 1;
+    z-index: 4;
     line-height: 1em;
 }
 
@@ -57,7 +57,7 @@ video {
     position: absolute;
     color: hsl(0, 0%, 0% / 0.7);
     font-size: 2em;
-    top: 6.25em;
+    top: 9.5em;
     left: 19.15em;
     padding: 1em;
     font-family: 'Luckiest guy', cursive;
@@ -85,35 +85,6 @@ video {
     font-family: 'Carter One', cursive;
   }
 
-@media (max-width: 770px) {
-    #heroHome {
-        transform: translate(20em, -10em);
-        z-index: 4;
-    }
-
-    .hireButton {
-        margin-left: -20em;
-    }
-
-    .heroHeadline {
-        font-size: 1em;
-    }
-
-    #askName {
-        margin: 0 -5em -22em 0;
-        ;
-    }
-
-    #greet {
-        margin-top: -2em;
-    }
-
-    .blockGreen {
-        left: 27.5em;
-        top: -11em;
-    }
-
-}
 
 /* HERO MODIFICATIONS */
   
@@ -235,11 +206,11 @@ video {
     content: '';
     position: absolute;
     background: var(--clr-neon);
-    top: 120%;
+    top: 110%;
     left: 0;
     width: 100%;
     height: 100%;
-    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.30);
     filter: blur(1em);
     opacity: 0.7;
   }
@@ -281,7 +252,8 @@ video {
     height: 35em;
     width: 23em;
     transform: translate(-20.75em, -10%);
-    z-index: 3;
+    opacity: 0;
+    z-index: 2;
   }
 
   .blockBlue {
@@ -290,14 +262,67 @@ video {
     height: 35em;
     width: 5em;
     transform: translate(49em, 20%);
-    z-index: 1;
+    z-index: 2;
   }
 
   .blockRed {
-    background-color:hsla(0, 99%, 64%, 0.229) ;
+    background-color:hsla(0, 100%, 65%, 0.646) ;
     position: absolute;
     height: 5em;
     width: 20em;
     transform: translate(-49em, -8.78em);
-    z-index: 1;
+    z-index: 2;
   }
+
+  
+@media (max-width: 770px) {
+  #heroHome {
+      transform: translate(21em, -1.5em);
+      z-index: 4;
+  }
+
+  .hireButton {
+      margin-left: -20.25em;
+  }
+
+  .heroHeadline {
+      font-size: 1em;
+  }
+
+  #askName {
+      margin: 0 6em -17em 0;
+      text-align: left;
+  }
+
+  #greet {
+    width: max-content;
+    font-size: 2em;
+      margin-top: 1em;
+      left: -0.25em;
+  }
+
+  .blockGreen {
+      left: 27em;
+      top: -15em;
+      z-index: 1;
+  }
+
+  .blockRed {
+    left: 30em;
+    top: 19em;
+}
+
+.blockBlue {
+  left: -5.5em;
+  top: 12em;
+}
+
+  .jobTitle {
+    font-size: 1.5em;
+  }
+
+  .heroHeadline {
+    font-size: 1.5em;
+  }
+
+}

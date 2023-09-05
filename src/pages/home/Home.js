@@ -79,9 +79,75 @@ export const Home = () => {
         </motion.div>
         <ChangeUserName />
 
-          <div className="blockGreen"></div>
-          <div className="blockBlue"></div>
-          <div className="blockRed"></div>
+          <motion.div className="blockGreen"
+                    initial={{
+                      y: "-100%",
+                      x: "-90%",
+                      opacity: "0",
+                      transition: { delay: 0 },
+                    }}
+                    animate={{
+                      y: "-10%",
+                      x: "-90%",
+                      opacity: "1",
+                      transition: {
+                        type: "spring",
+                        duration: 1.25,
+                        delay: 8.2,
+                      },
+                    }}
+                    exit={{
+                      y: "-100vh",
+                      scale: "0",
+                      transition: { duration: 1, delay: 0 },
+                    }}
+          ></motion.div>
+          <motion.div className="blockBlue"
+                              initial={{
+                                y: "100%",
+                                x: "140%",
+                                opacity: "0",
+                                transition: { delay: 0 },
+                              }}
+                              animate={{
+                                y: "40%",
+                                x: "140%",
+                                opacity: "1",
+                                transition: {
+                                  type: "spring",
+                                  duration: 1.25,
+                                  delay: 8.5,
+                                },
+                              }}
+                              exit={{
+                                y: "100vh",
+                                scale: "0",
+                                transition: { duration: 1, delay: 0 },
+                              }}
+          ></motion.div>
+          <motion.div className="blockRed"
+                              initial={{
+                                x: "-300%",
+                                y: "-175%",
+                                opacity: "0",
+                                transition: { delay: 0 },
+                              }}
+                              animate={{
+                                x: "-245%",
+                                y: "-175%",
+                                opacity: "1",
+                                transition: {
+                                  type: "spring",
+                                  duration: 1.25,
+                                  delay: 7.6,
+                                },
+                              }}
+                              exit={{
+                                y: "-300%",
+                                scale: "0",
+                                transition: { duration: 1, delay: 0 },
+                              }}
+          ></motion.div>
 
       </div>
     </motion.div>
