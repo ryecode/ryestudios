@@ -164,7 +164,7 @@ export const Home = () => {
                                 transition: {
                                   type: "spring",
                                   duration: 1.25,
-                                  delay: 8.6,
+                                  delay: 9,
                                 },
                               }}
                               exit={{
@@ -188,7 +188,7 @@ export const Home = () => {
                       transition: {
                         type: "spring",
                         duration: 5,
-                        delay: 9,
+                        delay: 9.2,
                       },
                     }}
                     exit={{
@@ -213,7 +213,7 @@ export const Home = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 2,
-                  delay: 9.2,
+                  delay: 8.6,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}

@@ -297,7 +297,7 @@ video {
   }
 
   .blockGold {
-    background-color:hsla(53, 100%, 50%, 0.402) ;
+    background-color:hsla(53, 100%, 50%, 0.354) ;
     position: absolute;
     height: 5em;
     width: 30em;
@@ -345,11 +345,11 @@ video {
 
 .blockBlue {
   left: -5.5em;
-  top: 15em;
+  top: 10.5em;
 }
 
-.blockPink {
-  background-color:hsla(271, 100%, 48%, 0.692);
+.blockGold {
+  /* background-color:hsla(271, 100%, 48%, 0.692); */
   left: -45em;
   top: 27em;
 }

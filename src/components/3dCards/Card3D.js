@@ -58,7 +58,7 @@ const Card3D = () => {
             <div className="card-fg">
               <img
                 className="card-image"
-                src="https://ryecode.github.io/portfolio/ImageBank/RyeStudiosSSv2.jpeg"
+                src="https://ryecode.github.io/portfolio/ImageBank/RyeStudiosSSv3.jpeg"
                 alt="website screenshot"
               />
             </div>
