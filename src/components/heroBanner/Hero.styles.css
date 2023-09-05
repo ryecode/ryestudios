@@ -1,12 +1,12 @@
 #resumeBtn {
   text-decoration: none;
   text-shadow: none;
-  color: hsl(0, 97%, 44%);
+  color: hsl(228, 96%, 56%);
   z-index: 2;
 }
 
 #resumeBtn:hover {
-  color: hsl(0, 97%, 44%);
+  color: hsl(228, 96%, 56%);
 }
 
 .hero-image {
@@ -27,10 +27,10 @@
   position: relative;
   font-family: 'Carter One', serif;
   width: max-content;
-  color: hsl(228, 96%, 56%);
+  color: hsl(0, 0%, 100%);
   font-weight: 400;
   letter-spacing: 3px;
-  text-shadow: 1px 1px #2da4c2;
+  text-shadow: 1px 1px #00171c;
   padding-top: 2em;
   caret-color: transparent;
 }
@@ -57,7 +57,7 @@
   width: 0.25em;
   height: 1.25em;
   margin-top: 2em;
-  background: hsl(228, 96%, 56%);
+  background: hsl(0, 0%, 100%);
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
 }
 
@@ -67,7 +67,7 @@
   opacity: 0;
   transform: translateY(-2rem);
   animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 2%, 72%);
   font-weight: 400;
   margin-top: 2px;
   font-family: 'Carter One';
@@ -100,7 +100,7 @@
   background-color: transparent;
   font-size: 1rem;
   font-family: 'Carter One', sans-serif;
-  color: hsl(0, 97%, 44%);
+  color: hsl(228, 96%, 56%);
   display: inline-block;
   cursor: pointer;
   text-decoration: none;

@@ -175,16 +175,17 @@
 
 
 .gradienttext {
-  background-image: linear-gradient(to right bottom, #b2a009, #c5b507, #d9ca05, #ece003, #fff600);
+  background-image: linear-gradient(to left bottom, hsl(63, 75%, 40%), hsl(63, 80%, 41%), hsl(63, 85%, 44%), hsl(63, 90%, 47%), hsl(63, 100%, 50%), hsl(63, 89%, 71%));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   caret-color: transparent;
-  font-family: 'Carter One', 'Poppins';
+  font-family: 'Carter One';
+  text-shadow: currentColor;
 }
 
 .gradientUser {
-  background-image: linear-gradient(to top, #b89a04 0%, rgb(255, 236, 61) 50%, #b89a04 100%);
+  background-image: linear-gradient(to top, hsl(63, 94%, 40%) 10%, hsl(63, 100%, 50%) 50%, hsl(63, 95%, 38%) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -196,9 +197,10 @@
 #role {
   font-size: 1em;
   margin-bottom: 5px;
-  color: rgb(255, 166, 1);
+  color: hsl(0, 0%, 100%);
   text-shadow: 1px 1px #000000;
   caret-color: transparent;
+  font-family: 'Carter One';
 }
 
 #qoute {
@@ -211,13 +213,12 @@
 #aboutMe {
   margin: 0;
   padding: 0;
-  font-size: 0.7em;
+  font-size: 0.68em;
   letter-spacing: 0.15em;
   color: white;
   overflow-y: auto;
   caret-color: transparent;
   text-shadow: 1px 1px black;
-  font-family: 'Montserrat';
   text-align: left;
 }
 

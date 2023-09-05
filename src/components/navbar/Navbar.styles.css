@@ -13,7 +13,7 @@
   background-color: transparent;
   font-size: 0.8rem;
   font-family: 'Carter One', sans-serif;
-  color: hsl(108, 100%, 51%);
+  color: hsl(124, 100%, 83%);
   text-shadow: 0 0 1 0 rgb(255, 255, 255);
   display: inline-block;
   cursor: pointer;
@@ -41,7 +41,7 @@
 
 .neon-button1:hover,
 .neon-button1:focus {
-  color: hsl(112, 100%, 50%);
+  color: hsl(112, 100%, 60%);
   text-shadow: none;
 }
 
@@ -63,7 +63,7 @@
   align-items: center;
   justify-content: space-between;
   caret-color: transparent;
-  background: linear-gradient(to bottom, rgba(4, 4, 4, 0.5) 25%, rgba(32, 32, 31, 0.01) 100%);
+    background: linear-gradient(to bottom,rgba(4, 4, 4, 0.622) 0%, rgba(29, 29, 29, 0.543) 50%, rgba(32, 32, 31, 0.024) 100%);
   height: 3em;
   padding: 1em;
   box-sizing: border-box;
@@ -112,7 +112,7 @@
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: hsl(112, 100%, 50%);
+  background-color: hsl(113, 100%, 69%);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -190,8 +190,8 @@
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: hsl(112, 100%, 50%);
-    background: linear-gradient(to right bottom, rgba(4, 4, 4, 0.875), rgba(32, 32, 31, 0.873));
+    color: hsl(113, 100%, 86%);
+    background: linear-gradient(to right bottom, rgba(4, 4, 4, 0.875) 50%, rgba(32, 32, 31, 0.612) 100%);
   }
 
   .menu>li:not(:last-child) {
@@ -200,7 +200,7 @@
 
   .top-nav {
     width: 100%;
-    background: linear-gradient(to bottom, rgba(4, 4, 4, 0.698) 50%, rgba(32, 32, 31, 0.382) 100%);
+    background: linear-gradient(to right bottom, rgba(4, 4, 4, 0.875) 50%, rgba(32, 32, 31, 0.612) 100%);
   }
 
   .RyeLogo {
@@ -211,7 +211,7 @@
 
 
 .active {
-  color: hsl(113, 100%, 86%);
+  color: hsl(63, 100%, 50%);
   text-shadow: 0 0 1em rgb(254, 248, 248),
 }
 

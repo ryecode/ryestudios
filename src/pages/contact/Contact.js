@@ -118,7 +118,7 @@ export const Contact = () => {
                 href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_WebDeveloper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textShadow: "1px 1px black", textDecoration: "none", color: "hsl(112, 100%, 50%)" }}
+                style={{ textShadow: "1px 1px black", textDecoration: "none", color: "hsl(63, 100%, 50%)" }}
               >
                 <b>here</b>
               </a>

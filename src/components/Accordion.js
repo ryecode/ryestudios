@@ -113,7 +113,6 @@ export const AccordionComponent = () => {
                 textAlign: "left",
                 color: "white",
                 textShadow: "1px 1px black",
-                fontFamily: "Montserrat",
                 fontSize: "0.85em",
               }}
             >
@@ -134,7 +133,6 @@ export const AccordionComponent = () => {
                 lineHeight: "1.25em",
                 textAlign: "left",
                 color: "white",
-                fontFamily: "Montserrat",
                 textShadow: "1px 1px black",
               }}
             >
@@ -144,8 +142,7 @@ export const AccordionComponent = () => {
                 style={{
                   lineHeight: "1em",
                   fontSize: "0.75em",
-                  fontFamily: "Montserrat",
-                  color: "aliceblue",
+                    color: "aliceblue",
                 }}
               ><br/>
                 ■ Troubleshooted service issues for customers of
