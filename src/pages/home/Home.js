@@ -134,7 +134,7 @@ export const Home = () => {
                                 transition: { delay: 0 },
                               }}
                               animate={{
-                                y: "35.5%",
+                                y: "31%",
                                 x: "140%",
                                 opacity: "1",
                                 transition: {
@@ -158,7 +158,7 @@ export const Home = () => {
                                 transition: { delay: 0 },
                               }}
                               animate={{
-                                y: "-47%",
+                                y: "-44%",
                                 x: "330%",
                                 opacity: "1",
                                 transition: {
@@ -176,7 +176,7 @@ export const Home = () => {
 
                     <motion.div className="blockGold"
                     initial={{
-                      x: "180%",
+                      x: "300%",
                       y: "170%",
                       opacity: "0",
                       transition: { delay: 0 },
@@ -187,12 +187,12 @@ export const Home = () => {
                       opacity: "1",
                       transition: {
                         type: "spring",
-                        duration: 5,
+                        duration: 1.5,
                         delay: 9.2,
                       },
                     }}
                     exit={{
-                      x: "100%",
+                      x: "500%",
                       scale: "0",
                       transition: { duration: 1, delay: 0 },
                     }}

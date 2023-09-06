@@ -42,7 +42,7 @@ video {
 
 #askName {
     position: absolute;
-    margin: 0em -1em -18em 0;
+    margin: 0em -1em -3.75em 0;
     opacity: 0;
     padding: 2em 2em 3em 2em;
     caret-color: transparent;
@@ -57,7 +57,7 @@ video {
     position: absolute;
     color: hsl(0, 0%, 0% / 0.7);
     font-size: 2em;
-    top: 9.5em;
+    top: 6.25em;
     left: 19.15em;
     padding: 1em;
     font-family: 'Luckiest guy', cursive;
@@ -252,7 +252,7 @@ video {
     height: 15em;
     border: none;
     background-color: transparent;
-    transform: translate(123.5%, 61%);
+    transform: translate(123.5%, 67%);
     padding: 0;
     margin: 0;
   }
@@ -328,7 +328,7 @@ video {
   #greet {
     width: max-content;
     font-size: 2em;
-      margin-top: -1em;
+      margin-top: 2em;
       left: -0.25em;
   }
 
