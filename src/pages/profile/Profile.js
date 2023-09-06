@@ -477,8 +477,7 @@ export const Profile = () => {
             <p id="qoute">
               <i>
                 <q>
-                  When you love coding, it's not considered hard work. <br />I
-                  call it fun!
+                I'm so addicted to coding that when I start to code,<br/> food and sleep become fiction.
                 </q>
               </i>
             </p>
