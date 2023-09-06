@@ -100,7 +100,7 @@
   background-color: transparent;
   font-size: 1rem;
   font-family: 'Carter One', sans-serif;
-  color: hsl(228, 96%, 56%);
+  color: hsl(188, 88%, 55%);
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -148,7 +148,7 @@
 
 .neon-button:hover,
 .neon-button:focus {
-  text-shadow: none;
+  color: hsl(0, 98%, 50%);
 }
 
 .neon-button:hover::before,
