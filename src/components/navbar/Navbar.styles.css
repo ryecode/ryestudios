@@ -156,6 +156,7 @@
     display: flex;
     padding-right: 1.5em;
     transform: translateX(0.75em);
+    z-index: 4;
   }
 
   .menu {
@@ -204,11 +205,13 @@
   }
 
   .RyeLogo {
-    width: 12%;
+    width: 20%;
   }
 
   .animate-charcter {
-    margin-right: -16em;
+    margin-left: 0;
+    transform: translateX(2em);
+    z-index: 3;
   }
 
 }
