@@ -72,7 +72,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4,
+                  delay: 4.5,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -167,7 +167,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4.2,
+                  delay: 4.7,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -260,7 +260,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4.4,
+                  delay: 4.9,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -355,7 +355,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4.6,
+                  delay: 5.1,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -392,12 +392,12 @@ const Card3D = () => {
 
           <motion.div
             className="folder"
-            initial={{ 
+            initial={{
               y: "-200%",
-              transition: { 
+              transition: {
                 duration: 0,
-                delay: 0 
-              }
+                delay: 0,
+              },
             }}
             animate={{
               y: "0%",
@@ -433,7 +433,10 @@ const Card3D = () => {
                 href="https://cvhack.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{color: "rgb(255, 78, 78)", textShadow: "1px 1px black"}}
+                style={{
+                  color: "rgb(255, 78, 78)",
+                  textShadow: "1px 1px black",
+                }}
               >
                 <b>Website under reconstruction!</b>
               </a>
@@ -456,7 +459,7 @@ const Card3D = () => {
                   type: "spring",
                   bounce: "0.5",
                   duration: 0.75,
-                  delay: 4.8,
+                  delay: 5.3,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
@@ -491,6 +494,127 @@ const Card3D = () => {
               </div>
             )}
           </motion.div>
+
+          <motion.div
+            className="blockCard1"
+            initial={{
+              x: "0.05%",
+              y: "210%",
+              opacity: "0",
+              transition: { delay: 0 },
+            }}
+            animate={{
+              x: "0.05%",
+              y: "325%",
+              opacity: "1",
+              transition: {
+                duration: 0.5,
+                delay: 4,
+              },
+            }}
+            exit={{
+              x: "0.05%",
+              y: "210%",
+              opacity: "0",
+              transition: { duration: 1, delay: 0 },
+            }}
+          ></motion.div>
+          <motion.div
+            className="blockCard2"
+            initial={{
+              x: "128%",
+              y: "210%",
+              opacity: "0",
+              transition: { delay: 0 },
+            }}
+            animate={{
+              x: "128%",
+              y: "325%",
+              opacity: "1",
+              transition: {
+                duration: 0.5,
+                delay: 4,
+              },
+            }}
+            exit={{
+              x: "128%",
+              y: "210%",
+              opacity: "0",
+              transition: { duration: 1, delay: 0 },
+            }}
+          ></motion.div>
+          <motion.div
+            className="blockCard3"
+            initial={{
+              x: "256%",
+              y: "210%",
+              opacity: "0",
+              transition: { delay: 0 },
+            }}
+            animate={{
+              x: "256%",
+              y: "325%",
+              opacity: "1",
+              transition: {
+                duration: 0.5,
+                delay: 4,
+              },
+            }}
+            exit={{
+              x: "256%",
+              y: "210%",
+              opacity: "0",
+              transition: { duration: 1, delay: 0 },
+            }}
+          ></motion.div>
+          <motion.div
+            className="blockCard4"
+            initial={{
+              x: "384%",
+              y: "210%",
+              opacity: "0",
+              transition: { delay: 0 },
+            }}
+            animate={{
+              x: "384%",
+              y: "325%",
+              opacity: "1",
+              transition: {
+                duration: 0.5,
+                delay: 4,
+              },
+            }}
+            exit={{
+              x: "384%",
+              y: "210%",
+              opacity: "0",
+              transition: { duration: 1, delay: 0 },
+            }}
+          ></motion.div>
+          <motion.div
+            className="blockCard5"
+            initial={{
+              x: "512.5%",
+              y: "210%",
+              opacity: "0",
+              transition: { delay: 0 },
+            }}
+            animate={{
+              x: "512.5%",
+              y: "325%",
+              opacity: "1",
+              transition: {
+                duration: 0.5,
+                delay: 4,
+              },
+            }}
+            exit={{
+              x: "512.5%",
+              y: "210%",
+              opacity: "0",
+              transition: { duration: 1, delay: 0 },
+            }}
+          ></motion.div>
         </div>
       </div>
     </>

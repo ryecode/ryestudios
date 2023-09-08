@@ -49,7 +49,7 @@ p {
     perspective: 1400px;
     cursor: pointer;
     margin-bottom: 2em;
-
+    z-index: 4;
 }
 
 .card-bg {
@@ -197,6 +197,27 @@ p {
         margin-bottom: 5em;
         opacity: 0;
     }
+
+    .blockCard2 {
+        left: -41.5%;
+        top: 24.95%;
+    }
+
+    .blockCard3 {
+        left: -107.5%;
+        top: 41.8%;
+    }
+
+    .blockCard4 {
+        left: -173.5%;
+        top: 58.8%;
+    }
+
+    .blockCard5 {
+        left: -240%;
+        top: 75.7%;
+    }
+
 }
 
 /* WEBSITE DETAILS */
@@ -281,17 +302,12 @@ p {
     box-sizing: border-box;
 }
 
-.detailsBtn:hover {
-    color: hsl(0, 97%, 44%);
-    text-shadow: 1px 2px black;
-  }
-
 .detailsBtn {
     background-color: transparent;
     font-size: 1rem;
     font-family: 'Carter One', sans-serif;
     letter-spacing: 2.5px;
-    color: hsl(0, 100%, 51%);
+    color: hsl(188, 88%, 55%);
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
@@ -339,6 +355,7 @@ p {
 
 .detailsBtn:hover,
 .detailsBtn:focus {
+    color: hsl(0, 97%, 44%);
     text-shadow: none;
 }
 
@@ -351,3 +368,53 @@ p {
 .detailsBtn:focus::after {
     opacity: 1;
 }
+
+.blockCard1 {
+    background-color:#00060db7;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    caret-color: transparent;
+    border-radius: 10px;
+  }
+  
+.blockCard2 {
+    background-color:#00060db7;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    caret-color: transparent;
+    border-radius: 10px;
+  }
+  
+.blockCard3 {
+    background-color:#00060db7;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    caret-color: transparent;
+    border-radius: 10px;
+  }
+  
+.blockCard4 {
+    background-color:#00060db7;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    caret-color: transparent;
+    border-radius: 10px;
+  }
+  
+.blockCard5 {
+    background-color:#00060db7;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    z-index: 2;
+    caret-color: transparent;
+    border-radius: 10px;
+  }
