@@ -69,7 +69,7 @@ export const Profile = () => {
               }}
               exit={{
                 translateY: "-100vh",
-                translateX: "-100vw",
+                translateX: "100vw",
                 scale: "0",
                 transition: {
                   type: "spring",
@@ -142,7 +142,7 @@ export const Profile = () => {
                 }}
                 exit={{
                   translateY: "100vh",
-                  translateX: "-100vw",
+                  translateX: "100vw",
                   scale: "0",
                   transition: {
                     type: "spring",
@@ -177,7 +177,7 @@ export const Profile = () => {
                 }}
                 exit={{
                   translateY: "100vh",
-                  translateX: "-100vw",
+                  translateX: "100vw",
                   scale: "0",
                   transition: {
                     type: "spring",
@@ -212,7 +212,7 @@ export const Profile = () => {
                 }}
                 exit={{
                   translateY: "100vh",
-                  translateX: "-100vw",
+                  translateX: "100vw",
                   scale: "0",
                   transition: {
                     type: "spring",
