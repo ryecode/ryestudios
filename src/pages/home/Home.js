@@ -168,7 +168,7 @@ export const Home = () => {
                                 },
                               }}
                               exit={{
-                                y: "100vh",
+                                y: "-100vh",
                                 scale: "0",
                                 transition: { duration: 1, delay: 0 },
                               }}
