@@ -308,12 +308,12 @@ video {
   
 @media (max-width: 770px) {
   #heroHome {
-      transform: translate(21em, -1.5em);
+      transform: translate(20em, -1.5em);
       z-index: 4;
   }
 
   .hireButton {
-      margin-left: -20.25em;
+      margin-left: -21em;
   }
 
   .heroHeadline {
@@ -321,15 +321,19 @@ video {
   }
 
   #askName {
-      margin: 0 5em -11em 0;
+      margin: 0 6.5em -11em 0;
       text-align: left;
   }
 
   #greet {
     width: max-content;
     font-size: 2em;
-      margin-top: 2em;
-      left: -0.25em;
+      margin-top: 1.75em;
+      left: 0.5em;
+  }
+
+  .enterBtn {
+    margin-left: -1.25em;
   }
 
   .blockGreen {
@@ -339,7 +343,7 @@ video {
   }
 
   .blockRed {
-    left: 30em;
+    left: 30.5em;
     top: 19em;
 }
 

@@ -27,25 +27,25 @@
   width: fit-content;
   background: transparent;
   border: none;
-  transform: translate(-80%, -40%);
+  transform: translate(65%, -30%);
   caret-color: transparent;
   z-index: 4;
 }
 
 
 #title {
-  font-size: 2rem;
+  font-size: 2.5em;
   color: #fdfdfd;
   padding: 0;
   caret-color: transparent;
-  text-shadow: 3px 3px black;
+  text-shadow: 2px 2.5px black;
   font-family: 'Carter One';
   letter-spacing: 3px;
   opacity: 0;
 }
 
 #title1 {
-  font-size: 1rem;
+  font-size: 1.5em;
   caret-color: transparent;
   opacity: 0;
   color: #fdfdfd;
@@ -53,7 +53,7 @@
   margin-top: 2px;
   font-family: 'Carter One';
   caret-color: transparent;
-  text-shadow: 3px 3px black;
+  text-shadow: 2px 2.5px black;
   letter-spacing: 3px;
 }
 
@@ -108,7 +108,7 @@
   position: absolute;
   transform: translateX(15em);
   opacity: 0;
-
+  z-index: 4;
 }
 
 .details-container {
@@ -129,7 +129,7 @@
   transform: translateX(15em);
   position: absolute;
   opacity: 0;
-
+  z-index: 4;
 }
 
 .skills-container {
@@ -148,6 +148,7 @@
   transform: translateX(15em);
   position: absolute;
   opacity: 0;
+  z-index: 4;
 }
 
 .profileImage {
@@ -422,11 +423,49 @@ ul li button {
   border: none;
   color: #fdfdfd;
   caret-color: transparent;
-  text-shadow: 3px 3px black;
+  text-shadow: 2px 2.5px black;
   letter-spacing: 3px;
 }
 
+.blockCross1 {
+  background-color:#0063d5b7;
+  position: absolute;
+  height: 15em;
+  width: 60em;
+  transform: translate(100em, -8.78em);
+  z-index: 2;
+  caret-color: transparent;
+}
 
+.blockCross2 {
+  background-color:#0063d5b7;
+  position: absolute;
+  height: 15em;
+  width: 60em;
+  transform: translate(100em, -8.78em);
+  z-index: 2;
+  caret-color: transparent;
+}
+
+.blockCross3 {
+  background-color:#5500d5b7;
+  position: absolute;
+  width: 15em;
+  height: 60em;
+  transform: translate(-8.78em, 100em);
+  z-index: 2;
+  caret-color: transparent;
+}
+
+.blockCross4 {
+  background-color:#5500d5b7;
+  position: absolute;
+  width: 15em;
+  height: 60em;
+  transform: translate(-8.78em, 100em);
+  z-index: 2;
+  caret-color: transparent;
+}
 
 @media (max-width: 770px) {
   .profileBody {
@@ -446,21 +485,22 @@ ul li button {
 
 
   .details-container {
-    margin-left: -24em;
+    margin-left: 26em;
     margin-top: 10em;
     padding: 1em 0 1em 0;
     width: 90%;
   }
 
   .skills-container {
-    margin-left: -23em;
+    margin-left: 27em;
     margin-top: 10em;
     padding: 1em 1em 1em 1em;
     width: 90%;
+    z-index: 4;
   }
 
   .header-container {
-    margin-left: -23em;
+    margin-left: 27em;
     margin-top: 10em;
     padding: 1em;
     width: 90%;
@@ -491,6 +531,19 @@ ul li button {
   .toggleBtns {
     margin: 0 0 0 0;
     transform: translateX(5px);
+  }
+
+  .blockCross1 {
+    visibility: hidden;
+  }
+  
+  .blockCross3 {
+    margin-bottom: -9em;
+  }
+
+  .blockCross4 {
+    margin-bottom: -7em;
+
   }
 
 }

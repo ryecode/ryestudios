@@ -64,7 +64,7 @@ export const Profile = () => {
                   type: "spring",
                   bounce: "0.4",
                   duration: 5,
-                  delay: 3.6,
+                  delay: 4.4,
                 },
               }}
               exit={{
@@ -105,7 +105,7 @@ export const Profile = () => {
                   type: "spring",
                   bounce: "0.4",
                   duration: 5,
-                  delay: 3.8,
+                  delay: 4.6,
                 },
               }}
               exit={{
@@ -137,7 +137,7 @@ export const Profile = () => {
                     type: "spring",
                     bounce: "0.4",
                     duration: 5,
-                    delay: 4,
+                    delay: 4.8,
                   },
                 }}
                 exit={{
@@ -172,7 +172,7 @@ export const Profile = () => {
                     type: "spring",
                     bounce: "0.4",
                     duration: 5,
-                    delay: 4.2,
+                    delay: 5,
                   },
                 }}
                 exit={{
@@ -207,7 +207,7 @@ export const Profile = () => {
                     type: "spring",
                     bounce: "0.4",
                     duration: 5,
-                    delay: 4.4,
+                    delay: 5.2,
                   },
                 }}
                 exit={{
@@ -232,13 +232,13 @@ export const Profile = () => {
             className="skills-container"
             id="pCardSkills"
             initial={{
-              y: -150,
-              x: 200,
+              y: "-300%",
+              x: -200,
               opacity: 0,
             }}
             animate={{
-              y: 1,
-              x: 200,
+              y: 0,
+              x: -200,
               opacity: 1,
               transition: {
                 type: "spring",
@@ -248,9 +248,10 @@ export const Profile = () => {
               },
             }}
             exit={{
-              y: "-100vh",
+              y: "-300%",
+              x: -200,
               opacity: "0",
-              transition: { type: "spring", duration: 1, delay: 0 },
+              transition: { duration: 1, delay: 0 },
             }}
             style={{ zIndex: index3 }}
           >
@@ -414,11 +415,11 @@ export const Profile = () => {
             className="details-container"
             id="pCardDetails"
             initial={{
-              x: "200%",
+              x: 100,
               opacity: 0,
             }}
             animate={{
-              x: 200,
+              x: -200,
               opacity: 1,
               transition: {
                 type: "spring",
@@ -428,9 +429,9 @@ export const Profile = () => {
               },
             }}
             exit={{
-              x: "100vh",
+              x: 100,
               opacity: "0",
-              transition: { type: "spring", duration: 0.75, delay: 0 },
+              transition: { duration: 1, delay: 0 },
             }}
             style={{ zIndex: index2 }}
           >
@@ -445,11 +446,11 @@ export const Profile = () => {
           <motion.div
             className="header-container"
             initial={{
-              x: -200,
+              x: -500,
               opacity: 0,
             }}
             animate={{
-              x: 200,
+              x: -200,
               opacity: 1,
               transition: {
                 type: "spring",
@@ -459,9 +460,9 @@ export const Profile = () => {
               },
             }}
             exit={{
-              x: -200,
+              x: -500,
               opacity: "0",
-              transition: { type: "spring", duration: 1, delay: 0 },
+              transition: { duration: 1, delay: 0 },
             }}
             style={{ zIndex: index1 }}
           >
@@ -500,6 +501,97 @@ export const Profile = () => {
               </a>
             </p>
           </motion.div>
+
+          <motion.div className="blockCross1"
+                    initial={{
+                      x: "300%",
+                      y: "-27%",
+                      opacity: "0",
+                      transition: { delay: 0 },
+                    }}
+                    animate={{
+                      x: "53%",
+                      y: "-27%",
+                      opacity: "1",
+                      transition: {
+                        duration: 0.5,
+                        delay: 4.2,
+                      },
+                    }}
+                    exit={{
+                      x: "300%",
+                      scale: "0",
+                      transition: { duration: 1, delay: 0 },
+                    }}
+          ></motion.div>
+          <motion.div className="blockCross2"
+                    initial={{
+                      x: "-300%",
+                      y: "-27%",
+                      opacity: "0",
+                      transition: { delay: 0 },
+                    }}
+                    animate={{
+                      x: "-94.5%",
+                      y: "-27%",
+                      opacity: "1",
+                      transition: {
+                        duration: 0.5,
+                        delay: 3.8,
+                      },
+                    }}
+                    exit={{
+                      x: "-300%",
+                      scale: "0",
+                      transition: { duration: 1, delay: 0 },
+                    }}
+          ></motion.div>
+                    <motion.div className="blockCross3"
+                    initial={{
+                      x: "-83%",
+                      y: "-200%",
+                      opacity: "0",
+                      transition: { delay: 0 },
+                    }}
+                    animate={{
+                      x: "-83%",
+                      y: "-82%",
+                      opacity: "1",
+                      transition: {
+                        duration: 0.5,
+                        delay: 4,
+                      },
+                    }}
+                    exit={{
+                      y: "-200%",
+                      x: "-83%",
+                      scale: "0",
+                      transition: { duration: 1, delay: 0 },
+                    }}
+          ></motion.div>
+                              <motion.div className="blockCross4"
+                    initial={{
+                      x: "-83%",
+                      y: "200%",
+                      opacity: "0",
+                      transition: { delay: 0 },
+                    }}
+                    animate={{
+                      x: "-83%",
+                      y: "77%",
+                      opacity: "1",
+                      transition: {
+                        duration: 0.5,
+                        delay: 3.6,
+                      },
+                    }}
+                    exit={{
+                      y: "200%",
+                      scale: "0",
+                      transition: { duration: 1, delay: 0 },
+                    }}
+          ></motion.div>
+
         </div>
       </motion.div>
     </>
