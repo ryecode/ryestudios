@@ -17,8 +17,8 @@ export const Project = () => {
     >
         <div className="projectCard">
           <div className="projectHeadline">
-          <motion.h3
-              id="title"
+          <motion.h5
+              id="pageTitle"
               initial={{
                 translateY: "-100vh",
                 translateX: "-100vw",
@@ -57,7 +57,7 @@ export const Project = () => {
                 </span>
                 ,&nbsp;check out my project list!
               </b>
-            </motion.h3>
+            </motion.h5>
           </div>
             <Card3D />
         </div>

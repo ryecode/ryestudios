@@ -299,11 +299,11 @@ export const Profile = () => {
 
                 <li>
                   <a
-                    href="https://greensock.com/gsap/"
+                    href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>GSAP3</span>
+                    <span>BOOTSTRAPS</span>
                   </a>
                 </li>
                 <li>
@@ -373,11 +373,11 @@ export const Profile = () => {
 
                 <li>
                   <a
-                    href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                    href="https://code.visualstudio.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>BOOTSTRAPS</span>
+                    <span>VS CODE</span>
                   </a>
                 </li>
                 <li>

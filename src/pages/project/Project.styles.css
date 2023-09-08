@@ -11,7 +11,7 @@
 
 .projectCard {
     margin: 0;
-    padding: 5em 3em 13em 3em;
+    padding: 5em 3em 13.6em 3em;
     width: 100%;
     height: auto;
     display: flex;
@@ -25,7 +25,15 @@
 
 .projectHeadline {
   /* border-bottom: 2px solid #fff; */
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  color: #fdfdfd;
+  padding: 0;
+  caret-color: transparent;
+  text-shadow: 2px 2.5px black;
+  font-family: 'Carter One';
+  letter-spacing: 3px;
+  opacity: 1;
 }
 
 @media (max-width: 770px) {
@@ -39,9 +47,11 @@
     transform: translateX(-3.75em);
   }
 
-#titleID {
-  transform: translateY(0.3em);
-  padding: 1em;
-}
+  #pageTitle {
+    font-size: large;
+    padding: 2em 0 0 0.25em;
+    letter-spacing: 2px;
+  }
+
 
 }
