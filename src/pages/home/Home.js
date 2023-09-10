@@ -40,7 +40,7 @@ export const Home = () => {
         >
           <div className="heroText">
             <h1 className="heroHeadline">
-              <b>I'am Ryan Corral</b>
+              <b>I'am Ryan Corral&nbsp;</b>
             </h1>
             <p className="jobTitle">And I'm a Full Stack Web Developer</p>
 
@@ -67,7 +67,7 @@ export const Home = () => {
               type: "spring",
               bounce: "0.65",
               duration: 1.25,
-              delay: 6.3,
+              delay: 7,
             },
           }}
           exit={{
@@ -83,13 +83,13 @@ export const Home = () => {
         <motion.div className="blockRed"
                               initial={{
                                 x: "-300%",
-                                y: "-175%",
+                                y: "-33.5%",
                                 opacity: "0",
                                 transition: { delay: 0 },
                               }}
                               animate={{
-                                x: "-245%",
-                                y: "-175%",
+                                x: "-250%",
+                                y: "-33.5%",
                                 opacity: "1",
                                 transition: {
                                   type: "spring",
@@ -106,13 +106,13 @@ export const Home = () => {
           <motion.div className="blockGreen"
                     initial={{
                       y: "-100%",
-                      x: "-90%",
+                      x: "-94%",
                       opacity: "0",
                       transition: { delay: 0 },
                     }}
                     animate={{
                       y: "-20%",
-                      x: "-90%",
+                      x: "-94%",
                       opacity: "1",
                       transition: {
                         type: "spring",
@@ -129,18 +129,18 @@ export const Home = () => {
           <motion.div className="blockBlue"
                               initial={{
                                 y: "100%",
-                                x: "140%",
+                                x: "-38%",
                                 opacity: "0",
                                 transition: { delay: 0 },
                               }}
                               animate={{
-                                y: "31%",
-                                x: "140%",
+                                y: "63%",
+                                x: "-38%",
                                 opacity: "1",
                                 transition: {
                                   type: "spring",
                                   duration: 1.25,
-                                  delay: 8.3,
+                                  delay: 8.4,
                                 },
                               }}
                               exit={{
@@ -153,18 +153,18 @@ export const Home = () => {
 <motion.div className="blockPurple"
                               initial={{
                                 y: "-100%",
-                                x: "330%",
+                                x: "70%",
                                 opacity: "0",
                                 transition: { delay: 0 },
                               }}
                               animate={{
-                                y: "-44%",
-                                x: "330%",
+                                y: "-41%",
+                                x: "70%",
                                 opacity: "1",
                                 transition: {
                                   type: "spring",
                                   duration: 1.25,
-                                  delay: 9,
+                                  delay: 8.8,
                                 },
                               }}
                               exit={{
@@ -177,22 +177,22 @@ export const Home = () => {
                     <motion.div className="blockGold"
                     initial={{
                       x: "300%",
-                      y: "170%",
+                      y: "120%",
                       opacity: "0",
                       transition: { delay: 0 },
                     }}
                     animate={{
-                      x: "180%",
-                      y: "170%",
+                      x: "145%",
+                      y: "120%",
                       opacity: "1",
                       transition: {
                         type: "spring",
-                        duration: 1.5,
+                        duration: 1,
                         delay: 9.2,
                       },
                     }}
                     exit={{
-                      x: "500%",
+                      x: "300%",
                       scale: "0",
                       transition: { duration: 1, delay: 0 },
                     }}
@@ -212,8 +212,8 @@ export const Home = () => {
                 transition: {
                   type: "spring",
                   bounce: "0.5",
-                  duration: 2,
-                  delay: 8.6,
+                  duration: 1,
+                  delay: 6.3,
                 },
               }}
               exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}

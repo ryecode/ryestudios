@@ -138,8 +138,8 @@
 
 .modalPointer {
   position: absolute;
-  top: -10em;
-  right: -25em;
+  top: -20em;
+  right: -10em;
   visibility: hidden;
   opacity: 0;
   margin: 0;
@@ -177,6 +177,7 @@
   text-decoration: none;
   border: var(--clr-neon) 0.125em solid;
   padding: 1em;
+  left: -1em;
   border-radius: 0.25em;
   position: relative;
   font-weight: 700;
@@ -252,8 +253,8 @@
 
   .modalPointer img {
     width: 30%;
-    transform: translateX(-14em);
-    margin-top: 10em;
+    transform: translateX(3em);
+    margin-top: 11em;
     z-index: 4;
   }
 

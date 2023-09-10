@@ -24,7 +24,7 @@ export const ChangeUserName = () => {
             type: "spring",
             bounce: "0.65",
             duration: 1.25,
-            delay: 6.7,
+            delay: 7.5,
           },
         }}
         exit={{
@@ -66,7 +66,7 @@ export const ChangeUserName = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 0.5,
-                delay: 7.5,
+                delay: 9.5,
               },
             }}
             exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
