@@ -5,6 +5,7 @@ video {
     margin: 0;
     padding: 0;
     position: fixed;
+    opacity: 0.8;
 }
 
 .content {
@@ -270,7 +271,7 @@ video {
   }
 
   .blockGreen {
-    background-color:hsla(134, 98%, 43%, 0.352) ;
+    background-color:hsla(134, 95%, 36%, 0.652) ;
     position: absolute;
     height: 41em;
     width: 24em;
@@ -280,7 +281,7 @@ video {
   }
 
   .blockBlue {
-    background-color:hsla(231, 95%, 58%, 0.547) ;
+    background-color:hsla(231, 95%, 58%, 0.647) ;
     position: absolute;
     height: 35em;
     width: 23em;
@@ -298,7 +299,7 @@ video {
   }
 
   .blockGold {
-    background-color:hsla(53, 100%, 50%, 0.354) ;
+    background-color:hsla(53, 100%, 50%, 0.524) ;
     position: absolute;
     height: 10em;
     width: 30em;
