@@ -42,7 +42,7 @@ export const Profile = () => {
     <>
       <motion.div
         className="profileBody"
-        initial={{ opacity: 0, transition: { delay: 0 } }}
+        initial={{ transition: { delay: 0 } }}
         animate={{ opacity: 1, transition: { duration: 0.5, delay: 2 } }}
         exit={{ opacity: 0, transition: { duration: 1, delay: 1 } }}
       >
@@ -53,13 +53,12 @@ export const Profile = () => {
               initial={{
                 translateY: "-100vh",
                 translateX: "-100vw",
-                opacity: "0",
                 transition: { duration: 0, delay: 0 },
               }}
               animate={{
                 translateY: 0,
                 translateX: 0,
-                opacity: "1",
+                opacity: 1,
                 transition: {
                   type: "spring",
                   bounce: "0.4",
@@ -94,7 +93,6 @@ export const Profile = () => {
               initial={{
                 translateY: "-100vh",
                 translateX: "-100vw",
-                opacity: 0,
                 transition: { duration: 0, delay: 0 },
               }}
               animate={{
@@ -126,7 +124,6 @@ export const Profile = () => {
                 initial={{
                   translateY: "-100vh",
                   translateX: "-100vw",
-                  opacity: "0",
                   transition: { duration: 0, delay: 0 },
                 }}
                 animate={{
@@ -161,7 +158,6 @@ export const Profile = () => {
                 initial={{
                   translateY: "-100vh",
                   translateX: "-100vw",
-                  opacity: "0",
                   transition: { duration: 0, delay: 0 },
                 }}
                 animate={{
@@ -196,7 +192,6 @@ export const Profile = () => {
                 initial={{
                   translateY: "-100vh",
                   translateX: "-100vw",
-                  opacity: "0",
                   transition: { duration: 0, delay: 0 },
                 }}
                 animate={{
@@ -234,7 +229,6 @@ export const Profile = () => {
             initial={{
               y: "-300%",
               x: -200,
-              opacity: 0,
             }}
             animate={{
               y: 0,
@@ -416,7 +410,6 @@ export const Profile = () => {
             id="pCardDetails"
             initial={{
               x: 100,
-              opacity: 0,
             }}
             animate={{
               x: -200,
@@ -447,7 +440,6 @@ export const Profile = () => {
             className="header-container"
             initial={{
               x: -500,
-              opacity: 0,
             }}
             animate={{
               x: -200,
@@ -506,7 +498,6 @@ export const Profile = () => {
                     initial={{
                       x: "300%",
                       y: "-27%",
-                      opacity: "0",
                       transition: { delay: 0 },
                     }}
                     animate={{
@@ -528,7 +519,6 @@ export const Profile = () => {
                     initial={{
                       x: "-300%",
                       y: "-27%",
-                      opacity: "0",
                       transition: { delay: 0 },
                     }}
                     animate={{
@@ -550,7 +540,6 @@ export const Profile = () => {
                     initial={{
                       x: "-83%",
                       y: "-200%",
-                      opacity: "0",
                       transition: { delay: 0 },
                     }}
                     animate={{
@@ -573,7 +562,6 @@ export const Profile = () => {
                     initial={{
                       x: "-83%",
                       y: "200%",
-                      opacity: "0",
                       transition: { delay: 0 },
                     }}
                     animate={{

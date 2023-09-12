@@ -14,7 +14,6 @@ export const ChangeUserName = () => {
         className="modalTrigger"
         initial={{
           y: "-100vh",
-          opacity: "0",
           transition: { duration: 1, delay: 0 },
         }}
         animate={{
@@ -24,7 +23,7 @@ export const ChangeUserName = () => {
             type: "spring",
             bounce: "0.65",
             duration: 1.25,
-            delay: 7.5,
+            delay: 7,
           },
         }}
         exit={{

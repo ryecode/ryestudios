@@ -58,7 +58,7 @@ const Card3D = () => {
             <div className="card-fg">
               <img
                 className="card-image"
-                src="https://ryecode.github.io/portfolio/ImageBank/RyeStudiosSSv2.jpeg"
+                src="https://ryecode.github.io/portfolio/ImageBank/RyeStudiosSS.jpeg"
                 alt="website screenshot"
               />
             </div>
@@ -500,7 +500,6 @@ const Card3D = () => {
             initial={{
               x: "0.05%",
               y: "210%",
-              opacity: "0",
               transition: { delay: 0 },
             }}
             animate={{
@@ -524,7 +523,6 @@ const Card3D = () => {
             initial={{
               x: "128%",
               y: "210%",
-              opacity: "0",
               transition: { delay: 0 },
             }}
             animate={{
@@ -548,7 +546,6 @@ const Card3D = () => {
             initial={{
               x: "256%",
               y: "210%",
-              opacity: "0",
               transition: { delay: 0 },
             }}
             animate={{
@@ -572,7 +569,6 @@ const Card3D = () => {
             initial={{
               x: "384%",
               y: "210%",
-              opacity: "0",
               transition: { delay: 0 },
             }}
             animate={{
@@ -596,7 +592,6 @@ const Card3D = () => {
             initial={{
               x: "512.5%",
               y: "210%",
-              opacity: "0",
               transition: { delay: 0 },
             }}
             animate={{

@@ -98,7 +98,7 @@
     margin-top: 25em;
     color: "white";
     text-shadow: "1px 1px black";
-    opacity:'0';
+    opacity: 0;
     font-family: 'Carter One';
     caret-color: transparent;
     position: absolute;
@@ -114,7 +114,6 @@
   position: relative;
   perspective: 1000px;
   caret-color: transparent;
-
 }
 
 .tilt-box-wrap:hover {

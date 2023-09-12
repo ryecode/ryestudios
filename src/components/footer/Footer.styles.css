@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .footer {
-  background: linear-gradient(to top, rgba(4, 4, 4, 0.875) 25%, rgba(32, 32, 31, 0.01) 100%);
+  background: linear-gradient(to top, rgba(4, 4, 4, 0.875) 35%, rgba(32, 32, 31, 0.01) 100%);
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0.15em 0 1.2em 1em;
+  padding: 0.15em 0 1em 1em;
   position: relative;
   height: 100%;
   opacity: 0;
@@ -170,7 +170,7 @@
   text-align: left;
   color: rgb(218, 227, 235);
   opacity: 1;
-  margin: 4em 0 0.5em -74em;
+  margin: 4.5em 0 -0.5em -74em;
   display: inline-block;
   pointer-events: none;
   padding-top: 1em;
@@ -192,7 +192,7 @@
   margin-left: -10em;
   z-index: 2;
   pointer-events: all;
-  margin-top: -3.25em;
+  margin-top: -4.5em;
   position: absolute;
   caret-color: transparent;
 }
@@ -205,7 +205,7 @@
     align-items: center;
     position: absolute;
     width: 100%;
-    margin: -1em 0 0 0;
+    margin: -2.5em 0 0 0;
     transform: translate(-2em, 17em);
   }
 
@@ -219,18 +219,19 @@
 
   #footerQuery img {
     width: 20%;
-    margin: -6.5em 1.25em 1.5em 0;
+    margin: -7em 0 1.5em -2em;
   }
 
   .sub a {
     margin: -10em;
-    transform: translateY(10.5em);
+    transform: translateY(12em);
   }
 
   .footer {
     height: 10em;
     width: 100%;
     margin-top: -10em;
+    overflow: hidden;
   }
 
 

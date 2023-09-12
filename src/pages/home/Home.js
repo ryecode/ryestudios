@@ -10,7 +10,6 @@ import "../../global.css";
 // import CarouselFadeExample from '../../components/carousel/Carousel';
 
 export const Home = () => {
-
   return (
     <motion.div
       className="overlay"
@@ -57,7 +56,6 @@ export const Home = () => {
           id="greet"
           initial={{
             y: "-100vh",
-            opacity: "0",
             transition: { delay: 0 },
           }}
           animate={{
@@ -66,8 +64,8 @@ export const Home = () => {
             transition: {
               type: "spring",
               bounce: "0.65",
-              duration: 1.25,
-              delay: 7,
+              duration: 1,
+              delay: 6.5,
             },
           }}
           exit={{
@@ -80,164 +78,163 @@ export const Home = () => {
         </motion.div>
         <ChangeUserName />
 
-        <motion.div className="blockRed"
-                              initial={{
-                                x: "-300%",
-                                y: "-33.5%",
-                                opacity: "0",
-                                transition: { delay: 0 },
-                              }}
-                              animate={{
-                                x: "-250%",
-                                y: "-33.5%",
-                                opacity: "1",
-                                transition: {
-                                  type: "spring",
-                                  duration: 1.25,
-                                  delay: 7.6,
-                                },
-                              }}
-                              exit={{
-                                y: "-300%",
-                                scale: "0",
-                                transition: { duration: 1, delay: 0 },
-                              }}
-          ></motion.div>
-          <motion.div className="blockGreen"
-                    initial={{
-                      y: "-100%",
-                      x: "-94%",
-                      opacity: "0",
-                      transition: { delay: 0 },
-                    }}
-                    animate={{
-                      y: "-20%",
-                      x: "-94%",
-                      opacity: "1",
-                      transition: {
-                        type: "spring",
-                        duration: 1.25,
-                        delay: 8,
-                      },
-                    }}
-                    exit={{
-                      y: "-100vh",
-                      scale: "0",
-                      transition: { duration: 1, delay: 0 },
-                    }}
-          ></motion.div>
-          <motion.div className="blockBlue"
-                              initial={{
-                                y: "100%",
-                                x: "-38%",
-                                opacity: "0",
-                                transition: { delay: 0 },
-                              }}
-                              animate={{
-                                y: "63%",
-                                x: "-38%",
-                                opacity: "1",
-                                transition: {
-                                  type: "spring",
-                                  duration: 1.25,
-                                  delay: 8.4,
-                                },
-                              }}
-                              exit={{
-                                y: "100vh",
-                                scale: "0",
-                                transition: { duration: 1, delay: 0 },
-                              }}
-          ></motion.div>
+        <motion.div
+          className="blockRed"
+          initial={{
+            x: "-300%",
+            y: "-33.5%",
+            transition: { delay: 0 },
+          }}
+          animate={{
+            x: "-250%",
+            y: "-33.5%",
+            opacity: "1",
+            transition: {
+              type: "spring",
+              duration: 1.25,
+              delay: 7.6,
+            },
+          }}
+          exit={{
+            y: "-300%",
+            scale: "0",
+            transition: { duration: 1, delay: 0 },
+          }}
+        ></motion.div>
+        <motion.div
+          className="blockGreen"
+          initial={{
+            y: "-100%",
+            x: "-94%",
+            transition: { delay: 0 },
+          }}
+          animate={{
+            y: "-20%",
+            x: "-94%",
+            opacity: "1",
+            transition: {
+              type: "spring",
+              duration: 1.25,
+              delay: 8,
+            },
+          }}
+          exit={{
+            y: "-100vh",
+            scale: "0",
+            transition: { duration: 1, delay: 0 },
+          }}
+        ></motion.div>
+        <motion.div
+          className="blockBlue"
+          initial={{
+            y: "100%",
+            x: "-38%",
+            transition: { delay: 0 },
+          }}
+          animate={{
+            y: "63%",
+            x: "-38%",
+            opacity: "1",
+            transition: {
+              type: "spring",
+              duration: 1.25,
+              delay: 8.4,
+            },
+          }}
+          exit={{
+            y: "100vh",
+            scale: "0",
+            transition: { duration: 1, delay: 0 },
+          }}
+        ></motion.div>
 
-<motion.div className="blockPurple"
-                              initial={{
-                                y: "-100%",
-                                x: "70%",
-                                opacity: "0",
-                                transition: { delay: 0 },
-                              }}
-                              animate={{
-                                y: "-41%",
-                                x: "70%",
-                                opacity: "1",
-                                transition: {
-                                  type: "spring",
-                                  duration: 1.25,
-                                  delay: 8.8,
-                                },
-                              }}
-                              exit={{
-                                y: "-100vh",
-                                scale: "0",
-                                transition: { duration: 1, delay: 0 },
-                              }}
-          ></motion.div>
+        <motion.div
+          className="blockPurple"
+          initial={{
+            y: "-100%",
+            x: "70%",
+            transition: { delay: 0 },
+          }}
+          animate={{
+            y: "-41%",
+            x: "70%",
+            opacity: "1",
+            transition: {
+              type: "spring",
+              duration: 1.25,
+              delay: 8.8,
+            },
+          }}
+          exit={{
+            y: "-100vh",
+            scale: "0",
+            transition: { duration: 1, delay: 0 },
+          }}
+        ></motion.div>
 
-                    <motion.div className="blockGold"
-                    initial={{
-                      x: "300%",
-                      y: "120%",
-                      opacity: "0",
-                      transition: { delay: 0 },
-                    }}
-                    animate={{
-                      x: "145%",
-                      y: "120%",
-                      opacity: "1",
-                      transition: {
-                        type: "spring",
-                        duration: 1,
-                        delay: 9.2,
-                      },
-                    }}
-                    exit={{
-                      x: "300%",
-                      scale: "0",
-                      transition: { duration: 1, delay: 0 },
-                    }}
-          ></motion.div>
-          <div className="carouselBox">
-            <motion.div
-              className="tilt-box-wrap"
-              initial={{
-                y: "-100vh",
-                opacity: '0',
-                transition: { duration: 0, delay: 0 },
-              }}
-              animate={{
-                y: "0%",
-                opacity: "1",
-                zIndex: "3",
-                transition: {
-                  type: "spring",
-                  bounce: "0.5",
-                  duration: 1,
-                  delay: 6.3,
-                },
-              }}
-              exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
-              style={{width:"22.25em", height:"15em", margin:"0 0 0 -2em", }}
-            >
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <span className="t_over"></span>
-              <div className="tilt-box">
-                <img
-                  src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
-                  alt="resume"
-                  width="100%"
-                  height="100%"
-                ></img>
-              </div>
-            </motion.div>
+        <motion.div
+          className="blockGold"
+          initial={{
+            x: "300%",
+            y: "120%",
+            transition: { delay: 0 },
+          }}
+          animate={{
+            x: "145%",
+            y: "120%",
+            opacity: "1",
+            transition: {
+              type: "spring",
+              duration: 1,
+              delay: 9.2,
+            },
+          }}
+          exit={{
+            x: "300%",
+            scale: "0",
+            transition: { duration: 1, delay: 0 },
+          }}
+        ></motion.div>
+        <div className="carouselBox">
+          <motion.div
+            className="tilt-box-wrap"
+            initial={{
+              y: "-100vh",
+              transition: { duration: 0, delay: 0 },
+            }}
+            animate={{
+              y: "0%",
+              opacity: "1",
+              zIndex: "3",
+              transition: {
+                type: "spring",
+                bounce: "0.5",
+                duration: 1,
+                delay: 6.3,
+              },
+            }}
+            exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
+            style={{ opacity: 0, width: "22.25em", height: "15em", margin: "0 0 0 -2em" }}
+          >
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <span className="t_over"></span>
+            <div className="tilt-box">
+              <img
+                src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                alt="resume"
+                width="100%"
+                height="100%"
+              ></img>
             </div>
+          </motion.div>
+        </div>
       </div>
     </motion.div>
   );

@@ -61,7 +61,6 @@ export const Contact = () => {
               className="download"
               initial={{
                 y: "-100vh",
-                opacity: '0',
                 transition: { duration: 0, delay: 0 },
               }}
               animate={{

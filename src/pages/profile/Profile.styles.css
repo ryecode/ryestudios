@@ -15,6 +15,8 @@
   background-position: center;
   background-position-y: 5%;
   overflow-y: hidden;
+  overflow-x: hidden;
+  opacity: 0;
 }
 
 #profileTitle {
@@ -431,10 +433,11 @@ ul li button {
   background-color:#0063d5b7;
   position: absolute;
   height: 15em;
-  width: 60em;
+  width: 50em;
   transform: translate(100em, -8.78em);
   z-index: 2;
   caret-color: transparent;
+  opacity: 0;
 }
 
 .blockCross2 {
@@ -445,6 +448,7 @@ ul li button {
   transform: translate(100em, -8.78em);
   z-index: 2;
   caret-color: transparent;
+  opacity: 0;
 }
 
 .blockCross3 {
@@ -455,6 +459,7 @@ ul li button {
   transform: translate(-8.78em, 100em);
   z-index: 2;
   caret-color: transparent;
+  opacity: 0;
 }
 
 .blockCross4 {
@@ -465,6 +470,7 @@ ul li button {
   transform: translate(-8.78em, 100em);
   z-index: 2;
   caret-color: transparent;
+  opacity: 0;
 }
 
 @media (max-width: 770px) {
@@ -534,6 +540,10 @@ ul li button {
   }
 
   .blockCross1 {
+    visibility: hidden;
+  }
+
+  .blockCross2 {
     visibility: hidden;
   }
   

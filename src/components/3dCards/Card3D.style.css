@@ -371,51 +371,56 @@ p {
 }
 
 .blockCard1 {
-    background-color:#00060db7;
+    background-color: #00060db7;
     position: absolute;
     height: 100px;
     width: 200px;
     z-index: 2;
     caret-color: transparent;
     border-radius: 10px;
-  }
-  
+    opacity: 0;
+}
+
 .blockCard2 {
-    background-color:#00060db7;
+    background-color: #00060db7;
     position: absolute;
     height: 100px;
     width: 200px;
     z-index: 2;
     caret-color: transparent;
     border-radius: 10px;
-  }
-  
+    opacity: 0;
+}
+
 .blockCard3 {
-    background-color:#00060db7;
+    background-color: #00060db7;
     position: absolute;
     height: 100px;
     width: 200px;
     z-index: 2;
     caret-color: transparent;
     border-radius: 10px;
-  }
-  
+    opacity: 0;
+}
+
 .blockCard4 {
-    background-color:#00060db7;
+    background-color: #00060db7;
     position: absolute;
     height: 100px;
     width: 200px;
     z-index: 2;
     caret-color: transparent;
     border-radius: 10px;
-  }
-  
+    opacity: 0;
+}
+
 .blockCard5 {
-    background-color:#00060db7;
+    background-color: #00060db7;
     position: absolute;
     height: 100px;
     width: 200px;
     z-index: 2;
     caret-color: transparent;
     border-radius: 10px;
-  }
+    opacity: 0;
+}

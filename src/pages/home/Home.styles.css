@@ -73,7 +73,7 @@ video {
     flex-wrap: no wrap;
     width: fit-content;
     z-index: 4;
-
+    opacity: 0;
 }
 
 .gradientUser {
@@ -102,7 +102,7 @@ video {
   }
   
   .heroHeadline {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bolder;
     position: relative;
     font-family: 'Carter One', serif;
@@ -136,7 +136,7 @@ video {
     width: 0.25em;
     height: 1.25em;
     margin-top: 2em;
-    background: hsl(0, 0%, 100%);
+    background: hsla(0, 0%, 100%, 0.655);
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
   }
   
@@ -265,9 +265,10 @@ video {
   .blockRed {
     background-color:hsla(0, 100%, 51%, 0.688) ;
     position: absolute;
-    height: 15em;
+    height: 17em;
     width: 20em;
     z-index: 2;
+    opacity: 0;
   }
 
   .blockGreen {
@@ -287,6 +288,7 @@ video {
     width: 23em;
     transform: translate(49em, 20%);
     z-index: 2;
+    opacity: 0;
   }
 
   .blockPurple {
@@ -296,6 +298,7 @@ video {
     width: 28em;
     transform: translate(49em, 20%);
     z-index: 2;
+    opacity: 0;
   }
 
   .blockGold {
@@ -305,6 +308,7 @@ video {
     width: 30em;
     transform: translate(100em, -8.78em);
     z-index: 2;
+    opacity: 0;
   }
 
   
@@ -346,7 +350,7 @@ video {
 
   .blockRed {
     left: 31.5em;
-    top: 19em;
+    top: 16em;
 }
 
 .blockBlue {
@@ -355,13 +359,12 @@ video {
 }
 
 .blockGold {
-  /* background-color:hsla(271, 100%, 48%, 0.692); */
-  left: -30em;
+  left: -31em;
   top: 27em;
 }
 
   .jobTitle {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
 
   .heroHeadline {

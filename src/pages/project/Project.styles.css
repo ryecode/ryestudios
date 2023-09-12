@@ -10,15 +10,15 @@
 }
 
 .projectCard {
-    margin: 0;
-    padding: 5em 3em 13.6em 3em;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-      background-color: rgba(2, 72, 12, 0.1);
+  margin: 0;
+  padding: 5em 3em 13.6em 3em;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(2, 72, 12, 0.1);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
