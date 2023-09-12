@@ -180,13 +180,13 @@ export const Home = () => {
             transition: { delay: 0 },
           }}
           animate={{
-            x: "150%",
+            x: "146%",
             y: "120%",
             opacity: "1",
             transition: {
               type: "spring",
               duration: 1,
-              delay: 9.2,
+              // delay: 9.2,
             },
           }}
           exit={{

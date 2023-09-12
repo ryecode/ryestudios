@@ -45,7 +45,7 @@ video {
     position: absolute;
     margin: 0em -25.5em -24em 0;
     opacity: 0;
-    padding: 2em 2em 3em 2em;
+    padding: 2em 3em 3em 3em;
     caret-color: transparent;
     color: rgb(255, 255, 255);
     font-family: 'Carter One';
@@ -57,9 +57,9 @@ video {
 #greet {
     position: absolute;
     color: hsl(0, 0%, 0% / 0.7);
-    font-size: 2em;
-    top: 11em;
-    left: 25.25em;
+    font-size: 1.75em;
+    top: 13em;
+    left: 29em;
     padding: 1em;
     font-family: 'Carter One', 'Poppins';
     background-image: linear-gradient(to top, #4c4d4c 20%, #ffffff 50%, #4c4d4c 100%);
@@ -325,6 +325,7 @@ video {
     width: 20em;
     z-index: 2;
     opacity: 0;
+    caret-color: transparent;
   }
 
   
@@ -350,8 +351,8 @@ video {
   #greet {
     width: max-content;
     font-size: 2em;
-      margin-top: -2em;
-      left: 0.5em;
+      margin-top: -4em;
+      left: 0.25em;
   }
 
   .enterBtn {
