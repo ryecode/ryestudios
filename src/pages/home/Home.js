@@ -186,7 +186,7 @@ export const Home = () => {
             transition: {
               type: "spring",
               duration: 1,
-              // delay: 9.2,
+              delay: 9.2,
             },
           }}
           exit={{
