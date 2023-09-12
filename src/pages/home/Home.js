@@ -41,7 +41,7 @@ export const Home = () => {
             <h1 className="heroHeadline">
               <b>I'am Ryan Corral&nbsp;</b>
             </h1>
-            <p className="jobTitle">And I'm a Full Stack Web Developer</p>
+            <p className="jobTitle">And I'm a Full Stack <br/>Web Developer</p>
 
             <a
               href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_Resume.pdf"
@@ -86,7 +86,7 @@ export const Home = () => {
             transition: { delay: 0 },
           }}
           animate={{
-            x: "-250%",
+            x: "-255%",
             y: "-33.5%",
             opacity: "1",
             transition: {
@@ -195,15 +195,52 @@ export const Home = () => {
             transition: { duration: 1, delay: 0 },
           }}
         ></motion.div>
+        
+        <motion.div
+          className="branding"
+          initial={{
+            y: "-100%",
+            x: "95%",
+            transition: { delay: 0 },
+          }}
+          animate={{
+            y: "10%",
+            x: "95%",
+            opacity: "1",
+            transition: {
+              type: "spring",
+              duration: 1,
+              bounce: 0.5,
+              delay: 9.6,
+            },
+          }}
+          exit={{
+            y: "-100vh",
+            scale: "0",
+            transition: { duration: 1, delay: 0 },
+          }}
+        >
+          <p>
+          <img
+                src="https://ryecode.github.io/portfolio/ImageBank/BestCodingSSnoBG.png"
+                alt="resume"
+                width="100%"
+                height="100%"
+              ></img>
+          </p>
+        </motion.div>
+
         <div className="carouselBox">
           <motion.div
             className="tilt-box-wrap"
             initial={{
               y: "-100vh",
+              x: "5%",
               transition: { duration: 0, delay: 0 },
             }}
             animate={{
               y: "0%",
+              x: "5%",
               opacity: "1",
               zIndex: "3",
               transition: {
@@ -227,7 +264,7 @@ export const Home = () => {
             <span className="t_over"></span>
             <div className="tilt-box">
               <img
-                src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                src="https://ryecode.github.io/portfolio/ImageBank/KodeGoCert.png"
                 alt="resume"
                 width="100%"
                 height="100%"
