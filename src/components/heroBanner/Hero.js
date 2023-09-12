@@ -7,7 +7,7 @@ export const Hero = () => {
         <div className="hero-image">
       <div className="hero-text">
         <h1 className="hero-title">
-          <b>I'am Ryan Corral</b>
+          <b>I'am Ryan Corral&nbsp;</b>
         </h1>
         <p className="subtitle ">And I'm a Full Stack Web Developer</p>
 

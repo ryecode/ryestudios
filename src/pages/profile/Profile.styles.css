@@ -202,11 +202,12 @@
   color: hsl(0, 0%, 100%);
   text-shadow: 1px 1px #000000;
   caret-color: transparent;
-  font-family: 'Carter One';
+  font-family: 'Hanken Grotesk';
+  font-weight: 900;
 }
 
 #qoute {
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: white;
   caret-color: transparent;
   text-shadow: 1px 1px #000000;

@@ -50,7 +50,8 @@ export const AccordionComponent = () => {
           style={{
             background: "#434040",
             fontSize: "x-small",
-            fontFamily: "Carter One",
+            fontFamily: "Hanken Grotesk",
+            fontWeight: '900'
           }}
         >
           <ContextAwareToggle eventKey="0">INTRODUCTION</ContextAwareToggle>
@@ -97,14 +98,16 @@ export const AccordionComponent = () => {
           style={{
             background: "#434040",
             fontSize: "x-small",
-            fontFamily: "Carter One",
+            fontFamily: "Hanken Grotesk",
+            fontWeight: '900'
           }}
         >
           <ContextAwareToggle eventKey="1">BACKGROUND</ContextAwareToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <h6 style={{ lineHeight: "1.5em", color: "rgb(236, 219, 60)", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
+            <h6 style={{ lineHeight: "1.5em", color: "rgb(236, 219, 60)",             fontFamily: "Hanken Grotesk",
+            fontWeight: '900', textShadow: '1px 1px black' }}>
               EDUCATIONAL ATTAINMENT
             </h6>
             <p
@@ -125,7 +128,8 @@ export const AccordionComponent = () => {
               <b> AMA University (2001-2004, 2010-2011)</b>
               <br />• B.S. Electronics & Communications Engineering
             </p>
-            <h6 style={{ color: "rgb(236, 219, 60)", fontFamily: "Carter One", textShadow: '1px 1px black' }}>
+            <h6 style={{ color: "rgb(236, 219, 60)",             fontFamily: "Hanken Grotesk",
+            fontWeight: '900', textShadow: '1px 1px black' }}>
               WORK EXPERIENCE
             </h6>
             <p

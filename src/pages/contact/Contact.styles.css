@@ -99,7 +99,8 @@
     color: "white";
     text-shadow: "1px 1px black";
     opacity: 0;
-    font-family: 'Carter One';
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
     caret-color: transparent;
     position: absolute;
     padding-right: 10em;

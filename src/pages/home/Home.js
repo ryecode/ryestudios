@@ -180,7 +180,7 @@ export const Home = () => {
             transition: { delay: 0 },
           }}
           animate={{
-            x: "145%",
+            x: "150%",
             y: "120%",
             opacity: "1",
             transition: {

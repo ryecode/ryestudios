@@ -63,14 +63,14 @@
 
 .subtitle {
   color: hsl(0, 0%, 0% / 0.7);
-  font-size: 0.75em;
+  font-size: 1em;
   opacity: 0;
   transform: translateY(-2rem);
   animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
   color: hsl(0, 2%, 72%);
-  font-weight: 400;
+  font-weight: 900;
   margin-top: 2px;
-  font-family: 'Carter One';
+  font-family: 'Hanken Grotesk';
   caret-color: transparent;
 }
 
@@ -99,7 +99,7 @@
 .neon-button {
   background-color: transparent;
   font-size: 1rem;
-  font-family: 'Carter One', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   color: hsl(188, 88%, 55%);
   display: inline-block;
   cursor: pointer;
@@ -108,7 +108,7 @@
   padding: 0.25em 1em;
   border-radius: 0.25em;
   position: relative;
-  font-weight: 700;
+  font-weight: 900;
   opacity: 0;
   animation: scale 0.25s linear calc(var(--typewriterSpeed) + 2.75s) forwards;
 

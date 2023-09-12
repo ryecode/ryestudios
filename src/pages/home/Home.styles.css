@@ -61,7 +61,7 @@ video {
     top: 11em;
     left: 25.25em;
     padding: 1em;
-    font-family: 'Luckiest guy', cursive;
+    font-family: 'Carter One', 'Poppins';
     background-image: linear-gradient(to top, #4c4d4c 20%, #ffffff 50%, #4c4d4c 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -83,7 +83,8 @@ video {
     color: transparent;
     text-shadow: none;
     caret-color: transparent;
-    font-family: 'Carter One', cursive;
+    font-family: 'Hanken Grotesk', 'Poppins';
+    font-weight: 900;
   }
 
 
@@ -105,13 +106,13 @@ video {
     font-size: 2em;
     font-weight: bolder;
     position: relative;
-    font-family: 'Carter One', serif;
+    font-family: 'Carter One', 'Poppins';
     width: max-content;
     color: white;
-    font-weight: 400;
     letter-spacing: 3px;
     padding-top: 2em;
     caret-color: transparent;
+    text-shadow: 3px -3px black;
   }
   
   .heroHeadline::before,
@@ -151,7 +152,8 @@ video {
     color: transparent;
     font-weight: 400;
     margin-top: 2px;
-    font-family: 'Carter One';
+    font-family: 'Hanken Grotesk', 'Poppins';
+    font-weight: 900;
     caret-color: transparent;
   }
   
@@ -183,7 +185,7 @@ video {
   .hireButton {
     background-color: transparent;
     font-size: 1.5rem;
-    font-family: 'Carter One', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     color: hsl(188, 88%, 55%);
     display: inline-block;
     cursor: pointer;
@@ -192,7 +194,7 @@ video {
     padding: 0.25em 1em;
     border-radius: 0.25em;
     position: absolute;
-    font-weight: 700;
+    font-weight: 900;
     opacity: 0;
     animation: scale 0.25s linear calc(var(--typewriterSpeed) + 2.75s) forwards;
     text-shadow: none;
@@ -262,7 +264,7 @@ video {
 
   .carouselBox:hover {
     transition: all 0.5s ease-in-out;
-    transform: scale(2.25);  
+    transform: scale(2.15);  
   }
 
   /* BACKGROUND BLOCKS */
@@ -270,7 +272,7 @@ video {
   .blockRed {
     background-color:hsla(0, 100%, 51%, 0.688) ;
     position: absolute;
-    height: 17em;
+    height: 17.5em;
     width: 20em;
     z-index: 2;
     opacity: 0;

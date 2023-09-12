@@ -280,8 +280,8 @@ p {
     font-weight: 900;
     text-align: left;
     margin: 0em 1em 0 1em;
-    font-family: 'Carter One';
-    text-shadow: 1px 2px black;
+    font-family: 'Hanken Grotesk';
+    text-shadow: -1.5px 1.5px black;
     border-bottom: 2px solid #fff;
 }
 
@@ -291,10 +291,11 @@ p {
     font-size: 0.6em;
     color: rgb(0, 0, 0);
     padding: 0 1.5em 0 1.5em;
-    font-weight: bold;
+    font-weight: 700;
     text-align: left;
+    opacity: 1;
     margin-top: -2em;
-    text-shadow: 0.1px 0.1px black;
+    /* text-shadow: 0.05px 0.05px black; */
 }
 
 .detailsBtn,
@@ -306,7 +307,7 @@ p {
 .detailsBtn {
     background-color: transparent;
     font-size: 1rem;
-    font-family: 'Carter One', sans-serif;
+    font-family: 'Hanken Grotesk', 'Poppins';
     letter-spacing: 2.5px;
     color: hsl(188, 88%, 55%);
     display: inline-block;
@@ -316,7 +317,7 @@ p {
     padding: 0.25em 1em;
     border-radius: 0.25em;
     position: relative;
-    font-weight: 700;
+    font-weight: 900;
     opacity: 1;
     caret-color: transparent;
     text-shadow: 2px 2px black;
