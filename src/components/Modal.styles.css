@@ -177,7 +177,7 @@
   cursor: pointer;
   text-decoration: none;
   border: var(--clr-neon) 0.125em solid;
-  padding: 1em;
+  padding: 0.5em 1em 0.5em 1em;
   left: 1.75em;
   border-radius: 0.25em;
   position: relative;

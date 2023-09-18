@@ -106,7 +106,7 @@ export const AccordionComponent = () => {
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <h6 style={{ lineHeight: "1.5em", color: "rgb(236, 219, 60)",             fontFamily: "Hanken Grotesk",
+            <h6 style={{ lineHeight: "1.5em", color: "rgb(236, 219, 60)", fontFamily: "Hanken Grotesk",
             fontWeight: '900', textShadow: '1px 1px black' }}>
               EDUCATIONAL ATTAINMENT
             </h6>
@@ -128,7 +128,7 @@ export const AccordionComponent = () => {
               <b> AMA University (2001-2004, 2010-2011)</b>
               <br />• B.S. Electronics & Communications Engineering
             </p>
-            <h6 style={{ color: "rgb(236, 219, 60)",             fontFamily: "Hanken Grotesk",
+            <h6 style={{ color: "rgb(236, 219, 60)", fontFamily: "Hanken Grotesk",
             fontWeight: '900', textShadow: '1px 1px black' }}>
               WORK EXPERIENCE
             </h6>

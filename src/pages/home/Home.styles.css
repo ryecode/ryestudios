@@ -37,7 +37,7 @@ video {
 
 #heroHome {
     position: relative;
-    margin: -30em 0 0 -57.25em;
+    margin: -27em 0 0 -57.25em;
     caret-color: transparent;
 }
 
@@ -57,9 +57,9 @@ video {
 #greet {
     position: absolute;
     color: hsl(0, 0%, 0% / 0.7);
-    font-size: 1.75em;
-    top: 13em;
-    left: 29em;
+    font-size: 1.5em;
+    top: 16em;
+    left: 33.75em;
     padding: 1em;
     font-family: 'Carter One', 'Poppins';
     background-image: linear-gradient(to top, #4c4d4c 20%, #ffffff 50%, #4c4d4c 100%);
@@ -103,7 +103,7 @@ video {
   }
   
   .heroHeadline {
-    font-size: 2em;
+    font-size: 2.25em;
     font-weight: bolder;
     position: relative;
     font-family: 'Carter One', 'Poppins';
@@ -142,18 +142,17 @@ video {
   }
   
   .jobTitle {
-    font-size: 3.4em;
+    font-size: 1.75em;
     opacity: 0;
     transform: translateY(-2em);
     animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
-    background-image: linear-gradient(to top, #acadac 10%, #ffffff 50%, #acadac 100%);
+    background-image: linear-gradient(to top, #c7cec7 10%, #ffffff 50%, #c7cec7 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 400;
     margin-top: 2px;
-    font-family: 'Hanken Grotesk', 'Poppins';
-    font-weight: 900;
+    font-family: 'Carter One', 'Poppins';
     caret-color: transparent;
   }
   
@@ -184,14 +183,14 @@ video {
   
   .hireButton {
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1em;
     font-family: 'Hanken Grotesk', sans-serif;
     color: hsl(188, 88%, 55%);
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
     border: var(--clr-neon) 0.125em solid;
-    padding: 0.25em 1em;
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 0.25em;
     position: absolute;
     font-weight: 900;
@@ -272,7 +271,7 @@ video {
   .blockRed {
     background-color:hsla(0, 100%, 51%, 0.688) ;
     position: absolute;
-    height: 17.5em;
+    height: 15em;
     width: 20em;
     z-index: 2;
     opacity: 0;

@@ -41,7 +41,7 @@ export const Home = () => {
             <h1 className="heroHeadline">
               <b>I'am Ryan Corral&nbsp;</b>
             </h1>
-            <p className="jobTitle">And I'm a Full Stack <br/>Web Developer</p>
+            <p className="jobTitle">And I'm a Full Stack Web Developer</p>
 
             <a
               href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_Resume.pdf"
@@ -82,12 +82,12 @@ export const Home = () => {
           className="blockRed"
           initial={{
             x: "-300%",
-            y: "-33.5%",
+            y: "-40%",
             transition: { delay: 0 },
           }}
           animate={{
             x: "-255%",
-            y: "-33.5%",
+            y: "-40%",
             opacity: "1",
             transition: {
               type: "spring",
@@ -180,7 +180,7 @@ export const Home = () => {
             transition: { delay: 0 },
           }}
           animate={{
-            x: "146%",
+            x: "130%",
             y: "120%",
             opacity: "1",
             transition: {
@@ -235,12 +235,12 @@ export const Home = () => {
             className="tilt-box-wrap"
             initial={{
               y: "-100vh",
-              x: "5%",
+              x: "-10%",
               transition: { duration: 0, delay: 0 },
             }}
             animate={{
               y: "0%",
-              x: "5%",
+              x: "-10%",
               opacity: "1",
               zIndex: "3",
               transition: {

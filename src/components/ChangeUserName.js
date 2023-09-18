@@ -42,7 +42,7 @@ export const ChangeUserName = () => {
           style={{
             padding: "0.2em",
             textAlign: "center",
-            caretColor: "blue",
+            caretColor: "black",
             background: "#c1bebe",
             borderRadius: "50px",
             borderColor: "green",
@@ -51,7 +51,7 @@ export const ChangeUserName = () => {
           maxLength={"8"}
         />
         <br />
-        <a href="#demo-modal" style={{ padding: "1em" }}>
+        <a href="#demo-modal" style={{ padding: "1em", caretColor: "transparent" }}>
           <motion.button
             className="enterBtn"
             style={{ marginTop: "1em" }}
