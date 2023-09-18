@@ -43,7 +43,7 @@ video {
 
 #askName {
     position: absolute;
-    margin: 0em -25.5em -24em 0;
+    margin: 0em -38em -24em 0;
     opacity: 0;
     padding: 2em 3em 3em 3em;
     caret-color: transparent;
@@ -59,7 +59,7 @@ video {
     color: hsl(0, 0%, 0% / 0.7);
     font-size: 1.5em;
     top: 16em;
-    left: 33.75em;
+    left: 38em;
     padding: 1em;
     font-family: 'Carter One', 'Poppins';
     background-image: linear-gradient(to top, #4c4d4c 20%, #ffffff 50%, #4c4d4c 100%);
@@ -291,7 +291,7 @@ video {
     background-color:hsla(231, 100%, 50%, 0.474) ;
     position: absolute;
     height: 35em;
-    width: 23em;
+    width: 27em;
     transform: translate(49em, 20%);
     z-index: 2;
     opacity: 0;
@@ -355,7 +355,7 @@ video {
   }
 
   .enterBtn {
-    margin-left: -2.75em;
+    margin-left: -0.5em;
   }
 
   .blockGreen {

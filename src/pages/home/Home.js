@@ -128,12 +128,12 @@ export const Home = () => {
           className="blockBlue"
           initial={{
             y: "100%",
-            x: "-38%",
+            x: "-30%",
             transition: { delay: 0 },
           }}
           animate={{
-            y: "63%",
-            x: "-38%",
+            y: "66%",
+            x: "-30%",
             opacity: "1",
             transition: {
               type: "spring",
@@ -180,7 +180,7 @@ export const Home = () => {
             transition: { delay: 0 },
           }}
           animate={{
-            x: "130%",
+            x: "162%",
             y: "120%",
             opacity: "1",
             transition: {
@@ -251,7 +251,7 @@ export const Home = () => {
               },
             }}
             exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
-            style={{ opacity: 0, width: "22.25em", height: "15em", margin: "0 0 0 -2em" }}
+            style={{ opacity: 0, width: "20em", height: "13em", margin: "0 0 0 -2em" }}
           >
             <span className="t_over"></span>
             <span className="t_over"></span>
