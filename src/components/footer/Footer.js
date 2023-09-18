@@ -46,7 +46,7 @@ export const Footer = () => {
             className="subscribe"
             src="https://ryecode.github.io/portfolio/ImageBank/phoneBtn.png"
             alt="phone icon"
-            width="3.5%"
+            width="2.25%"
           />
         </a>
         <a href="mailto:mr.ryan.corral@gmail.com">
@@ -54,7 +54,7 @@ export const Footer = () => {
             className="subscribe"
             src="https://ryecode.github.io/portfolio/ImageBank/emailBtn.png"
             alt="email icon"
-            width="3.5%"
+            width="2.25%"
           />
         </a>
         <a
@@ -66,7 +66,7 @@ export const Footer = () => {
             className="subscribe"
             src="https://ryecode.github.io/portfolio/ImageBank/linkedinBtn.png"
             alt="linkedIn icon"
-            width="3.5%"
+            width="2.25%"
           />
         </a>
         <a
@@ -78,7 +78,7 @@ export const Footer = () => {
             className="subscribe"
             src="https://ryecode.github.io/portfolio/ImageBank/msngrBtn.png"
             alt="facebook icon"
-            width="3.5%"
+            width="2.25%"
           />
         </a>
       </div>

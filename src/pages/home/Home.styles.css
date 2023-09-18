@@ -269,7 +269,7 @@ video {
   /* BACKGROUND BLOCKS */
 
   .blockRed {
-    background-color:hsl(0, 94%, 43%) ;
+    background-color:hsla(0, 100%, 50%, 0.55) ;
     position: absolute;
     height: 15em;
     width: 20em;
@@ -278,7 +278,7 @@ video {
   }
 
   .blockGreen {
-    background-color:hsla(134, 100%, 50%, 0.552) ;
+    background-color:hsl(134, 98%, 32%) ;
     position: absolute;
     height: 41em;
     width: 24em;
