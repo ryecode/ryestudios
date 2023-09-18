@@ -251,7 +251,7 @@ export const Home = () => {
               },
             }}
             exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
-            style={{ opacity: 0, width: "20em", height: "13em", margin: "0 0 0 -2em" }}
+            style={{ opacity: 0, width: "20em", height: "13em", margin: "2em 0 0 -2em" }}
           >
             <span className="t_over"></span>
             <span className="t_over"></span>

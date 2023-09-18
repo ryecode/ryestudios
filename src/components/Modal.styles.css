@@ -139,7 +139,7 @@
 
 .modalPointer {
   position: absolute;
-  top: -20em;
+  top: -22em;
   right: -5em;
   visibility: hidden;
   opacity: 0;
@@ -153,7 +153,7 @@
   opacity: 1;
   animation: bounce 1s ease-in forwards;
   animation-iteration-count: infinite;
-  transform: translateY(120%);
+  transform: translateY(100%);
   pointer-events: none;
   cursor: none;
   caret-color: transparent;
@@ -253,9 +253,9 @@
   }
 
   .modalPointer img {
-    width: 30%;
+    width: 20%;
     transform: translateX(7em);
-    margin-top: 15em;
+    margin-top: 16em;
     z-index: 4;
   }
 

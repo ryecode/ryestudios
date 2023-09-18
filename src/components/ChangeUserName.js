@@ -104,7 +104,7 @@ export const ChangeUserName = () => {
           <img
             src="https://ryecode.github.io/portfolio/ImageBank/goldArrow.png"
             alt="pointer"
-            width={"30%"}
+            width={"20%"}
           />
         </div>
       </motion.div>
