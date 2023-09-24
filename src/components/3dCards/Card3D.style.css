@@ -291,10 +291,10 @@ p {
     font-size: 0.6em;
     color: rgb(0, 0, 0);
     padding: 0 1.5em 0 1.5em;
-    font-weight: bold;
+    font-weight: 400;
     text-align: left;
     margin-top: -2em;
-    text-shadow: 0.1px 0.1px black;
+    text-shadow: 0.1px 0.1px rgba(0, 0, 0, 0.512);
 }
 
 .detailsBtn,
