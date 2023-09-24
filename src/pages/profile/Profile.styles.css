@@ -292,13 +292,14 @@
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
   transform: rotateY(0deg) scale(0.8);
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .skillButtons li a:hover span {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.4em;
   transform: scale(1em);
+  opacity: 1;
 }
 
 .skillButtons li:nth-child(1) a,
@@ -555,6 +556,10 @@ ul li button {
   .blockCross4 {
     margin-bottom: -7em;
 
+  }
+
+  .skillButtons li a span {
+    opacity: 1;
   }
 
 }

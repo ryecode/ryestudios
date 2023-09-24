@@ -329,12 +329,12 @@ export const Profile = () => {
                 </li>
 
                 <li>
-                  <a
-                    href="https://www.postman.com/"
+                <a
+                    href="https://www.mysql.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>POSTMAN</span>
+                    <span>MySQL</span>
                   </a>
                 </li>
                 <li>
@@ -347,12 +347,12 @@ export const Profile = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://github.blog/"
+                <a
+                    href="https://www.postman.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>GITHUB</span>
+                    <span>POSTMAN</span>
                   </a>
                 </li>
                 <li>

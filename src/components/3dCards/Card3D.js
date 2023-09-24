@@ -80,7 +80,7 @@ const Card3D = () => {
                 setShowDetails1(!showDetails1);
               }}
             >
-              DETAILS
+              {showDetails1 ? "HIDE DETAILS" : "SHOW DETAILS"}
             </motion.button>
             {showDetails1 === true && (
               <div className="detailsModal">
@@ -175,7 +175,7 @@ const Card3D = () => {
                 setShowDetails2(!showDetails2);
               }}
             >
-              DETAILS
+              {showDetails2 ? "HIDE DETAILS" : "SHOW DETAILS"}
             </motion.button>
             {showDetails2 === true && (
               <div className="detailsModal">
@@ -268,7 +268,7 @@ const Card3D = () => {
                 setShowDetails3(!showDetails3);
               }}
             >
-              DETAILS
+              {showDetails3 ? "HIDE DETAILS" : "SHOW DETAILS"}
             </motion.button>
             {showDetails3 === true && (
               <div className="detailsModal">
@@ -363,7 +363,7 @@ const Card3D = () => {
                 setShowDetails4(!showDetails4);
               }}
             >
-              DETAILS
+              {showDetails4 ? "HIDE DETAILS" : "SHOW DETAILS"}
             </motion.button>
             {showDetails4 === true && (
               <div className="detailsModal">
@@ -467,7 +467,7 @@ const Card3D = () => {
                 setShowDetails5(!showDetails5);
               }}
             >
-              DETAILS
+              {showDetails5 ? "HIDE DETAILS" : "SHOW DETAILS"}
             </motion.button>
             {showDetails5 === true && (
               <div className="detailsModal">

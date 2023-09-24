@@ -261,6 +261,7 @@
   font-size: large;
   letter-spacing: 8px;
   padding-left: 3em;
+  padding-right: 0;
 }
 
 @keyframes textclip {

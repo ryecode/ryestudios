@@ -12,25 +12,27 @@ export const Navbar = () => {
             style={{
               paddingTop: "1em",
               paddingBottom: "0",
-              width: "100%",
+              width: "fitContent",
               backgroundColor: "transparent",
             }}
           >
-            <a
+
+              <div className="animate-charcter">
+              <a
               href="https://ryestudios.vercel.app/"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none"}}
             >
-              <h1 className="animate-charcter">
                 <img
                   className="RyeLogo"
                   src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
                   alt="RYE Logo"
                   height="12%"
                   width="12%"
-                />{" "}
+                />
+                            </a>{" "}
                 RYE STUDIOS
-              </h1>
-            </a>
+              </div>
+
           </div>
           <input id="menu-toggle" type="checkbox" />
           <label className="menu-button-container" htmlFor="menu-toggle">
