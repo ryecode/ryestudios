@@ -103,12 +103,12 @@ video {
   }
   
   .heroHeadline {
-    font-size: 2.25em;
+    font-size: 2.5em;
     font-weight: bolder;
     position: relative;
     font-family: 'Carter One', 'Poppins';
     width: max-content;
-    color: white;
+    color: rgb(230, 255, 4);
     letter-spacing: 3px;
     padding-top: 2em;
     caret-color: transparent;
@@ -137,7 +137,7 @@ video {
     width: 0.25em;
     height: 1.25em;
     margin-top: 2em;
-    background: hsla(0, 0%, 100%, 0.655);
+    background: rgb(230, 255, 4);
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
   }
   
@@ -146,10 +146,13 @@ video {
     opacity: 0;
     transform: translateY(-2em);
     animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
-    background-image: linear-gradient(to top, #c7cec7 10%, #ffffff 50%, #c7cec7 100%);
+    /* background-image: linear-gradient(to top, rgb(255, 205, 4) 10%, rgb(230, 255, 4) 50%, rgb(255, 205, 4) 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: transparent; */
+    color: rgb(218, 240, 17);
+    letter-spacing: 3px;
+    text-shadow: 3px -3px black;
     font-weight: 400;
     margin-top: 2px;
     font-family: 'Carter One', 'Poppins';
@@ -278,7 +281,7 @@ video {
   }
 
   .blockGreen {
-    background-color:hsl(134, 98%, 32%) ;
+    background-color:hsl(134, 96%, 20%) ;
     position: absolute;
     height: 41em;
     width: 24em;
@@ -288,7 +291,7 @@ video {
   }
 
   .blockBlue {
-    background-color:hsla(231, 100%, 50%, 0.474) ;
+    background-color:hsla(231, 100%, 50%, 0.731) ;
     position: absolute;
     height: 35em;
     width: 27em;
