@@ -476,12 +476,12 @@ export const Profile = () => {
             </p>
             <p>
               <a
-                href="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                href="https://ryecode.github.io/portfolio/ImageBank/KodeGoCert.png"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg"
+                  src="https://ryecode.github.io/portfolio/ImageBank/KodeGoCert.png"
                   alt="certificate"
                   width={"85%"}
                   style={{
