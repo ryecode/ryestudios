@@ -208,11 +208,6 @@
     width: 20%;
   }
 
-  .animate-charcter {
-    margin-left: 0;
-    transform: translateX(2em);
-    z-index: 3;
-  }
 
 }
 
@@ -262,6 +257,11 @@
   letter-spacing: 8px;
   padding-left: 3em;
   padding-right: 0;
+  cursor: default;
+
+  margin-left: 0;
+  transform: translateX(2em);
+  z-index: 3;
 }
 
 @keyframes textclip {

@@ -52,6 +52,7 @@ video {
     text-align: left;
     z-index: 4;
     line-height: 1em;
+    cursor: default;
 }
 
 #greet {
@@ -74,6 +75,7 @@ video {
     width: fit-content;
     z-index: 4;
     opacity: 0;
+    cursor: default;
 }
 
 .gradientUser {
@@ -113,6 +115,7 @@ video {
     padding-top: 2em;
     caret-color: transparent;
     text-shadow: 3px -3px black;
+    cursor: default;
   }
   
   .heroHeadline::before,
@@ -157,6 +160,7 @@ video {
     margin-top: 2px;
     font-family: 'Carter One', 'Poppins';
     caret-color: transparent;
+    cursor: default;
   }
   
   .heroText {
@@ -170,6 +174,7 @@ video {
     margin-top: -2em;
     width: 100%;
     z-index: 4;
+    caret-color: transparent;
   }
   
   :root {
@@ -323,7 +328,7 @@ video {
   .branding {
     background-color:transparent;
     position: absolute;
-    height: 30em;
+    height: 20em;
     width: 20em;
     z-index: 2;
     opacity: 0;

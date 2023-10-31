@@ -195,17 +195,17 @@ export const Home = () => {
             transition: { duration: 1, delay: 0 },
           }}
         ></motion.div>
-        
+
         <motion.div
           className="branding"
           initial={{
             y: "-100%",
-            x: "95%",
+            x: "98%",
             transition: { delay: 0 },
           }}
           animate={{
-            y: "10%",
-            x: "95%",
+            y: "-30%",
+            x: "98%",
             opacity: "1",
             transition: {
               type: "spring",
@@ -220,14 +220,22 @@ export const Home = () => {
             transition: { duration: 1, delay: 0 },
           }}
         >
-          <p>
           <img
-                src="https://ryecode.github.io/portfolio/ImageBank/BestCodingSSnoBG.png"
-                alt="resume"
-                width="100%"
-                height="100%"
-              ></img>
-          </p>
+            src="https://ryecode.github.io/portfolio/ImageBank/EfsetSS.png"
+            alt="EFSET certificate"
+            width="80%"
+            height="80%"
+            style={{ backgroundColor: "gold", boxShadow: "-2px 3px black" }}
+          />
+          <br />
+          <a
+            href="https://www.efset.org/cert/yTDWgY"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", color: "gold" }}
+          >
+            View certificate here
+          </a>
         </motion.div>
 
         <div className="carouselBox">
@@ -251,7 +259,12 @@ export const Home = () => {
               },
             }}
             exit={{ scale: 0, transition: { duration: 1, delay: 0.25 } }}
-            style={{ opacity: 0, width: "20em", height: "13em", margin: "2em 0 0 -2em" }}
+            style={{
+              opacity: 0,
+              width: "20em",
+              height: "13em",
+              margin: "2em 0 0 -2em",
+            }}
           >
             <span className="t_over"></span>
             <span className="t_over"></span>
