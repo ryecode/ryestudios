@@ -260,7 +260,7 @@
   cursor: default;
 
   margin-left: 0;
-  transform: translateX(2em);
+  transform: translateX(0em);
   z-index: 3;
 }
 
