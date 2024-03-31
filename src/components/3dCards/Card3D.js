@@ -9,6 +9,7 @@ const Card3D = () => {
   const [showDetails3, setShowDetails3] = useState(false);
   const [showDetails4, setShowDetails4] = useState(false);
   const [showDetails5, setShowDetails5] = useState(false);
+  const [showDetails6, setShowDetails6] = useState(false);
 
   return (
     <>
@@ -430,21 +431,21 @@ const Card3D = () => {
             </div>
             <div className="card-cta">
               <a
-                href="https://cvhack.vercel.app/"
+                href="https://dev.d2l0wtnnm8bk8f.amplifyapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  color: "rgb(255, 78, 78)",
-                  textShadow: "1px 1px black",
-                }}
+                // style={{
+                //   color: "rgb(255, 78, 78)",
+                //   textShadow: "1px 1px black",
+                // }}
               >
-                <b>Website under reconstruction!</b>
+                <b>Tap here to visit website</b>
               </a>
             </div>
             <div className="card-fg">
               <img
                 className="card-image"
-                src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
+                src="https://ryecode.github.io/portfolio/ImageBank/SparkSoftAWSAppV6.jpeg"
                 alt="website screenshot"
                 style={{ width: "40%" }}
               />
@@ -473,22 +474,121 @@ const Card3D = () => {
               <div className="detailsModal">
                 <div className="detail-container">
                   <p className="detail-header">
-                    cvhack.com
-                    <br />( Personal Project )
+                    Rye Technologies
+                    <br />( AWS Practice App )
                   </p>
                   <p className="detail-description">
                     <span style={{ color: "blue" }}>Description:</span>
                     <br />
-                    This was a mini-project for the KodeGo bootcamp.
-                    Unfortunately, its Github was ruined, and I'm currently
-                    reconstructing it. Stay tuned for the relaunch of this
-                    website soon!
+                    This was a mini-project for the SparkSoft Internship Program.
+                    It is my playground to practice using multiple AWS services required by the company.
                     <br />
                     <br />
                     <span style={{ color: "blue" }}>Tools Used:</span>
                     <br />
-                    React, Node.js, MongoDB, Framer Motion, Javascript, CSS, and
-                    Vercel.
+                    React, AWS Services, CSS, Javascript, and Bootstraps.
+                  </p>
+                </div>
+              </div>
+            )}
+          </motion.div>
+
+          <motion.div
+            className="folder"
+            initial={{
+              y: "-200%",
+              transition: {
+                duration: 0,
+                delay: 0,
+              },
+            }}
+            animate={{
+              y: "0%",
+              opacity: 1,
+              transition: {
+                type: "spring",
+                bounce: "0.5",
+                duration: 1,
+                delay: 2.8,
+              },
+            }}
+            exit={{
+              x: "200%",
+              scale: 0,
+              transition: {
+                type: "spring",
+                bounce: "0.5",
+                duration: 1,
+                delay: 0.5,
+              },
+            }}
+          >
+            <div className="card-bg">
+              <p>
+                {" "}
+                sit esse et et amet pariatur Lorem Lorem proident voluptate do
+                quis magna laboris sit voluptate et dolor nulla nisi minim amet
+                laborum aliquip do
+              </p>
+            </div>
+            <div className="card-cta">
+              <a
+                href="https://main.d2b8ux0mnom2j7.amplifyapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                // style={{
+                //   color: "rgb(255, 78, 78)",
+                //   textShadow: "1px 1px black",
+                // }}
+              >
+                <b>Tap here to visit website</b>
+              </a>
+            </div>
+            <div className="card-fg">
+              <img
+                className="card-image"
+                src="https://ryecode.github.io/portfolio/ImageBank/SparkSoftAWSAppV7.jpeg"
+                alt="website screenshot"
+                style={{ width: "40%" }}
+              />
+            </div>
+            <motion.button
+              className="detailsBtn"
+              style={{ marginTop: "22em" }}
+              initial={{ scale: 0 }}
+              animate={{
+                scale: 1,
+                transition: {
+                  type: "spring",
+                  bounce: "0.5",
+                  duration: 0.75,
+                  delay: 5.5,
+                },
+              }}
+              exit={{ scale: 0, transition: { duration: 0.5, delay: 0 } }}
+              onClick={() => {
+                setShowDetails6(!showDetails6);
+              }}
+            >
+              {showDetails6 ? "HIDE DETAILS" : "SHOW DETAILS"}
+            </motion.button>
+            {showDetails6 === true && (
+              <div className="detailsModal">
+                <div className="detail-container">
+                  <p className="detail-header">
+                    Rye Amp V7
+                    <br />( AWS Practice App )
+                  </p>
+                  <p className="detail-description">
+                    <span style={{ color: "blue" }}>Description:</span>
+                    <br />
+                    This was another mini-project for the SparkSoft Internship Program.
+                    It is my playground to practice using multiple AWS services required by the company.
+                    <br />
+                    <br />
+                    <span style={{ color: "blue" }}>Tools Used:</span>
+                    <br />
+                    React, AWS Services, CSS, Javascript, and Bootstraps.
                   </p>
                 </div>
               </div>
@@ -605,6 +705,29 @@ const Card3D = () => {
             }}
             exit={{
               x: "512.5%",
+              y: "210%",
+              opacity: "0",
+              transition: { duration: 1, delay: 0 },
+            }}
+          ></motion.div>
+                    <motion.div
+            className="blockCard6"
+            initial={{
+              x: "640%",
+              y: "210%",
+              transition: { delay: 0 },
+            }}
+            animate={{
+              x: "640%",
+              y: "325%",
+              opacity: "1",
+              transition: {
+                duration: 0.5,
+                delay: 4,
+              },
+            }}
+            exit={{
+              x: "640%",
               y: "210%",
               opacity: "0",
               transition: { duration: 1, delay: 0 },
