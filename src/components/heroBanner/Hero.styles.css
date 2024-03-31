@@ -1,0 +1,162 @@
+#resumeBtn {
+  text-decoration: none;
+  text-shadow: none;
+  color: hsl(228, 96%, 56%);
+  z-index: 2;
+}
+
+#resumeBtn:hover {
+  color: hsl(228, 96%, 56%);
+}
+
+.hero-image {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 2em;
+  font-weight: bolder;
+  position: relative;
+  font-family: 'Carter One', serif;
+  width: max-content;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px #00171c;
+  padding-top: 2em;
+  caret-color: transparent;
+}
+
+.hero-title::before,
+.hero-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-title::before {
+  background-color: black;
+  height: 1.25em;
+  margin-top: 2em;
+  border-radius: 8px;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards;
+}
+
+.hero-title::after {
+  width: 0.25em;
+  height: 1.25em;
+  margin-top: 2em;
+  background: hsl(0, 0%, 100%);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
+}
+
+.subtitle {
+  color: hsl(0, 0%, 0% / 0.7);
+  font-size: 1em;
+  opacity: 0;
+  transform: translateY(-2rem);
+  animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
+  color: hsl(0, 2%, 72%);
+  font-weight: 900;
+  margin-top: 2px;
+  font-family: 'Hanken Grotesk';
+  caret-color: transparent;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 800;
+}
+
+:root {
+  --clr-neon: hsl(112, 100%, 50%);
+  --clr-bg: hsl(320, 43%, 96%);
+  ;
+}
+
+.neon-button,
+.neon-button::before,
+.neon-button::after {
+  box-sizing: border-box;
+}
+
+.neon-button {
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: hsl(188, 88%, 55%);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  position: relative;
+  font-weight: 900;
+  opacity: 0;
+  animation: scale 0.25s linear calc(var(--typewriterSpeed) + 2.75s) forwards;
+
+  box-shadow:
+    inset 0 0 0.5em 0 var(--clr-neon),
+    0 0 0.5em 0 var(--clr-neon);
+}
+
+.neon-button::before {
+  pointer-events: none;
+  /*use this string to avoid pointer change outside button */
+  content: '';
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  transition: opacity 100ms linear;
+  background-color: var(--clr-neon);
+  z-index: -1;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: hsl(0, 98%, 50%);
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}

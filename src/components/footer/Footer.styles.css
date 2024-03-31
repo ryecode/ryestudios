@@ -1,32 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .footer {
-  background-image: linear-gradient(to bottom, rgba(4, 4, 4, 0.875), rgba(32, 32, 31, 0.873));
+  background: linear-gradient(to top, rgba(4, 4, 4, 0.875) 35%, rgba(32, 32, 31, 0.01) 100%);
   width: 100%;
   margin-top: 0;
-  padding: 0;
-  position: absolute;
+  margin-bottom: 0;
+  padding: 0.15em 0 1.35em 1em;
+  position: relative;
+  height: 100%;
+  opacity: 0;
 }
 
 .btn {
   width: 100%;
-  font-size: 1em;
-  height: 90px;
+  height: 1em;
   border: none;
   outline: none;
-  /* background: black; */
-  /* cursor: none; */
+  pointer-events: none;
   position: relative;
   border-radius: 10px;
-  padding: 0;
+  padding: 0.75em 0 1em 7em;
+  text-align: left;
+  z-index: 2;
+  margin-bottom: -2em;  
 }
 
 .words {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   background-image: none;
   font-weight: bold;
   letter-spacing: 5px;
+  font-family: 'Carter One';
+
 }
 
 .btn .words {
@@ -65,6 +71,7 @@
 
 .btn .words {
   opacity: 1;
+
 }
 
 .btn:before {
@@ -162,24 +169,86 @@
 }
 
 .credit {
-  font-size: 0.75rem;
-  text-align: center;
-  color: rgb(145, 146, 147);
-  opacity: 50%;
-  margin: 0 0 0 0;
-  padding-bottom: 2.5em;
-  width: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 50%;
+  font-size: 0.4rem;
+  caret-color: transparent;
+  text-align: left;
+  color: rgb(218, 227, 235);
+  opacity: 1;
+  margin: 4.5em 0 -0.5em -105em;
+  display: inline-block;
+  pointer-events: none;
+  padding-top: 1em;
 }
 
 .credit a {
   text-decoration: none;
-  color: rgb(17, 120, 3);
-  font-weight: bold;
+  color: rgb(28, 240, 0);
+  pointer-events: all;
+  z-index: 4;
+}
+
+.sub {
+  width: 50%;
+  opacity: 0;
+  animation: scale 1s ease-in-out 2s forwards;
+  background: transparent;
+  border: none;
+  margin-left: -8em;
+  z-index: 3;
+  pointer-events: all;
+  margin-top: -3em;
+  position: absolute;
+  caret-color: transparent;
 }
 
 @media (max-width: 770px) {
   .credit {
-    transform: translateX(-0.1em);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin: -2.5em 0 0 0;
+    transform: translate(-2em, 17em);
+    z-index: 4;
   }
+
+  .sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    margin-left: -10em;
+  }
+
+  #footerQuery img {
+    width: 20%;
+    margin: -7em 0 1.5em -2em;
+  }
+
+  .sub a {
+    margin: -10em;
+    transform: translateY(10.5em);
+  }
+
+  .footer {
+    position: fixed; /* make the footer fixed */
+    left: 0;
+    bottom: 0;
+    height: 10em;
+    width: 100%;
+    margin-top: -10em;
+    overflow: hidden;
+  }
+
+  .btn {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
 }

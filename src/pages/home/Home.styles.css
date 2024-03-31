@@ -1,21 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.home {
-    width: 100%;
-    height: 100vh;
-}
-
 video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    opacity: 0.8;
 }
 
 .content {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -23,14 +17,390 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: rgb(4, 4, 4);
+    padding-bottom: 5em;
 }
 
 .overlay {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -6em;
+}
+
+#heroHome {
+    position: relative;
+    margin: -27em 0 0 -57.25em;
+    caret-color: transparent;
+}
+
+#askName {
+    position: absolute;
+    margin: 0em -38em -24em 0;
+    opacity: 0;
+    padding: 5em 6em 3em 3em;
+    caret-color: transparent;
+    color: rgb(255, 255, 255);
+    font-family: 'Carter One';
+    text-align: left;
+    z-index: 4;
+    line-height: 1em;
+    cursor: default;
+}
+
+#greet {
+    position: absolute;
+    color: hsl(0, 0%, 0% / 0.7);
+    font-size: 1.5em;
+    top: 21em;
+    left: 45em;
+    padding: 1em;
+    font-family: 'Carter One', 'Poppins';
+    background-image: linear-gradient(to top, #4c4d4c 20%, #ffffff 50%, #4c4d4c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    caret-color: transparent;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    flex-wrap: no wrap;
+    width: fit-content;
+    z-index: 4;
+    opacity: 0;
+    cursor: default;
+}
+
+.gradientUser {
+    background-image: linear-gradient(to top, hsl(63, 94%, 40%) 10%, hsl(63, 100%, 50%) 50%, hsl(63, 95%, 38%) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    caret-color: transparent;
+    font-family: 'Hanken Grotesk', 'Poppins';
+    font-weight: 900;
+  }
+
+
+/* HERO MODIFICATIONS */
+  
+  .heroIMG {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .heroHeadline {
+    font-size: 2.5em;
+    font-weight: bolder;
+    position: relative;
+    font-family: 'Carter One', 'Poppins';
+    width: max-content;
+    color: rgb(230, 255, 4);
+    letter-spacing: 3px;
+    padding-top: 2em;
+    caret-color: transparent;
+    text-shadow: 3px -3px black;
+    cursor: default;
+  }
+  
+  .heroHeadline::before,
+  .heroHeadline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .heroHeadline::before {
+    background-color: black;
+    height: 1.25em;
+    margin-top: 2em;
+    border-radius: 8px;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards;
+  }
+  
+  .heroHeadline::after {
+    width: 0.25em;
+    height: 1.25em;
+    margin-top: 2em;
+    background: rgb(230, 255, 4);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterSteps)) 2.25s forwards, blink 750ms steps(18) infinite;
+  }
+  
+  .jobTitle {
+    font-size: 1.75em;
+    opacity: 0;
+    transform: translateY(-2em);
+    animation: fadeInY 0.75s ease calc(var(--typewriterSpeed) + 2.25s) forwards;
+    /* background-image: linear-gradient(to top, rgb(255, 205, 4) 10%, rgb(230, 255, 4) 50%, rgb(255, 205, 4) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    color: rgb(218, 240, 17);
+    letter-spacing: 3px;
+    text-shadow: 3px -3px black;
+    font-weight: 400;
+    margin-top: 2px;
+    font-family: 'Carter One', 'Poppins';
+    caret-color: transparent;
+    cursor: default;
+  }
+  
+  .heroText {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+    color: white;
+    font-weight: 800;
+    margin-top: -2em;
+    width: 100%;
+    z-index: 4;
+    caret-color: transparent;
+  }
+  
+  :root {
+    --clr-neon: hsl(112, 100%, 50%);
+    --clr-bg: hsl(320, 43%, 96%);
+    ;
+  }
+  
+  .hireButton,
+  .hireButton::before,
+  .hireButton::after {
+    box-sizing: border-box;
+  }
+  
+  .hireButton {
+    background-color: transparent;
+    font-size: 1em;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: hsl(188, 88%, 55%);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.25em;
+    position: absolute;
+    font-weight: 900;
+    opacity: 0;
+    animation: scale 0.25s linear calc(var(--typewriterSpeed) + 2.75s) forwards;
+    text-shadow: none;
+    z-index: 4;
+    box-shadow:
+      inset 0 0 0.5em 0 var(--clr-neon),
+      0 0 0.5em 0 var(--clr-neon);
+    /* left: 21em; */
+  }
+  
+  .hireButton::before {
+    pointer-events: none;
+    /*use this string to avoid pointer change outside button */
+    content: '';
+    position: absolute;
+    background: var(--clr-neon);
+    top: 110%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.30);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+  
+  .hireButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+    background-color: var(--clr-neon);
+    z-index: -1;
+  }
+  
+  .hireButton:hover,
+  .hireButton:focus {
+    color: hsl(0, 98%, 50%);
+  }
+  
+  .hireButton:hover::before,
+  .hireButton:focus::before {
+    opacity: 1;
+  }
+  
+  .hireButton:hover::after,
+  .hireButton:focus::after {
+    opacity: 1;
+  }
+
+  .carouselBox {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    width: 25em;
+    height: 18em;
+    border: none;
+    background-color: transparent;
+    transform: translate(-50%, 55%);
+    padding: 0;
+    margin: 0;
+  }
+
+  .carouselBox:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(2.25);  
+  }
+
+  /* BACKGROUND BLOCKS */
+
+  .blockRed {
+    background-color:hsla(0, 100%, 50%, 0.55) ;
+    position: absolute;
+    height: 15em;
+    width: 20em;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .blockGreen {
+    background-color:hsl(134, 96%, 20%) ;
+    position: absolute;
+    height: 41em;
+    width: 24em;
+    transform: translate(-20.75em, -10%);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .blockBlue {
+    background-color:hsla(231, 100%, 50%, 0.731) ;
+    position: absolute;
+    height: 35em;
+    width: 27em;
+    transform: translate(49em, 20%);
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .blockPurple {
+    background-color:hsl(271, 80%, 45%) ;
+    position: absolute;
+    height: 30em;
+    width: 28em;
+    transform: translate(49em, 20%);
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .blockGold {
+    background-color:hsla(53, 100%, 50%, 0.395) ;
+    position: absolute;
+    height: 10em;
+    width: 30em;
+    transform: translate(100em, -8.78em);
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .branding {
+    background-color:transparent;
+    position: absolute;
+    height: 20em;
+    width: 20em;
+    z-index: 2;
+    opacity: 0;
+    caret-color: transparent;
+  }
+
+  
+@media (max-width: 770px) {
+  #heroHome {
+      transform: translate(21em, -1em);
+      z-index: 4;
+  }
+
+  .hireButton {
+      margin-left: 0.2em;
+  }
+
+  .heroHeadline {
+      font-size: 1em;
+  }
+
+  #askName {
+      margin: 0 1em -10em -1.25em;
+      text-align: left;
+  }
+
+  #greet {
+    width: max-content;
+    font-size: 1.25em;
+      margin-top: -6em;
+      left: 0.25em;
+  }
+
+  .enterBtn {
+    margin-left: -0.5em;
+  }
+
+  .blockGreen {
+      left: 28em;
+      top: -15em;
+      z-index: 1;
+  }
+
+  .blockRed {
+    left: 32em;
+    top: 13em;
+}
+
+.blockBlue {
+  left: -8em;
+  top: 8em;
+}
+
+.blockGold {
+  left: -31em;
+  top: 27em;
+}
+
+  .jobTitle {
+    font-size: 1em;
+  }
+
+  .heroHeadline {
+    font-size: 1.5em;
+  }
+
+  .branding {
+    visibility: hidden;
+  }
+
+  .carouselBox {
+    visibility: hidden;
+  }
+
 }

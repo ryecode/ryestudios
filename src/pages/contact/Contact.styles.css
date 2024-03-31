@@ -1,0 +1,297 @@
+.bodyContact {
+  margin: 0 0 -5.9em 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+
+#tilter {
+  animation: scale 0.5s ease-in calc(var(--typewriterSpeed) + 3s) forwards;
+  animation-iteration-count: initial;
+  text-align: center;
+  z-index: 1;
+  margin-top: 0;
+  opacity: 0;
+}
+
+#rowDaw {
+  margin: 5em 0 0 13em;
+  padding: 0;
+  color: aliceblue;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+#heroBox {
+  margin: 0;
+}
+
+.imageContainer {
+  background-image: url("https://ryecode.github.io/portfolio/ImageBank/chipBG.png");
+  background-size: 10em 7em;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  border-radius: 10%;
+  margin: 2em 1em 1em 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  transform: translate(-12em, -8em);
+  width: 7em;
+  height: 4em;
+}
+
+.callingCardImage {
+  position: absolute;
+  margin: 0.85em 0 0 1.25em ;
+}
+
+.callingCardName {
+  background-image: radial-gradient(circle, #785802, #906a02, #a87c03, #c18e03, #dba104, #dba104, #dba104, #dba104, #c18e03, #a87c03, #906a02, #785802);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Poppins', cursive;
+  position: absolute;
+  transform: translate(-9em, 1.5em);
+  font-size: 2em;
+  font-weight: bold;
+  caret-color: transparent;
+  width: max-content;
+}
+
+#job {
+  font-size: 0.75em;
+  margin-bottom: 5px;
+  color: rgb(177, 211, 3);
+  text-shadow: 1px 1px #000000;
+  caret-color: transparent;
+  font-family: 'Poppins', cursive;
+  width: max-content;
+  position: absolute;
+  transform: translate(-22em, 7em);
+}
+
+#contactDetails {
+  font-size: 0.5em;
+  color: white;
+  caret-color: transparent;
+  text-shadow: 1px 1px black;
+  font-family: 'Poppins', cursive;
+  width: max-content;
+  position: absolute;
+  transform: translate(-60em, -13em);
+  text-transform: none;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25em;
+    color: "white";
+    text-shadow: "1px 1px black";
+    opacity: 0;
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
+    caret-color: transparent;
+    position: absolute;
+    padding-right: 10em;
+}
+
+
+/* TILT BOX EFFECT */
+
+.tilt-box-wrap {
+  width: 70%;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  caret-color: transparent;
+}
+
+.tilt-box-wrap:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.tilt-box {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: all 0.6s ease-out;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin-left: 30px;
+  caret-color: transparent;
+  border: 2px solid rgb(144, 123, 1);
+  box-shadow: -3px 3px rgb(28, 28, 5);
+}
+
+.tilt-box strong {
+  transform: translateZ(40px);
+}
+
+.t_over {
+  width: 33.333%;
+  height: 33.333%;
+  position: absolute;
+  z-index: 1;
+}
+
+.t_over:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.t_over:nth-child(2) {
+  left: 33.333%;
+  top: 0;
+}
+
+.t_over:nth-child(3) {
+  left: 66.666%;
+  top: 0;
+}
+
+.t_over:nth-child(4) {
+  left: 0;
+  top: 33.333%;
+}
+
+.t_over:nth-child(5) {
+  left: 33.333%;
+  top: 33.333%;
+}
+
+.t_over:nth-child(6) {
+  left: 66.666%;
+  top: 66.666%;
+}
+
+.t_over:nth-child(7) {
+  left: 0;
+  top: 66.666%;
+}
+
+.t_over:nth-child(8) {
+  left: 33.333%;
+  top: 66.666%;
+}
+
+.t_over:nth-child(9) {
+  left: 66.666%;
+  top: 66.666%;
+}
+
+.t_over:nth-child(1):hover~.tilt-box {
+  transform: rotateX(-20deg) rotateY(20deg);
+}
+
+.t_over:nth-child(2):hover~.tilt-box {
+  transform: rotateX(-20deg) rotateY(0deg);
+}
+
+.t_over:nth-child(3):hover~.tilt-box {
+  transform: rotateX(-20deg) rotateY(-20deg);
+}
+
+.t_over:nth-child(4):hover~.tilt-box {
+  transform: rotateX(0deg) rotateY(20deg);
+}
+
+.t_over:nth-child(5):hover~.tilt-box {
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+.t_over:nth-child(6):hover~.tilt-box {
+  transform: rotateX(0deg) rotateY(-20deg);
+}
+
+.t_over:nth-child(7):hover~.tilt-box {
+  transform: rotateX(20deg) rotateY(20deg);
+}
+
+.t_over:nth-child(8):hover~.tilt-box {
+  transform: rotateX(20deg) rotateY(0deg);
+}
+
+.t_over:nth-child(9):hover~.tilt-box {
+  transform: rotateX(20deg) rotateY(-20deg);
+}
+
+
+@media (max-width: 770px) {
+  .bodyContact {
+    overflow: hidden;
+    background: url("https://ryecode.github.io/portfolio/ImageBank/gamingBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15% 30%;
+  }
+
+  .tilt-box {
+    width: 90vw;
+    margin: 2em 0 0 0;
+    transform: translateX(-5.1em);
+  }
+
+  .tilt-box-wrap:hover {
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+  }
+
+  .download {
+    display: flex;
+    position: absolute;
+    margin: 35em 12em 0 0;
+    padding: 0 0 0 0;
+    font-size: 0.75em;
+    width: max-content;
+  }
+
+  .callingCardImage {
+    width: 4em;
+    height: 3em;
+    margin: 7.5px 0 0 140px;
+    transform: translateX(-8.35em)
+  }
+
+  .imageContainer {
+    width: 5em;
+    height: 4em;
+    margin: 40px 0 0 80px;
+  }
+
+  #contactDetails {
+    font-size: 0.35em;
+    transform: translateX(-335px);
+    margin-top: -18em;
+  }
+
+  .callingCardName {
+    font-size: 1.25em;
+    margin-top: 1em;
+  }
+
+  #job {
+    font-size: 0.75em;
+    margin-top: 1em;
+  }
+
+}
