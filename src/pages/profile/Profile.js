@@ -339,15 +339,34 @@ export const Profile = () => {
                 </li>
                 <li>
                   <a
-                    href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction"
+                    href="https://www.php.net/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>EXPRESS.js</span>
+                    <span>PHP</span>
                   </a>
                 </li>
                 <li>
                 <a
+                    href="https://graphql.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>GraphQL</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://aws.amazon.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>AWS SERVICES</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
                     href="https://www.postman.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -357,30 +376,11 @@ export const Profile = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.figma.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>FIGMA</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://code.visualstudio.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>VS CODE</span>
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="https://dev.classmethod.jp/articles/git-bash-commands/?fbclid=IwAR2RADTjXgRVwBcGMezHKd9KVBQGoGCxod5ehizfVY20H4Lqr_jxGEmYzQY"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>GITBASH</span>
+                    <span>GIT</span>
                   </a>
                 </li>
                 <li>
