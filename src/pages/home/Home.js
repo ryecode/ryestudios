@@ -86,7 +86,7 @@ export const Home = () => {
             transition: { delay: 0 },
           }}
           animate={{
-            x: "-255%",
+            x: "-265%",
             y: "-40%",
             opacity: "1",
             transition: {
@@ -204,7 +204,7 @@ export const Home = () => {
             transition: { delay: 0 },
           }}
           animate={{
-            y: "-30%",
+            y: "-50%",
             x: "98%",
             opacity: "1",
             transition: {
