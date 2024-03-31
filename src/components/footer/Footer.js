@@ -16,7 +16,7 @@ export const Footer = () => {
       exit={{ y: "100%", transition: { duration: 0.75, delay: 0 } }}
     >
       <button className="btn">
-        <span className="words">© RYAN CORRAL 2023</span>
+        <span className="words">RYAN CORRAL © 2023</span>
       </button>
       <div className="credit">
         Some background and images from&nbsp;
