@@ -509,7 +509,7 @@ const Card3D = () => {
                 type: "spring",
                 bounce: "0.5",
                 duration: 1,
-                delay: 2.8,
+                delay: 2.6,
               },
             }}
             exit={{
