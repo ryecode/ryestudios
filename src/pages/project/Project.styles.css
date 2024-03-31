@@ -1,7 +1,9 @@
 .projectBody {
+  position: relative;
   margin: 0 0 -5.93em 0;
   padding: 0;
   width: 100%;
+  height: 100vh;
   background: url("https://ryecode.github.io/portfolio/ImageBank/projectsBG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,7 +15,7 @@
   margin: 0;
   padding: 5em 3em 13.6em 3em;
   width: 100%;
-  height: auto;
+  /* height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -24,11 +26,19 @@
 }
 
 .projectHeadline {
+  
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+
   /* border-bottom: 2px solid #fff; */
   margin-bottom: 1em;
   font-size: 2.5em;
   color: #fdfdfd;
-  padding: 0;
+  /* padding: 0; */
   caret-color: transparent;
   text-shadow: 2px 2.5px black;
   font-family: 'Carter One';
@@ -39,8 +49,10 @@
 @media (max-width: 770px) {
   .profileCard {
     flex-direction: column;
-    margin-top: 1.5em;
+    margin-top: 2em;
+    padding: 2em;
     width: 100%;
+    height: auto;
   }
 
   .folder {
@@ -49,8 +61,14 @@
 
   #pageTitle {
     font-size: large;
-    padding: 2em 0 0 0.25em;
+    padding: 0 0 0 0.25em;
     letter-spacing: 2px;
+  }
+
+  .projectBody {
+    position: relative;
+    background-attachment: fixed; /* make the background fixed */
+    height: auto;
   }
 
 
