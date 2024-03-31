@@ -7,11 +7,11 @@ export const Footer = () => {
   return (
     <motion.div
       className="footer"
-      initial={{ y: "100%", transition: { duration: 0, delay: 0 } }}
+      initial={{ y: "100%", transition: { duration: 0, delay: 0 },}}
       animate={{
         y: "0%",
         opacity: "1",
-        transition: { type: "spring", bounce: "0.5", duration: 0.75, delay: 2 },
+        transition: { type: "spring", bounce: "0.5", duration: 0.75, delay: 1 },
       }}
       exit={{ y: "100%", transition: { duration: 0.75, delay: 0 } }}
     >
