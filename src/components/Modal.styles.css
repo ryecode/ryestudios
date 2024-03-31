@@ -139,8 +139,8 @@
 
 .modalPointer {
   position: absolute;
-  top: -22em;
-  right: -5em;
+  top: -25em;
+  right: -20em;
   visibility: hidden;
   opacity: 0;
   margin: 0;
